@@ -1,2 +1,2 @@
 # Block-Copolymer
-# Block-Copolymer
+Use polymer field theory to construct phase diagrams of block copolymers (diblock copolymer, triblock copolymer, random copolymer etc.). Chains are modeled as worm-like chains with finite bending rigidity. Density fluctuation effects can also be readily incorporated using renormalized group theory.
