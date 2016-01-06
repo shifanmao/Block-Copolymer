@@ -1,0 +1,13 @@
+Universe = vanilla
+Getenv = True 
+Executable = /usr/local/bin/matlab 
+Initialdir = /tower12/home/shifan/polymem-wlc-pt/scalcbatch-12-15-15/sdata-8-1/mfiles/ 
+input = scalc.m
+output = out.out
+error = out.err
+Log = out.log
+Arguments = -nodisplay 
++NeverSuspend = True
++NeverPreempt = True
++TimeBeforePreempt = 72
+Queue

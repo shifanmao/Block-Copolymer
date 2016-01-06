@@ -1,0 +1,17 @@
+cp ../snapshots-03-06-15-1-1/snap0045.png snap_eps001_lamnp75.png
+cp ../snapshots-03-06-15-2-1/snap0045.png snap_eps001_lamnp50.png
+cp ../snapshots-03-06-15-3-1/snap0045.png snap_eps001_lamnp25.png
+cp ../snapshots-03-06-15-4-2/snap0045.png snap_eps001_lam0.png
+
+cp ../snapshots-03-06-15-8-1/snap0045.png  snap_eps010_lamnp75.png
+cp ../snapshots-03-06-15-9-1/snap0045.png  snap_eps010_lamnp50.png
+cp ../snapshots-03-06-15-10-1/snap0045.png snap_eps010_lamnp25.png
+cp ../snapshots-03-06-15-11-1/snap0045.png snap_eps010_lam0.png
+
+cp ../snapshots-03-06-15-15-2/snap0045.png snap_eps100_lamnp75.png
+cp ../snapshots-03-06-15-16-1/snap0045.png snap_eps100_lamnp50.png
+cp ../snapshots-03-06-15-17-1/snap0045.png snap_eps100_lamnp25.png
+cp ../snapshots-03-06-15-18-2/snap0045.png snap_eps100_lam0.png
+cp ../snapshots-03-06-15-19-1/snap0045.png snap_eps100_lam25.png
+cp ../snapshots-03-06-15-20-1/snap0045.png snap_eps100_lam50.png
+cp ../snapshots-03-06-15-21-1/snap0045.png snap_eps100_lam75.png
