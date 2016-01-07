@@ -1,4 +1,4 @@
-addpath('../')
+addpath('../functions')
 close all
 clear
 

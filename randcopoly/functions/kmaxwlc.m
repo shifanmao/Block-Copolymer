@@ -1,4 +1,27 @@
 function [kval,sval,d2gam2]=kmaxwlc(N,NM,FA,LAM,d,ORDmax,ORD,ResLayer)
+% Evaluate structure factor of random copolymer melt near peak, at
+% zero Flory-Huggins parameter. Chains are modeled as wormlike chains.
+% Usage :: [kval,sval,d2gam2]=kmaxwlc(N,NM,FA,LAM,d,ORDmax,ORD,ResLayer)
+% Outputs ::
+%   kval = critical wavemode of instability
+%   sval = inverse of structure factor (s2invwlc) at kval
+%   d2gam2 = second derivative of sval at kval
+% Inputs ::
+%   N = number of monomers
+%   NM = number of Kuhn steps per monomer
+%   FA = fraction of A monomers
+%   LAM = degree of chemical correlation
+%   d = number of dimensions, default 3
+%   ORDmax = maximum number of eigenvalues, default 20
+%   ORD = number of eigenvalues, default 20
+%   ResLayer = number of residual layers, default 500
+% Shifan Mao (1/6/16)
+
+% Check conditions on chemical composition and correlation
+if ~( FA>=0 && 1-FA>=0 && LAM>=-1 && 1-LAM>=0 && ...
+     FA*(1-LAM)+LAM>=0 && FA*(LAM-1)+1>=0 )
+ error('chemical composition and correlation constraints not satisfied')
+end
 
 % Fill in unset optional values
 
@@ -11,10 +34,10 @@ switch nargin
     case 5
         ORDmax=20;
         ORD=20;
-        ResLayer=500;        
+        ResLayer=500;
     case 6
         ORD=20;
-        ResLayer=500;        
+        ResLayer=500;
     case 7
         ResLayer=500;        
 end
@@ -50,7 +73,7 @@ else
     
 end
 
-% find susceptibility (second der. of gamma2 w/ k at kstar)
+% find peak sharpness
 ks = kval;
 dks = 1/sqrt(R2)*5e-2;
 G = @(k) s2invwlc(N,NM,FA,LAM,k,d,ORDmax,ORD,ResLayer);

@@ -1,7 +1,7 @@
 % This is an example calculating structure factor
 % of rigid, anti-correlated random copolymer melts,
 % correpsonding to Figure 2A in "Impact of ..." paper
-addpath('../')
+addpath('../functions')
 close all
 clear
 
