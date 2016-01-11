@@ -2,9 +2,9 @@ clear;close all
 cd ../
 
 % start code
-LAM = -0.75;
+LAM = 0.25;
 EPSV = [0.01,0.10,1.00];
-PLOTON = 0;
+PLOTON = 1;
 
 % simulation parameters
 N=8;
@@ -47,6 +47,10 @@ elseif LAM==-0.75
     ylim([0,2]);xlim([0,20]);
     set(gca,'Ytick',0:0.4:2.0)
     set(gca,'YtickLabel',{'0.0','0.4','0.8','1.2','1.6','2.0'})
+else
+    ylim([0,2]);xlim([0,20]);
+    set(gca,'Ytick',0:0.4:2.0)
+    set(gca,'YtickLabel',{'0.0','0.4','0.8','1.2','1.6','2.0'})
 end
 
 savename = sprintf('../results/random-simulation/ssim-lam%.2f.eps',LAM);
@@ -64,6 +68,10 @@ elseif LAM==-0.75
     ylim([2,5]);xlim([0,20]);
     set(gca,'Ytick',2:0.5:5)
     set(gca,'YtickLabel',{'2.0','2.5','3.0','3.5','4.0','4.5','5.0'})
+else
+    ylim([0,5]);xlim([0,20]);
+    set(gca,'Ytick',0:1.0:5)
+    set(gca,'YtickLabel',{'0','1','2','3','4','5'})
 end
 
 savename = sprintf('../results/random-simulation/qsim-lam%.2f.eps',LAM);
