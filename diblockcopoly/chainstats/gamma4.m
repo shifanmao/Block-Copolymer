@@ -1,4 +1,4 @@
-function val=gamma4(N,FA,k,Q1,Q2,Q3,Q4)
+function val=gamma4(N,NM,FA,k,Q1,Q2,Q3,Q4)
 %% This function calculates the quartic order coefficient
 % in free energy expansion of copolymer melts
 % Usage: val=gamma4(N,FA,k,Q1,Q2,Q3,Q4)
@@ -44,29 +44,29 @@ else
         Q14=norm(Q1+Q4);
 
         % calculate single chain correlation functions
-        if N>=1e4  % Gaussian chain limit
+        if NM>=1e4  % Gaussian chain limit
             % Gaussian chain correlations
-            s4 = s4gc(N,FA,Q1,Q2,Q3,Q4);
-            s31 = s3gc(N,FA,Q1,Q2,-Q1-Q2);
-            s32 = s3gc(N,FA,Q1,Q3,-Q1-Q3);
-            s33 = s3gc(N,FA,Q1,Q4,-Q1-Q4);
-        elseif N<=1e-4  % Rigid rod limit
+            s4 = s4gc(N,NM,FA,Q1,Q2,Q3,Q4);
+            s31 = s3gc(N,NM,FA,Q1,Q2,-Q1-Q2);
+            s32 = s3gc(N,NM,FA,Q1,Q3,-Q1-Q3);
+            s33 = s3gc(N,NM,FA,Q1,Q4,-Q1-Q4);
+        elseif NM<=1e-4  % Rigid rod limit
             % Rigid rod correlations
-            s4 = s4rr(NM,FA,Q1,Q2,Q3,Q4);
-            s31 = s3rr(NM,FA,Q1,Q2,-Q1-Q2);
-            s32 = s3rr(NM,FA,Q1,Q3,-Q1-Q3);
-            s33 = s3rr(NM,FA,Q1,Q4,-Q1-Q4);
+            s4 = s4rr(N,FA,Q1,Q2,Q3,Q4);
+            s31 = s3rr(N,FA,Q1,Q2,-Q1-Q2);
+            s32 = s3rr(N,FA,Q1,Q3,-Q1-Q3);
+            s33 = s3rr(N,FA,Q1,Q4,-Q1-Q4);
         else
             % Worm-like chain correlations
-            s4 = s4wlc(N,FA,Q1,Q2,Q3,Q4);
-            s31 = s3wlc(N,FA,Q1,Q2,-Q1-Q2);
-            s32 = s3wlc(N,FA,Q1,Q3,-Q1-Q3);
-            s33 = s3wlc(N,FA,Q1,Q4,-Q1-Q4);
+            s4 = s4wlc(N,NM,FA,Q1,Q2,Q3,Q4);
+            s31 = s3wlc(N,NM,FA,Q1,Q2,-Q1-Q2);
+            s32 = s3wlc(N,NM,FA,Q1,Q3,-Q1-Q3);
+            s33 = s3wlc(N,NM,FA,Q1,Q4,-Q1-Q4);
         end
-        s2inv=s2inverse(N,FA,k(j));
-        s21inv=s2inverse(N,FA,Q12);
-        s22inv=s2inverse(N,FA,Q13);
-        s23inv=s2inverse(N,FA,Q14);
+        s2inv=s2inverse(N,NM,FA,k(j));
+        s21inv=s2inverse(N,NM,FA,Q12);
+        s22inv=s2inverse(N,NM,FA,Q13);
+        s23inv=s2inverse(N,NM,FA,Q14);
         
         % Use Leibler's formula (III-22 to III-25 in his 1980 paper)
         g4=zeros(2,2,2,2);

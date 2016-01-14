@@ -1,4 +1,4 @@
-function S3=s3wlc(NM,FA,Q1,Q2,Q3)
+function S3=s3wlc(N,NM,FA,Q1,Q2,Q3)
 %% Function :: s3wlc. Calcultes fourier transform of three-point 
 % correlation function of worm-like chain
 % Usage: S3=s3wlc(NM,FA,Q1,Q2,Q3,ORDEig,ORDL,ResLayer)
@@ -26,15 +26,15 @@ elseif sum(power(Q3,2)) < MIN
     
     % reduces to two-point correlation function
     Q1MAG=sqrt(sum(power(Q1,2)));
-    S2 = s2wlc(NM,FA,Q1MAG);
-    S3(1,1,1) = S2(1,1)*FA*NM;
-    S3(1,1,2) = S2(1,1)*FB*NM;
-    S3(1,2,1) = S2(1,2)*FA*NM;
-    S3(1,2,2) = S2(1,2)*FB*NM;
-    S3(2,1,1) = S2(2,1)*FA*NM;
-    S3(2,1,2) = S2(2,1)*FB*NM;
-    S3(2,2,1) = S2(2,2)*FA*NM;
-    S3(2,2,2) = S2(2,2)*FB*NM;
+    S2 = s2wlc(N,NM,FA,Q1MAG);
+    S3(1,1,1) = S2(1,1)*FA*N;
+    S3(1,1,2) = S2(1,1)*FB*N;
+    S3(1,2,1) = S2(1,2)*FA*N;
+    S3(1,2,2) = S2(1,2)*FB*N;
+    S3(2,1,1) = S2(2,1)*FA*N;
+    S3(2,1,2) = S2(2,1)*FB*N;
+    S3(2,2,1) = S2(2,2)*FA*N;
+    S3(2,2,2) = S2(2,2)*FB*N;
     
 else
 
@@ -79,20 +79,20 @@ else
     for N1=1:NR
         for N2=1:NR
             % Case 1: A1=A2=A3 (SAAA)
-            S3=S3_case1(S3,NM,N1,N2,R1,R2,GL1,GL2,PL12,FA,FB);
-            S3=S3_case1(S3,NM,N1,N2,R1,R3,GL1,GL3,PL13,FA,FB);
-            S3=S3_case1(S3,NM,N1,N2,R2,R3,GL2,GL3,PL23,FA,FB);
-            S3=S3_case1(S3,NM,N1,N2,R2,R1,GL2,GL1,PL12,FA,FB);
-            S3=S3_case1(S3,NM,N1,N2,R3,R1,GL3,GL1,PL13,FA,FB);
-            S3=S3_case1(S3,NM,N1,N2,R3,R2,GL3,GL2,PL23,FA,FB);
+            S3=S3_case1(S3,N,N1,N2,R1,R2,GL1,GL2,PL12,FA,FB);
+            S3=S3_case1(S3,N,N1,N2,R1,R3,GL1,GL3,PL13,FA,FB);
+            S3=S3_case1(S3,N,N1,N2,R2,R3,GL2,GL3,PL23,FA,FB);
+            S3=S3_case1(S3,N,N1,N2,R2,R1,GL2,GL1,PL12,FA,FB);
+            S3=S3_case1(S3,N,N1,N2,R3,R1,GL3,GL1,PL13,FA,FB);
+            S3=S3_case1(S3,N,N1,N2,R3,R2,GL3,GL2,PL23,FA,FB);
 
             % Case 2: A1=A2~=A3 (SAAB)
-            S3=S3_case2(S3,NM,N1,N2,R1,R3,GL1,GL3,PL13,FA,FB);
-            S3=S3_case2(S3,NM,N1,N2,R2,R3,GL2,GL3,PL23,FA,FB);
+            S3=S3_case2(S3,N,N1,N2,R1,R3,GL1,GL3,PL13,FA,FB);
+            S3=S3_case2(S3,N,N1,N2,R2,R3,GL2,GL3,PL23,FA,FB);
 
             % Case 3: A1~=A2=A3 (SABB)
-            S3=S3_case3(S3,NM,N1,N2,R1,R2,GL1,GL2,PL12,FA,FB);
-            S3=S3_case3(S3,NM,N1,N2,R1,R3,GL1,GL3,PL13,FA,FB);
+            S3=S3_case3(S3,N,N1,N2,R1,R2,GL1,GL2,PL12,FA,FB);
+            S3=S3_case3(S3,N,N1,N2,R1,R3,GL1,GL3,PL13,FA,FB);
         end
     end
 
@@ -102,24 +102,24 @@ else
 
 end
 end
-function S3=S3_case1(S3,NM,N1,N2,R1,R2,GL1,GL2,PL12,FA,FB)
+function S3=S3_case1(S3,N,N1,N2,R1,R2,GL1,GL2,PL12,FA,FB)
 % Case 1: A1=A2=A3
-    S3(1,1,1)=S3(1,1,1)+S3_case1_int(FA,R1(N1),R2(N2))*NM^3*...
+    S3(1,1,1)=S3(1,1,1)+S3_case1_int(FA,R1(N1),R2(N2))*N^3*...
                                     sum(PL12.*GL1(:,N1).*GL2(:,N2));
-    S3(2,2,2)=S3(2,2,2)+S3_case1_int(FB,R1(N1),R2(N2))*NM^3*...
+    S3(2,2,2)=S3(2,2,2)+S3_case1_int(FB,R1(N1),R2(N2))*N^3*...
                                     sum(PL12.*GL1(:,N1).*GL2(:,N2));
 end
-function S3=S3_case2(S3,NM,N1,N2,R1,R2,GL1,GL2,PL12,FA,FB)
+function S3=S3_case2(S3,N,N1,N2,R1,R2,GL1,GL2,PL12,FA,FB)
 % Case 2: A1=A2~=A3
-    S3(1,1,2)=S3(1,1,2)+S3_case2_int(FA,R1(N1),R2(N2))*NM^3*...
+    S3(1,1,2)=S3(1,1,2)+S3_case2_int(FA,R1(N1),R2(N2))*N^3*...
                                     sum(PL12.*GL1(:,N1).*GL2(:,N2));
-    S3(2,2,1)=S3(2,2,1)+S3_case2_int(FB,R1(N1),R2(N2))*NM^3*...
+    S3(2,2,1)=S3(2,2,1)+S3_case2_int(FB,R1(N1),R2(N2))*N^3*...
                                     sum(PL12.*GL1(:,N1).*GL2(:,N2));
 end
-function S3=S3_case3(S3,NM,N1,N2,R1,R2,GL1,GL2,PL12,FA,FB)
+function S3=S3_case3(S3,N,N1,N2,R1,R2,GL1,GL2,PL12,FA,FB)
 % Case 3: A1~=A2=A3
-    S3(2,1,1)=S3(2,1,1)+S3_case3_int(FB,R1(N1),R2(N2))*NM^3*...
+    S3(2,1,1)=S3(2,1,1)+S3_case3_int(FB,R1(N1),R2(N2))*N^3*...
                                     sum(PL12.*GL1(:,N1).*GL2(:,N2));
-    S3(1,2,2)=S3(1,2,2)+S3_case3_int(FA,R1(N1),R2(N2))*NM^3*...
+    S3(1,2,2)=S3(1,2,2)+S3_case3_int(FA,R1(N1),R2(N2))*N^3*...
                                     sum(PL12.*GL1(:,N1).*GL2(:,N2));
 end

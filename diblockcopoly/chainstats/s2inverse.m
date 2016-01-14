@@ -1,6 +1,6 @@
-function s2inv=s2inverse(N,FA,k)
+function s2inv=s2inverse(N,NM,FA,k)
 %% calculates the inverse of pair correlation function in Fourier space
-% usage s2inv=s2inverse(N,FA,k)
+% usage s2inv=s2inverse(N,NM,FA,k)
 % Return:
 %    val, inverse s2
 % Parameters:
@@ -13,12 +13,12 @@ s2inv=zeros(2,2);
 MIN=1e-10;
 
 % Calculate the s matrix
-if N>=1e4  % Gaussian chain limit
-    s2=s2gc(N,FA,k);
-elseif N<=1e-3  % Rigid rod limit
+if NM>=1e4  % Gaussian chain limit
+    s2=s2gc(N,NM,FA,k);
+elseif NM<=1e-4  % Rigid rod limit
     s2=s2rr(N,FA,k);
 else
-    s2=s2wlc(N,FA,k);
+    s2=s2wlc(N,NM,FA,k);
 end
 DET=s2(1,1,:)*s2(2,2,:)-s2(1,2,:)*s2(2,1,:);
 

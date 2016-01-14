@@ -1,4 +1,7 @@
-# data files
+# folders
 results
+backup
+
+# data files
 diblockcopoly/data/*
 homopoly/data/*

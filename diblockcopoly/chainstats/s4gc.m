@@ -1,4 +1,4 @@
-function S4=s4gc(N,FA,Q1,Q2,Q3,Q4)
+function S4=s4gc(N,NM,FA,Q1,Q2,Q3,Q4)
 %S4 is a four point correlation function
 %For example:
 %   S4(1,1,1,1)=SAAAA
@@ -19,10 +19,10 @@ else
     Q3MAG=sqrt(sum(power(Q3,2)));
     Q4MAG=sqrt(sum(power(Q4,2)));
     
-    R1=-N*Q1MAG*Q1MAG/(2*d);
-    R2=-N*Q2MAG*Q2MAG/(2*d);
-    R3=-N*Q3MAG*Q3MAG/(2*d);
-    R4=-N*Q4MAG*Q4MAG/(2*d);
+    R1=-NM*Q1MAG*Q1MAG/(2*d);
+    R2=-NM*Q2MAG*Q2MAG/(2*d);
+    R3=-NM*Q3MAG*Q3MAG/(2*d);
+    R4=-NM*Q4MAG*Q4MAG/(2*d);
     
     Q12MAG=sqrt(sum(power(Q1+Q2,2)));
     Q13MAG=sqrt(sum(power(Q1+Q3,2)));
