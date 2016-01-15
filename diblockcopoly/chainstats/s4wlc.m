@@ -1,4 +1,4 @@
-function S4=s4wlc(N,NM,FA,Q1,Q2,Q3,Q4)
+function S4=s4wlc(NM,FA,Q1,Q2,Q3,Q4)
 %% Function :: s3wlc. Calcultes fourier transform of three-point 
 % correlation function of worm-like chain
 % Usage: s4wlc(NM,FA,Q1,Q2,Q3,Q4)
@@ -106,43 +106,43 @@ if sum(power(Q1+Q2+Q3+Q4,2)) <= MIN
                     % 3 34 1 334 112
 
                     % Case 1: A1=A2=A3=A4 (SAAAA,SBBBB)
-                    S4=S4_case1(S4,N,N1,N2,N3,M,R1,R12,R4,FA,FB,GL1,GLM12,GL4,YLM112,YLM443);
-                    S4=S4_case1(S4,N,N1,N2,N3,M,R1,R12,R3,FA,FB,GL1,GLM12,GL3,YLM112,YLM334);
-                    S4=S4_case1(S4,N,N1,N2,N3,M,R1,R13,R4,FA,FB,GL1,GLM13,GL4,YLM113,YLM442);
-                    S4=S4_case1(S4,N,N1,N2,N3,M,R1,R13,R2,FA,FB,GL1,GLM13,GL2,YLM113,YLM224);
-                    S4=S4_case1(S4,N,N1,N2,N3,M,R1,R14,R3,FA,FB,GL1,GLM14,GL3,YLM114,YLM332);
-                    S4=S4_case1(S4,N,N1,N2,N3,M,R1,R14,R2,FA,FB,GL1,GLM14,GL2,YLM114,YLM223);
+                    S4=S4_case1(S4,NM,N1,N2,N3,M,R1,R12,R4,FA,FB,GL1,GLM12,GL4,YLM112,YLM443);
+                    S4=S4_case1(S4,NM,N1,N2,N3,M,R1,R12,R3,FA,FB,GL1,GLM12,GL3,YLM112,YLM334);
+                    S4=S4_case1(S4,NM,N1,N2,N3,M,R1,R13,R4,FA,FB,GL1,GLM13,GL4,YLM113,YLM442);
+                    S4=S4_case1(S4,NM,N1,N2,N3,M,R1,R13,R2,FA,FB,GL1,GLM13,GL2,YLM113,YLM224);
+                    S4=S4_case1(S4,NM,N1,N2,N3,M,R1,R14,R3,FA,FB,GL1,GLM14,GL3,YLM114,YLM332);
+                    S4=S4_case1(S4,NM,N1,N2,N3,M,R1,R14,R2,FA,FB,GL1,GLM14,GL2,YLM114,YLM223);
 
-                    S4=S4_case1(S4,N,N1,N2,N3,M,R2,R23,R4,FA,FB,GL2,GLM23,GL4,YLM223,YLM441);
-                    S4=S4_case1(S4,N,N1,N2,N3,M,R2,R23,R1,FA,FB,GL2,GLM23,GL1,YLM223,YLM114);
-                    S4=S4_case1(S4,N,N1,N2,N3,M,R2,R24,R3,FA,FB,GL2,GLM24,GL3,YLM224,YLM331);
-                    S4=S4_case1(S4,N,N1,N2,N3,M,R2,R24,R1,FA,FB,GL2,GLM24,GL1,YLM224,YLM113);
+                    S4=S4_case1(S4,NM,N1,N2,N3,M,R2,R23,R4,FA,FB,GL2,GLM23,GL4,YLM223,YLM441);
+                    S4=S4_case1(S4,NM,N1,N2,N3,M,R2,R23,R1,FA,FB,GL2,GLM23,GL1,YLM223,YLM114);
+                    S4=S4_case1(S4,NM,N1,N2,N3,M,R2,R24,R3,FA,FB,GL2,GLM24,GL3,YLM224,YLM331);
+                    S4=S4_case1(S4,NM,N1,N2,N3,M,R2,R24,R1,FA,FB,GL2,GLM24,GL1,YLM224,YLM113);
 
-                    S4=S4_case1(S4,N,N1,N2,N3,M,R3,R34,R2,FA,FB,GL3,GLM34,GL2,YLM334,YLM221);
-                    S4=S4_case1(S4,N,N1,N2,N3,M,R3,R34,R1,FA,FB,GL3,GLM34,GL1,YLM334,YLM112);
+                    S4=S4_case1(S4,NM,N1,N2,N3,M,R3,R34,R2,FA,FB,GL3,GLM34,GL2,YLM334,YLM221);
+                    S4=S4_case1(S4,NM,N1,N2,N3,M,R3,R34,R1,FA,FB,GL3,GLM34,GL1,YLM334,YLM112);
 
                     % Case 2: A1=A2=A3~=A4 (SAAAB,SBBBA)
-                    S4=S4_case2(S4,N,N1,N2,N3,M,R1,R12,R4,FA,FB,GL1,GLM12,GL4,YLM112,YLM443);
-                    S4=S4_case2(S4,N,N1,N2,N3,M,R1,R13,R4,FA,FB,GL1,GLM13,GL4,YLM113,YLM442);
-                    S4=S4_case2(S4,N,N1,N2,N3,M,R2,R23,R4,FA,FB,GL2,GLM23,GL4,YLM223,YLM441);
+                    S4=S4_case2(S4,NM,N1,N2,N3,M,R1,R12,R4,FA,FB,GL1,GLM12,GL4,YLM112,YLM443);
+                    S4=S4_case2(S4,NM,N1,N2,N3,M,R1,R13,R4,FA,FB,GL1,GLM13,GL4,YLM113,YLM442);
+                    S4=S4_case2(S4,NM,N1,N2,N3,M,R2,R23,R4,FA,FB,GL2,GLM23,GL4,YLM223,YLM441);
 
                     % Case 3: A1=A2~=A3=A4 (SAABB)
-                    S4=S4_case3(S4,N,N1,N2,N3,M,R1,R12,R4,FA,GL1,GLM12,GL4,YLM112,YLM443);
-                    S4=S4_case3(S4,N,N1,N2,N3,M,R1,R12,R3,FA,GL1,GLM12,GL3,YLM112,YLM334);
-                    S4=S4_case3(S4,N,N1,N2,N3,M,R2,R12,R4,FA,GL2,GLM12,GL4,YLM221,YLM443);
-                    S4=S4_case3(S4,N,N1,N2,N3,M,R2,R12,R3,FA,GL2,GLM12,GL3,YLM221,YLM334);
+                    S4=S4_case3(S4,NM,N1,N2,N3,M,R1,R12,R4,FA,GL1,GLM12,GL4,YLM112,YLM443);
+                    S4=S4_case3(S4,NM,N1,N2,N3,M,R1,R12,R3,FA,GL1,GLM12,GL3,YLM112,YLM334);
+                    S4=S4_case3(S4,NM,N1,N2,N3,M,R2,R12,R4,FA,GL2,GLM12,GL4,YLM221,YLM443);
+                    S4=S4_case3(S4,NM,N1,N2,N3,M,R2,R12,R3,FA,GL2,GLM12,GL3,YLM221,YLM334);
 
                     % Case 4: A1~=A2=A3~=A4 (SABBA)
-                    S4=S4_case4(S4,N,N1,N2,N3,M,R1,R14,R2,FA,GL1,GLM14,GL2,YLM114,YLM223);
-                    S4=S4_case4(S4,N,N1,N2,N3,M,R1,R14,R3,FA,GL1,GLM14,GL3,YLM114,YLM332);
-                    S4=S4_case4(S4,N,N1,N2,N3,M,R4,R14,R2,FA,GL4,GLM14,GL2,YLM441,YLM223);
-                    S4=S4_case4(S4,N,N1,N2,N3,M,R4,R14,R3,FA,GL4,GLM14,GL3,YLM441,YLM332);
+                    S4=S4_case4(S4,NM,N1,N2,N3,M,R1,R14,R2,FA,GL1,GLM14,GL2,YLM114,YLM223);
+                    S4=S4_case4(S4,NM,N1,N2,N3,M,R1,R14,R3,FA,GL1,GLM14,GL3,YLM114,YLM332);
+                    S4=S4_case4(S4,NM,N1,N2,N3,M,R4,R14,R2,FA,GL4,GLM14,GL2,YLM441,YLM223);
+                    S4=S4_case4(S4,NM,N1,N2,N3,M,R4,R14,R3,FA,GL4,GLM14,GL3,YLM441,YLM332);
 
                     % Case 5: A1~=A2~=A3~=A4 (SABAB)
-                    S4=S4_case5(S4,N,N1,N2,N3,M,R1,R13,R4,FA,GL1,GLM13,GL4,YLM113,YLM442);
-                    S4=S4_case5(S4,N,N1,N2,N3,M,R1,R13,R2,FA,GL1,GLM13,GL2,YLM113,YLM224);
-                    S4=S4_case5(S4,N,N1,N2,N3,M,R3,R13,R4,FA,GL3,GLM13,GL4,YLM331,YLM442);
-                    S4=S4_case5(S4,N,N1,N2,N3,M,R3,R13,R2,FA,GL3,GLM13,GL2,YLM331,YLM224);
+                    S4=S4_case5(S4,NM,N1,N2,N3,M,R1,R13,R4,FA,GL1,GLM13,GL4,YLM113,YLM442);
+                    S4=S4_case5(S4,NM,N1,N2,N3,M,R1,R13,R2,FA,GL1,GLM13,GL2,YLM113,YLM224);
+                    S4=S4_case5(S4,NM,N1,N2,N3,M,R3,R13,R4,FA,GL3,GLM13,GL4,YLM331,YLM442);
+                    S4=S4_case5(S4,NM,N1,N2,N3,M,R3,R13,R2,FA,GL3,GLM13,GL2,YLM331,YLM224);
     
                 end
             end

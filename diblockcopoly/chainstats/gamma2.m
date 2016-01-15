@@ -1,4 +1,4 @@
-function val=gamma2(N,NM,FA,k,CHI)
+function val=gamma2(N,FA,k,CHI)
 %% This function calculates the quadratic order coefficient
 % in free energy expansion of copolymer melts
 % Usage: val=gamma2(N,FA,k,CHI)
@@ -8,7 +8,6 @@ function val=gamma2(N,NM,FA,k,CHI)
 %    k, magnitude of wavevector in unit of 1/contour length
 %       k input can be a vector
 %    N, number of monomers
-%    NM, number of Kuhn steps per monomer
 %    FA, fraction of A type monomers
 %    CHI, chemical incompatibility between A and B monomers, non-
 %        dimensionalized by monomer volume v (CHI*v)
@@ -31,7 +30,7 @@ D=[1,-1];
 
 %% evaluate s2inv
 for j = 1:length(k)
-    s2inv=s2inverse(N,NM,FA,k(j));
+    s2inv=s2inverse(N,FA,k(j));
     G=0;
     for I = 1:4
         G = G + real(...

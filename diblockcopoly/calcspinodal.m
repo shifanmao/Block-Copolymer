@@ -1,22 +1,20 @@
-% Calculate spinodal and critical wavelength
+%% Calculate spinodal and critical wavelength
 clear all;
 
 FAV = 0.5;
-N = 1e5;
-NMV = logspace(-1,5,15);
+NV = logspace(-1,3,21);
 
 % results to save
-ks = zeros(length(NMV),1);
-chis = zeros(length(NMV),1);
+ks = zeros(length(NV),1);
+chis = zeros(length(NV),1);
 
 % start calcultion
 inm = 1;
-for NM = NMV
-    [chis(inm),ks(inm)]=spinodal(N,NM,FAV);
+for N = NV
+    [chis(inm),ks(inm)]=spinodal(N,FAV);
     inm = inm+1;
 end
 
-figure;semilogx(NMV,chis*N)
-
-R2=sqrt(r2(NMV))';
-figure;semilogx(NMV,1./(ks.*R2))
+figure;semilogx(NV,chis.*NV')
+figure;loglog(NV,2*pi./ks)
+figure;semilogx(NV,1./(ks.*sqrt(r2(NV))'))

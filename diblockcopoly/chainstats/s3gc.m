@@ -1,4 +1,4 @@
-function S3=s3gc(N,NM,FA,Q1,Q2,Q3)
+function S3=s3gc(N,FA,Q1,Q2,Q3)
 %S3 is a three point correlation function
 %For example:
 %   S3(1,1,1)=SAAA
@@ -17,9 +17,9 @@ S3=zeros(2,2,2);
 if sum(power(Q1+Q2+Q3,2)) > MIN
     error('Qs must add up to zero from translationsl invariance')
 else
-    R1=-NM*Q1MAG*Q1MAG/(2*d);
-    R2=-NM*Q2MAG*Q2MAG/(2*d);
-    R3=-NM*Q3MAG*Q3MAG/(2*d);
+    R1=-N*Q1MAG*Q1MAG/(2*d);
+    R2=-N*Q2MAG*Q2MAG/(2*d);
+    R3=-N*Q3MAG*Q3MAG/(2*d);
 
     % Case 1: A1=A2=A3 (SAAA)
     S3=S3_case1(S3,N,R1,R2,FA,FB);

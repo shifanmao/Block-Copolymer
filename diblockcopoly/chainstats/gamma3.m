@@ -1,4 +1,4 @@
-function val=gamma3(N,NM,FA,k)
+function val=gamma3(N,FA,k)
 %% This function calculates the cubic order coefficient
 % in free energy expansion of copolymer melts
 % Usage: G=gamma3(N,FA,k)
@@ -32,14 +32,14 @@ for j=1:length(k)
     Q2=transpose(rotz(pi*2/3)*Q1(1:3)');
     Q3=-Q1-Q2;    
 
-    if NM>=1e4  % Gaussian chain limit
-        s3 = s3gc(N,NM,FA,Q1,Q2,Q3);
-    elseif NM<=1e-4  % Rigid rod limit
+    if N>=1e4  % Gaussian chain limit
+        s3 = s3gc(N,FA,Q1,Q2,Q3);
+    elseif N<=1e-4  % Rigid rod limit
         s3 = s3rr(N,FA,Q1,Q2,Q3);
     else
-        s3 = s3wlc(N,NM,FA,Q1,Q2,Q3);
+        s3 = s3wlc(N,FA,Q1,Q2,Q3);
     end
-    s2inv=s2inverse(N,NM,FA,k(j));
+    s2inv=s2inverse(N,FA,k(j));
 
     % use Leibler's formula:
     for I = 1:length(M)

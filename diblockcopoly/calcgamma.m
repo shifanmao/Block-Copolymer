@@ -1,5 +1,5 @@
-function [gam3,gam4]=calcgamma(N,NM,FAV,NQ)
-% calcgamma.m :: This code calculates the coefficients in free energy expansion of block
+function [gam3,gam4]=calcgamma(N,FAV,NQ)
+%% calcgamma.m :: This code calculates the coefficients in free energy expansion of block
 % copolymers. Coefficients are evaluated by finding the cubic and quartic
 % order vertex functions at dominant peak given in quadratic order fluctuations
 % Usage: [gam3,gam4]=calcgamma(N,FAV,NQ)
@@ -69,24 +69,21 @@ gam3=zeros(length(FAV),1);
 gam4=zeros(length(FAV),NQ);
 
 % calculate spinodal and critical wavelength
-[~,ks]=spinodal(N,NM,FAV);
+[~,ks]=spinodal(N,FAV);
     
 for IFA=1:length(FAV)
     FA=FAV(IFA);
-    fprintf('Step 2: Calculating coefficients at FA=%.2f, NM=%d\n',FA,N)
+    disp(['Step 1: Calculating coefficients at FA=',num2str(FA),', NM=',num2str(N)])
 
     % calculate free energy coefficients
-    gam3(IFA)=gamma3(N,NM,FA,ks(IFA));
+    gam3(IFA) = gamma3(N,FA,ks(IFA));
 
     for IQ=1:NQ
         K1=Q1(:,IQ);
         K2=Q2(:,IQ);
         K3=Q3(:,IQ);
         K4=Q4(:,IQ);
-        gam4(IFA,IQ)=gamma4(N,NM,FA,ks(IFA),K1,K2,K3,K4);
+        gam4(IFA,IQ) = gamma4(N,FA,ks(IFA),K1,K2,K3,K4);
     end
 end
-
-% filename=sprintf('data/gam_C%dNM%.2f.mat',CHAIN,NM);
-% save(filename,'FAV','ks','chis','gam3','gam4')
 end
