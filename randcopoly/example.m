@@ -37,7 +37,7 @@ xlabel('R_Mq');ylabel('S(q)')
 set(gca,'xscale','log');set(gca,'yscale','log');
 axis([K0 KF 1e-1 1e2])
 
-% Example 2: find spinodal vs. chemical correlation
+% Example 2: find spinodal vs. fraction of A monomers
 N=100;  % total of 100 monomers
 NM=100; % each monomer has 100 Kuhn steps
 LAM=0; % ideal random copolymer
