@@ -54,7 +54,7 @@ function [chi13,chi36,chi12,chi23,chi26]=phasediag(N,FAV,gam3,gam4)
         gamma3=gam3(I);
         gamma4=gam4(I,:);
         
-        disp(['Step 2: Calculating OOT CHI at FA=',num2str(FA),', N=',num2str(N)])
+        fprintf('Step 2: Calculating OOT phase diag. at FA=%.2f, N=%.2e\n',FA,N)
         F13=@(CHI) abs(lamellar(CHI,gamma4)-hexagonal(CHI,gamma3,gamma4));
         F36=@(CHI) abs(hexagonal(CHI,gamma3,gamma4)-bcc(CHI,gamma3,gamma4));
         F12=@(CHI) abs(lamellar(CHI,gamma4)-tetragonal(CHI,gamma4));

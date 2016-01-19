@@ -34,13 +34,6 @@ G=@(k) gamma2(N,FA,k,0);
 R2 = r2(N);
 k0=-1e-2/(sqrt(R2));
 kf=1e1/(sqrt(R2));
-% if N>10
-%     k0=1e-1*power(N,-1/2);
-%     kf=1e2*power(N,-1/2);
-% else
-%     k0=1e-1*power(N,-1);
-%     kf=1e2*power(N,-1);
-% end
 ks(ii) = fminbnd(G,k0,kf);
 
 chis(ii) = 0.5*G(ks(ii));
@@ -53,5 +46,4 @@ if ks(ii)>1e-1  % central differences
 else  % forward differences
     d2gam2(ii) = (G(ks(ii)+2*dks)-2*G(ks(ii)+dks)+G(ks(ii)))/(dks^2);
 end
-d2gam2(ii) = -1/(N*R2)*d2gam2(ii)./power(G(ks(ii)),2);
 end

@@ -1,4 +1,7 @@
 function chi1=spinodalRG(N,Nbar,FA)
+% Find the renormalized spinodal by FH theory
+% Usage: chi1=spinodalRG(N,Nbar,FA)
+
 % find spinodal
 [chis,ks,~]=spinodal(N,FA);
 
@@ -40,6 +43,8 @@ function chi1=spinodalfh(N,Nbar,FA,ks,chis)
     end
     
     %% start solving self-consistent equations
+    fprintf('Step 2: Calculating renormalized spinodal at FA=%.2f, N=%.2e\n',FA,N)
+    
     % solver option
     options = optimset('Display','off','TolX',1e-8,'TolFun',1e-8,'MaxFunEvals',1e8,'MaxIter',1e8);
 
@@ -47,10 +52,6 @@ function chi1=spinodalfh(N,Nbar,FA,ks,chis)
     x0 = [-1e2,1,1,1];
     lb=[-1e7,0,0,0];
     ub=[0,1e5,1e5,1e5];
-
-    x02 = [-1e2,1,1,1,1,1,1];
-    lb2=[-1e5,0,0,0,0,0,0];
-    ub2=[0,1e5,1e5,1e5,1e5,1e5,1e5];
     
     % find corrected spinodal
     % use Hartree approximation from Fredrickson-Helfand theory
