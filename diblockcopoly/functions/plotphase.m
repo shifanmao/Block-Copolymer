@@ -1,5 +1,5 @@
 function [chis,chi13,chi36,chi12,chi23,chi26]=plotphase(N,FAV)
-% Plots phase mean-field diagram of diblock copolymers
+%% plots phase diagram of diblock copolymers
 % Usage: plotphase(N,FAV)
 % Parameters:
 %   N, number of Kuhn steps of total chain
