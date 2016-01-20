@@ -1,4 +1,4 @@
-diblockcopoly
+# diblockcopoly
 =======================================
 
 This is a function that uses polymer field theory to find phase behavior of diblock copolymers
@@ -9,3 +9,12 @@ chemical correlation and monomer rigidities.
 
 Renormalized phase diagrams are found by F-H/Brazovskii theory of free energy expansion
 up to quartic-order density fluctuations.
+
+## Run example
+example.m provides simple demo that utilizes the functions including
+- plotphase, plots a mean-field diblock copolymer phase diagram
+- plotphaseRG, plots a diblock copolymer with density fluctuations
+- spinodal, calculates mean-field phase transition spinodal of diblock copolymer
+- spinodalRG, calculates renormalized phase transition spinodal of diblock copolymer with density flucutations
+- densityRG, plots density-density correlations with mean-field and flucutation theory
+- calcgamma, calculates vertex functions of free energy expansion
