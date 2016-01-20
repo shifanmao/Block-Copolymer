@@ -68,7 +68,7 @@ function [chi13,chi36,chi12,chi23,chi26]=phasediag(N,FAV,gam3,gam4)
         chi12(I) = fminbnd(F12,0,200/N,options);
         chi23(I) = fminbnd(F23,0,200/N,options);
         chi26(I) = fminbnd(F26,0,200/N,options);
-        sprintf('FA = %.2f // F13 = %d, F36 = %d', FA, F13(chi13(I)), F36(chi36(I)))
+        fprintf('FA = %.2f // F13 = %d, F36 = %d', FA, F13(chi13(I)), F36(chi36(I)))
     end
 end
 

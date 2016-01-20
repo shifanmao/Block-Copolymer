@@ -65,6 +65,18 @@ for ii=1:NFA
         chi36(ii)=0;
     end
 end
+
+% make a phase diagram
+ind13=find(phase==3 | phase==6);
+ind36=find(phase==6);
+
+figure;hold;set(gca,'fontsize',18)
+plot(FAV,chit*N,'k','linewidth',1.5)
+plot(FAV,chis*N,'k--','linewidth',1.5)
+plot(FAV(ind13),chi13(ind13)*N,'r','linewidth',1.2)
+plot(FAV(ind36),chi36(ind36)*N,'b','linewidth',1.2)
+xlabel('f');ylabel('\chi N')
+xlim([FAV(1),FAV(end)]);ylim([10.,15])
 end
 
 function chi13=chioot(chis,c,d,N,Nbar,miu,lam,n1,n2)
