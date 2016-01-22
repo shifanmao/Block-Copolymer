@@ -1,7 +1,7 @@
-function densityRG(N,Nbar,FA,PLOT1,PLOT2)
+function [chis,chit]=densityRG(N,Nbar,FA,PLOT1,PLOT2)
 % Plot density-density correlations during phase transition
 % according to Mean-field theory and FH theory
-% Usage :: plotspinodalRG(N,Nbar,FA,CHIV)
+% Usage :: [chis,chit]=densityRG(N,Nbar,FA,PLOT1,PLOT2)
 % Inputs ::
 %   N, number of Kuhn steps of whole chain
 %   Nbar, invariant degree of polymerization
@@ -68,8 +68,8 @@ if (PLOT2)
     xlabel('\chi N');ylabel('N/<\psi^2(q^*)>')
 
     % find renormalized spinodal
-    chi1=spinodalRG(N,Nbar,FA);
-    plot(chi1*N,N./densityfh(N,Nbar,FA,ks,ks,chi1,d2gamma2),'ks',...
+    chit=spinodalRG(N,Nbar,FA);
+    plot(chit*N,N./densityfh(N,Nbar,FA,ks,ks,chit,d2gamma2),'ks',...
         'MarkerSize',6,'MarkerFaceColor','k');
 end
 end
@@ -91,8 +91,9 @@ function Sfh=densityfh(N,Nbar,FA,k,ks,CHI,d2gamma2)
 gam2 = gamma2(N,FA,ks,CHI);
 
 % gamma4 at angle phi=pi (assume no q dependence)
-Q1=[1,0,0]';Q2=rotz(pi)*Q1;Q3=-Q2;Q4=-Q1;
-gam4 = real(gamma4(N,FA,ks,Q1,Q2,Q3,Q4));
+NQ=1;
+[~,gam4]=calcgamma(N,FA,NQ);
+gam4=real(gam4(end,1));
 
 % solve self-consistent equations
 alpha = (1/2)*d2gamma2;
