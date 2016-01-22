@@ -1,4 +1,4 @@
-function plotspinodalRG(N,Nbar,FA,CHIV)
+function densityRG(N,Nbar,FA,PLOT1,PLOT2)
 % Plot density-density correlations during phase transition
 % according to Mean-field theory and FH theory
 % Usage :: plotspinodalRG(N,Nbar,FA,CHIV)
@@ -7,8 +7,10 @@ function plotspinodalRG(N,Nbar,FA,CHIV)
 %   Nbar, invariant degree of polymerization
 %   FA, fraction of A monomers
 %   CHIV, range of CHI values
-PLOT1=0;
-PLOT2=1;
+if nargin==3
+    PLOT1=1;
+    PLOT2=1;
+end
 
 % find mean-field spinodal
 [chis,ks,d2gamma2]=spinodal(N,FA);
@@ -18,6 +20,9 @@ if (PLOT1)
     % wavevectors
     kmin=0.5;kmax=3.5;
     k=power(linspace(kmin,kmax,200),1)/sqrt(N/6);
+    
+    % Flory-Huggins parameter
+    CHIV=linspace(0,1,5);
 
     figure;hold;set(gca,'fontsize',20)
     for ii = 1:length(CHIV)
@@ -38,13 +43,15 @@ if (PLOT1)
             plot(k*sqrt(N/6),Sfh./N,'color',[col 0 1-col],'linestyle','-','linewidth',2);
         end
     end
-    xlim([kmin,kmax]);ylim([0,3]);box on
-    set(gca,'yscale','log')
+    xlim([kmin,kmax]);box on
     xlabel('qR');ylabel('<\psi^2>/N')
 end
 
 % PLOT2: CRITICAL MODE vs CHI
 if (PLOT2)
+    % Flory-Huggins parameter
+    CHIV=linspace(0,4,50);
+    
     Smf = zeros(length(CHIV),1);
     Sfh = zeros(length(CHIV),1);
     for ii = 1:length(CHIV)

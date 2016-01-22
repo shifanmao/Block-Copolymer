@@ -1,31 +1,56 @@
-function [chit,phase]=spinodalRG(N,Nbar,FA)
-% Find the renormalized spinodal by FH theory
-% Usage: chi1=spinodalRG(N,Nbar,FA)
+function [chit,phase]=spinodalRG(NV,NbarV,FAV)
+% SPINODALRG  Find the renormalized spinodal by FH theory
+% Usage: [chit,phase]=spinodalRG(N,Nbar,FA)
+% Inputs:
+%   N, number of statistical steps of total chain
+%   Nbar, invariant degree of polymerization
+%   FA, A monomer chemical composition
+% Outputs:
+%   chit, renormalized spinodal
+%   phase, name of first stable phase above renormalized spinodal,
+%     e.g. phase=3, HEXAGONAL phase is the first stable phase
+
+% results to return
+chit=zeros(length(FAV),length(NV));     % renormalized spinodal
+phase=zeros(length(FAV),length(NV));     % renormalized spinodal
+
+% calculate vertex functions
+NQ=1;  % assume to Q dependence
+[gam3,gam4]=calcgamma(NV,FAV,NQ);
+gam3=real(gam3);
+gam4=real(gam4(:,1));
 
 % find spinodal
-[chis,ks,~]=spinodal(N,FA);
+[chis,ks,~]=spinodal(NV,FAV);
 
-% find renormalized spinodal of each phase
-chi1=spinodalfh(N,Nbar,FA,ks,chis,1);
-chi3=spinodalfh(N,Nbar,FA,ks,chis,3);
-chi6=spinodalfh(N,Nbar,FA,ks,chis,6);
+for ii=1:length(FAV)
+    FA=FAV(ii);
+    for jj=1:length(NV)
+        N=NV(jj);
+        for kk=1:length(NbarV)
+            Nbar=NbarV(kk);
 
-% find renormalized spinodal
-chiall=[chi1,chi3,chi6];
-phases=[1,3,6];
-[chi,order]=sort(chiall);
-chit=chi(1);
-phase=phases(order(1));
+            % find renormalized spinodal
+            fprintf('Step 3: Calculating renormalized spinodal at N=%.2e,Nbar=%.2e,FA=%.2f\n',N,Nbar,FA)
+
+            % find renormalized spinodal of each phase
+            chi1=spinodalfh(N,Nbar,FA,gam3(ii),gam4(ii),ks(ii),chis(ii),1);
+            chi3=spinodalfh(N,Nbar,FA,gam3(ii),gam4(ii),ks(ii),chis(ii),3);
+            chi6=spinodalfh(N,Nbar,FA,gam3(ii),gam4(ii),ks(ii),chis(ii),6);
+
+            % find renormalized spinodal
+            chiall=[chi1,chi3,chi6];
+            phases=[1,3,6];
+            [chi,order]=sort(chiall);
+            chit(ii,jj,kk)=chi(1);
+            phase(ii,jj,kk)=phases(order(1));
+        end
+    end
+end
 end
 
-function chit=spinodalfh(N,Nbar,FA,ks,chis,n)
-% calculate renormalized spinodal from FH theory
-    % calculate vertex functions
-    NQ=1;  % assume to Q dependence
-    [gam3,gam4]=calcgamma(N,FA,NQ);
-    gam3=real(gam3);
-    gam4=real(gam4);
-    
+function chit=spinodalfh(N,Nbar,FA,gam3,gam4,ks,chis,n)
+% calculate renormalized spinodal from FH theory    
     % calculate constant (estimate local second-order derivative)
     xs=ks^2*(1/6)*N;
     dx=xs*1e-3;
@@ -51,7 +76,6 @@ function chit=spinodalfh(N,Nbar,FA,ks,chis,n)
     end
 
     %% start solving self-consistent equations
-    fprintf('Step 2: Calculating renormalized spinodal at FA=%.2f, N=%.2e\n',FA,N)
     
     % solver option
     options = optimset('Display','off',...

@@ -27,7 +27,8 @@ col1='k-';
 col2='r-';
 col3='b-';
 
-plot(FAV,chis*N,col1,'linewidth',2);plot(1-FAV,chis*N,col1,'linewidth',1.5)
+plot(FAV,chis*N,col1,'linewidth',2);
+plot(1-FAV,chis*N,col1,'linewidth',1.5)
 plot(FAV,(chi13+chis)*N,col2,'linewidth',1.5)
 plot(1-FAV,(chi13+chis)*N,col2,'linewidth',1.5)
 
@@ -68,7 +69,6 @@ function [chi13,chi36,chi12,chi23,chi26]=phasediag(N,FAV,gam3,gam4)
         chi12(I) = fminbnd(F12,0,200/N,options);
         chi23(I) = fminbnd(F23,0,200/N,options);
         chi26(I) = fminbnd(F26,0,200/N,options);
-        fprintf('FA = %.2f // F13 = %d, F36 = %d', FA, F13(chi13(I)), F36(chi36(I)))
     end
 end
 

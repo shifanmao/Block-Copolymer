@@ -4,4 +4,5 @@ backup
 
 # data files
 diblockcopoly/data/*
+diblockcopoly/talk/*
 homopoly/data/*

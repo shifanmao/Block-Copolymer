@@ -1,40 +1,33 @@
-function [chit,phase,chi13,chi36]=plotphaseRG(N,Nbar,FAV)
-% fhphase.m :: This function predicts diblock copolymer phase diagram
+function [chis,chit,phase,chi13,chi36]=plotphaseRG(N,Nbar,FAV)
+% PLOTPHASERG:: Calculates diblock copolymer phase diagram
 % with Fredrickson-Helfand density fluctuation correction
-% Usage :: [chit,chi13,chi36,chi1,chi3,chi6]=plotphaseRG(N,Nbar,FAV)
+% Usage :: [chis,chit,phase,chi13,chi36]=plotphaseRG(N,Nbar,FAV)
 % Inputs ::
 %    FAV, fraction of A-type monomers
 
 % results to return
 NFA=length(FAV);
-chis=zeros(NFA,1);      % spinodal (uncorrected)
 chit=zeros(NFA,1);      % spinodal (corrected)
 phase=zeros(NFA,1);      % spinodal (corrected)
 chi13=zeros(NFA,1);      % spinodal (corrected)
 chi36=zeros(NFA,1);      % spinodal (corrected)
-ks=zeros(NFA,1);
 
 % parameters
 c=zeros(NFA,1);
 d=zeros(NFA,1);
 d2c=zeros(NFA,1);
-gamma3 = zeros(NFA,1);
-gamma4 = zeros(NFA,1);
+
+% calculate mean-field solution
+[chis,ks,~]=spinodal(N,FAV);
+
+% calculate vertex functions
+NQ=1;  % assume to Q dependence
+[gam3,gam4]=calcgamma(N,FAV,NQ);
+gam3=real(gam3);
+gam4=real(gam4(:,1));
 
 for ii=1:NFA
     FA=FAV(ii);
-    
-    % calculate mean-field solution
-    [chis(ii),ks(ii),~]=spinodal(N,FA);
-        
-    % calculate vertex functions
-    NQ=1;  % assume to Q dependence
-    [gam3,gam4]=calcgamma(N,FA,NQ);
-    gam3=real(gam3);
-    gam4=real(gam4);
-
-    gamma3(ii)=gam3;
-    gamma4(ii)=gam4;
     
     % calculate constant (estimate local second-order derivative)
     xs=ks(ii)^2*(1/6)*N;
@@ -44,8 +37,8 @@ for ii=1:NFA
 	c(ii)=power(1/3*xs*d2c(ii),1/2);
     
     % parameters
-    miu = N*gam3/power(c(ii),3);
-    lam = N*gam4(1)/power(c(ii),4);
+    miu = N*gam3(ii)/power(c(ii),3);
+    lam = N*gam4(ii)/power(c(ii),4);
     d(ii) = (3*xs)/(2*pi);
     
     % find renormalized spinodal
@@ -67,15 +60,21 @@ for ii=1:NFA
 end
 
 % make a phase diagram
-ind13=find(phase==3 | phase==6);
-ind36=find(phase==6);
+ind13=find((phase==3 | phase==6) & chi13>=chit);
+ind36=find((phase==6) & (chi36>=chit) & (chi36<=chi13));
 
 figure;hold;set(gca,'fontsize',18)
-plot(FAV,chit*N,'k','linewidth',1.5)
-plot(FAV,chis*N,'k--','linewidth',1.5)
-plot(FAV(ind13),chi13(ind13)*N,'r','linewidth',1.2)
-plot(FAV(ind36),chi36(ind36)*N,'b','linewidth',1.2)
-xlabel('f');ylabel('\chi N')
+plot(FAV,chit*N,'k','linewidth',2)
+plot(1-FAV,chit*N,'k','linewidth',2)
+plot(FAV,chis*N,'k--','linewidth',2)
+plot(1-FAV,chis*N,'k--','linewidth',2)
+
+plot(FAV(ind13),chi13(ind13)*N,'r','linewidth',2)
+plot(FAV(ind36),chi36(ind36)*N,'b','linewidth',2)
+plot(1-FAV(ind13),chi13(ind13)*N,'r','linewidth',2)
+plot(1-FAV(ind36),chi36(ind36)*N,'b','linewidth',2)
+
+xlabel('f');ylabel('\chi N');box on
 xlim([FAV(1),FAV(end)]);ylim([10.,15])
 end
 

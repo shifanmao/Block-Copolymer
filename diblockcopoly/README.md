@@ -13,8 +13,12 @@ up to quartic-order density fluctuations.
 ## Run example
 example.m provides simple demo that utilizes the functions including
 - plotphase, plots a mean-field diblock copolymer phase diagram
-- plotphaseRG, plots a diblock copolymer with density fluctuations
+- plotphaseRG, plots a diblock copolymer phase diagram with density fluctuations
 - spinodal, calculates mean-field phase transition spinodal of diblock copolymer
 - spinodalRG, calculates renormalized phase transition spinodal of diblock copolymer with density flucutations
 - densityRG, plots density-density correlations with mean-field and flucutation theory
 - calcgamma, calculates vertex functions of free energy expansion
+
+## Input specifications
+N, number of Kuhn steps of total chain. In general chains are modeled as worm-like chains. In the limit N>1e4, Gaussian chain statistics are used; in the other limit N<1e-4, perfectly rigid rod statistics are used
+FA, chemical composition of A type monomers
