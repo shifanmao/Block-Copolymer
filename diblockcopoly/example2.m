@@ -1,44 +1,42 @@
-clear;close all;
+clear;
 
-% Figure 1: make a mean-field phase diagram
-N=1e1;  % number of statistical steps of total chain
-FAV=linspace(0.1,0.499,21);  % range of A monomer chemical composition
-plotphase(N,FAV);
+% parameters
+FA = 0.5;
+NV = logspace(0,4,11);
+NbarV = logspace(2,10,21);
 
-% Figure 2: make a phase diagram with density fluctuations
-N=1e1;  % number of statistical steps of total chain
-Nbar=1e6;  % invariant degree of polymerization
-FAV=linspace(0.3,0.499,21);  % range of A monomer chemical composition
-plotphaseRG(N,Nbar,FAV);
+% results to return
+chi1 = zeros(length(NV),length(NbarV));
 
-% % Figure 3: spinodal
-% NV=logspace(-1,3,20);  % number of statistical steps of total chain
-% FA=0.5;  % range of A monomer chemical composition
-% [chis,ks,d2gam2]=spinodal(NV,FA);
-% figure;semilogx(NV,chis.*NV)
-% figure;loglog(NV,1./ks);
+iN=1;
+for N=NV
+    iNbar=1;
+    for Nbar=NbarV
+        chi1(iN,iNbar)=spinodalRG(N,Nbar,FA);
+        fprintf('N=%.2f, Nbar=%.2e--> chiN=%.2f\n\n',N,Nbar,chi1(iN,iNbar)*N)
+        iNbar = iNbar+1;
+    end
+    iN = iN+1;
+end
 
-% Figure 4: renormalized spinodal
-N=1e1;  % number of statistical steps of total chain
-NbarV=logspace(2,8,11);
-FA=0.5;  % range of A monomer chemical composition
-[chit,phase]=spinodalRG(N,NbarV,FA);
-chit=reshape(chit,length(NbarV),1);
-figure;semilogx(NbarV,chit*N);
+figure;hold
+iN=1;
+for N=NV
+    col=(iN-1)/(length(NV)-1);
+    plot(NbarV,chi1(iN,:)*N,'-','color',[col 0 1-col]);
+    iN=iN+1;
+end
+plot([NbarV(1),NbarV(end)],[10.495,10.495],'k--')
+plot(logspace(log10(NbarV(1)),log10(NbarV(end)),100),...
+    10.495+41.022*power(logspace(log10(NbarV(1)),log10(NbarV(end)),100),-1/3),'k-')
+xlim([NbarV(1),NbarV(end)])
+set(gca,'xscale','log')
 
-% Figure 5: density-density correlations
-N=1e1;  % number of statistical steps of total chain
-Nbar=1e4;  % invariant degree of polymerization
-FA=0.5;
-densityRG(N,Nbar,FA);
-
-% Figure 6: vertex functions
-N=1e1;  % number of statistical steps of total chain
-FAV = linspace(0.2,0.5,20);  % invariant degree of polymerization
-NQ=1;  % number of wavevector sets in calculating GAM4
-[GAM3,GAM4]=calcgamma(N,FAV,NQ);
-figure;plot(FAV,-GAM3*N);xlim([0.2,0.5]);xlabel('F_A');ylabel('-\Gamma_3 N')
-figure;plot(FAV,GAM4*N);xlim([0.3,0.5]);xlabel('F_A');ylabel('\Gamma_4 N')
-
-% filename = sprintf('data/N1e%dgamma.mat',log10(N));
-% save(filename,'N','GAM3','GAM4','FAV')
+figure;hold
+iNbar=1;
+for Nbar=NbarV
+    col=(iNbar-1)/(length(NbarV)-1);
+    plot(NV,chi1(:,iNbar).*NV','-','color',[col 0 1-col]);
+    iNbar=iNbar+1;
+end
+set(gca,'xscale','log')
