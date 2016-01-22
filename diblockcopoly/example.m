@@ -15,8 +15,8 @@ plotphaseRG(N,Nbar,FAV);
 % Figure 3: spinodal and critical wavelength at FA=0.5
 NV=logspace(-1,3,20);  % number of statistical steps of total chain
 [chis,ks,d2gam2]=spinodal(NV,0.5);
-figure;semilogx(NV,chis.*NV)
-figure;loglog(NV,1./ks);
+figure;semilogx(NV,chis.*NV);xlabel('N');ylabel('\chiN')
+figure;loglog(NV,1./ks);xlabel('N');ylabel('1/q^*')
 
 % Figure 4: renormalized spinodal
 NbarV=logspace(2,8,11);

@@ -15,10 +15,9 @@ chi36=zeros(NFA,1);      % spinodal (corrected)
 % parameters
 c=zeros(NFA,1);
 d=zeros(NFA,1);
-d2c=zeros(NFA,1);
 
 % calculate mean-field solution
-[chis,ks,~]=spinodal(N,FAV);
+[chis,ks,d2gam2]=spinodal(N,FAV);
 
 % calculate vertex functions
 NQ=1;  % assume to Q dependence
@@ -31,10 +30,7 @@ for ii=1:NFA
     
     % calculate constant (estimate local second-order derivative)
     xs=ks(ii)^2*(1/6)*N;
-    dx=xs*1e-3;
-    dks=dx/(2*ks(ii)*N/6);
-    d2c(ii)=N*(gamma2(N,FA,ks(ii)+dks,0)-2*gamma2(N,FA,ks(ii),0)+gamma2(N,FA,ks(ii)-dks,0))/(dx^2);
-	c(ii)=power(1/3*xs*d2c(ii),1/2);
+    c(ii)=power(d2gam2(ii)/2,1/2);
     
     % parameters
     miu = N*gam3(ii)/power(c(ii),3);
@@ -75,7 +71,7 @@ plot(1-FAV(ind13),chi13(ind13)*N,'r','linewidth',2)
 plot(1-FAV(ind36),chi36(ind36)*N,'b','linewidth',2)
 
 xlabel('f');ylabel('\chi N');box on
-xlim([FAV(1),FAV(end)]);ylim([10.,15])
+xlim([FAV(1),1-FAV(1)]);ylim([10.,15])
 end
 
 function chi13=chioot(chis,c,d,N,Nbar,miu,lam,n1,n2)

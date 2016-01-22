@@ -21,7 +21,7 @@ gam3=real(gam3);
 gam4=real(gam4(:,1));
 
 % find spinodal
-[chis,ks,~]=spinodal(NV,FAV);
+[chis,ks,d2gam2]=spinodal(NV,FAV);
 
 for ii=1:length(FAV)
     FA=FAV(ii);
@@ -34,9 +34,9 @@ for ii=1:length(FAV)
             fprintf('Step 3: Calculating renormalized spinodal at N=%.2e,Nbar=%.2e,FA=%.2f\n',N,Nbar,FA)
 
             % find renormalized spinodal of each phase
-            chi1=spinodalfh(N,Nbar,FA,gam3(ii),gam4(ii),ks(ii),chis(ii),1);
-            chi3=spinodalfh(N,Nbar,FA,gam3(ii),gam4(ii),ks(ii),chis(ii),3);
-            chi6=spinodalfh(N,Nbar,FA,gam3(ii),gam4(ii),ks(ii),chis(ii),6);
+            chi1=spinodalfh(N,Nbar,d2gam2(ii),gam3(ii),gam4(ii),ks(ii),chis(ii),1);
+            chi3=spinodalfh(N,Nbar,d2gam2(ii),gam3(ii),gam4(ii),ks(ii),chis(ii),3);
+            chi6=spinodalfh(N,Nbar,d2gam2(ii),gam3(ii),gam4(ii),ks(ii),chis(ii),6);
 
             % find renormalized spinodal
             chiall=[chi1,chi3,chi6];
@@ -49,14 +49,11 @@ for ii=1:length(FAV)
 end
 end
 
-function chit=spinodalfh(N,Nbar,FA,gam3,gam4,ks,chis,n)
+function chit=spinodalfh(N,Nbar,d2gam2,gam3,gam4,ks,chis,n)
 % calculate renormalized spinodal from FH theory    
     % calculate constant (estimate local second-order derivative)
     xs=ks^2*(1/6)*N;
-    dx=xs*1e-3;
-    dks=dx/(2*ks*N/6);
-    d2c=N*(gamma2(N,FA,ks+dks,0)-2*gamma2(N,FA,ks,0)+gamma2(N,FA,ks-dks,0))/(dx^2);
-	c=power(1/3*xs*d2c,1/2);
+    c=power(d2gam2/2,1/2);
     
     % parameters
     miu = N*gam3/power(c,3);

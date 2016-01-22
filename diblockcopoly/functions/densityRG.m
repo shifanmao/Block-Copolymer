@@ -56,7 +56,6 @@ end
 figure;hold;set(gca,'fontsize',20)
 plot(CHIV*chis*N,N./Smf,'k--','linewidth',2);
 plot(CHIV*chis*N,N./Sfh,'k-','linewidth',2);
-% plot(CHIV*N,N./Swlc,'k-','linewidth',2);
 xlim([1,17]);ylim([0,20]);box on
 xlabel('\chi N');ylabel('N/<\psi^2(q^*)>')
 

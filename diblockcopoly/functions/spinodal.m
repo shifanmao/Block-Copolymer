@@ -39,7 +39,7 @@ for ii=1:length(FAV)
         chis(ii,jj) = 0.5*G(ks(ii,jj));
 
         % find susceptibility (second der. of gamma2 w/ k at kstar)
-        dks = 1/sqrt(R2)*5e-2;
+        dks = 1/sqrt(R2)*1e-5;
 
         if ks(ii,jj)>1e-1  % central differences
             d2gam2(ii,jj) = (G(ks(ii,jj)+dks)-2*G(ks(ii,jj))+G(ks(ii,jj)-dks))/(dks^2);
