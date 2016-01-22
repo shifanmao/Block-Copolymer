@@ -25,6 +25,7 @@ chit=reshape(chit,length(NbarV),1);
 figure;hold
 plot(NbarV,chit*N,'kd');
 plot(NbarV,10.495+41*power(NbarV,-1/3),'k--')
+set(gca,'xscale','log');xlabel('Nbar');ylabel('\chiN')
 legend('Renormalized ODT','F-H theory')
 
 % Figure 5: density-density correlations
@@ -36,22 +37,3 @@ NQ=1;  % number of wavevector sets in calculating GAM4
 [gam3,gam4]=calcgamma(N,FAV,NQ);
 figure;plot(FAV,-gam3*N);xlim([0.2,0.5]);xlabel('f_A');ylabel('-\Gamma_3 N')
 figure;plot(FAV,gam4*N);xlim([0.3,0.5]);xlabel('f_A');ylabel('\Gamma_4 N')
-
-% % Run and save data
-% FAV = linspace(0.1,0.5,41);  % invariant degree of polymerization
-% NQ=4;  % number of wavevector sets in calculating GAM4
-% NV=logspace(4,6,15);
-% 
-% % write to file
-% filename='data/gamdata';
-% if ~exist(filename,'file')
-%     outfile = fopen(filename, 'wt');
-%     for N=NV
-%         for FA=FAV
-%             [GAM3,GAM4]=calcgamma(N,FA,NQ);
-%             fprintf(outfile,'%.2f, %.2f, %.2f, %.2f, %.2f, %.2f, %.2f\n',...
-%                 N,FA,GAM3*N,GAM4(1:4)*N);
-%         end
-%     end
-%     fclose(outfile);
-% end

@@ -1,77 +1,69 @@
-function [chis,chit]=densityRG(N,Nbar,FA,PLOT1,PLOT2)
+function [chis,chit]=densityRG(N,Nbar,FA)
 % Plot density-density correlations during phase transition
 % according to Mean-field theory and FH theory
-% Usage :: [chis,chit]=densityRG(N,Nbar,FA,PLOT1,PLOT2)
+% Usage :: [chis,chit]=densityRG(N,Nbar,FA)
 % Inputs ::
 %   N, number of Kuhn steps of whole chain
 %   Nbar, invariant degree of polymerization
 %   FA, fraction of A monomers
 %   CHIV, range of CHI values
-if nargin==3
-    PLOT1=1;
-    PLOT2=1;
-end
 
 % find mean-field spinodal
 [chis,ks,d2gamma2]=spinodal(N,FA);
 
 % PLOT1: DENSITY CORRELATION  %%
-if (PLOT1)
-    % wavevectors
-    kmin=0.5;kmax=3.5;
-    k=power(linspace(kmin,kmax,200),1)/sqrt(N/6);
-    
-    % Flory-Huggins parameter
-    CHIV=linspace(0,1,5);
+% wavevectors
+kmin=0.5;kmax=3.5;
+k=power(linspace(kmin,kmax,200),1)/sqrt(N/6);
 
-    figure;hold;set(gca,'fontsize',20)
-    for ii = 1:length(CHIV)
-        CHI=chis*CHIV(ii);
-        if length(CHIV)>1
-            col = (ii-1)/(length(CHIV)-1);
-        else
-            col = 0;
-        end
+% Flory-Huggins parameter
+CHIV=linspace(0,1,5);
 
-        if CHI<=0.9*chis
-            % plot mean-field results
-            Smf=densitymf(N,FA,k,CHI);
-            plot(k*sqrt(N/6),Smf./N,'color',[col 0 1-col],'linestyle','--','linewidth',2);
-
-            % plot RG results
-            Sfh=densityfh(N,Nbar,FA,k,ks,CHI,d2gamma2);
-            plot(k*sqrt(N/6),Sfh./N,'color',[col 0 1-col],'linestyle','-','linewidth',2);
-        end
+figure;hold;set(gca,'fontsize',20)
+for ii = 1:length(CHIV)
+    CHI=chis*CHIV(ii);
+    if length(CHIV)>1
+        col = (ii-1)/(length(CHIV)-1);
+    else
+        col = 0;
     end
-    xlim([kmin,kmax]);box on
-    xlabel('qR');ylabel('<\psi^2>/N')
+
+    if CHI<=0.9*chis
+        % plot mean-field results
+        Smf=densitymf(N,FA,k,CHI);
+        plot(k*sqrt(N/6),Smf./N,'color',[col 0 1-col],'linestyle','--','linewidth',2);
+
+        % plot RG results
+        Sfh=densityfh(N,Nbar,FA,k,ks,CHI,d2gamma2);
+        plot(k*sqrt(N/6),Sfh./N,'color',[col 0 1-col],'linestyle','-','linewidth',2);
+    end
 end
+xlim([kmin,kmax]);box on
+xlabel('qR');ylabel('<\psi^2>/N')
 
 % PLOT2: CRITICAL MODE vs CHI
-if (PLOT2)
-    % Flory-Huggins parameter
-    CHIV=linspace(0,4,50);
-    
-    Smf = zeros(length(CHIV),1);
-    Sfh = zeros(length(CHIV),1);
-    for ii = 1:length(CHIV)
-        CHI = CHIV(ii)*chis;
-        Smf(ii)=densitymf(N,FA,ks,CHI);
-        Sfh(ii)=densityfh(N,Nbar,FA,ks,ks,CHI,d2gamma2);
-    end
+% Flory-Huggins parameter
+CHIV=linspace(0,4,50);
 
-    figure;hold;set(gca,'fontsize',20)
-    plot(CHIV*chis*N,N./Smf,'k--','linewidth',2);
-    plot(CHIV*chis*N,N./Sfh,'k-','linewidth',2);
-    % plot(CHIV*N,N./Swlc,'k-','linewidth',2);
-    xlim([1,17]);ylim([0,20]);box on
-    xlabel('\chi N');ylabel('N/<\psi^2(q^*)>')
-
-    % find renormalized spinodal
-    chit=spinodalRG(N,Nbar,FA);
-    plot(chit*N,N./densityfh(N,Nbar,FA,ks,ks,chit,d2gamma2),'ks',...
-        'MarkerSize',6,'MarkerFaceColor','k');
+Smf = zeros(length(CHIV),1);
+Sfh = zeros(length(CHIV),1);
+for ii = 1:length(CHIV)
+    CHI = CHIV(ii)*chis;
+    Smf(ii)=densitymf(N,FA,ks,CHI);
+    Sfh(ii)=densityfh(N,Nbar,FA,ks,ks,CHI,d2gamma2);
 end
+
+figure;hold;set(gca,'fontsize',20)
+plot(CHIV*chis*N,N./Smf,'k--','linewidth',2);
+plot(CHIV*chis*N,N./Sfh,'k-','linewidth',2);
+% plot(CHIV*N,N./Swlc,'k-','linewidth',2);
+xlim([1,17]);ylim([0,20]);box on
+xlabel('\chi N');ylabel('N/<\psi^2(q^*)>')
+
+% find renormalized spinodal
+chit=spinodalRG(N,Nbar,FA);
+plot(chit*N,N./densityfh(N,Nbar,FA,ks,ks,chit,d2gamma2),'ks',...
+    'MarkerSize',6,'MarkerFaceColor','k');
 end
 
 function Smf=densitymf(N,FA,k,CHI)
