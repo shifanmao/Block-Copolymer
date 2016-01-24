@@ -72,7 +72,7 @@ function chit=spinodalfh(N,Nbar,d2gam2,gam3,gam4,ks,chis,n)
         eta=3*lam/2;
     end
 
-    %% start solving self-consistent equations
+    % start solving self-consistent equations
     
     % solver option
     options = optimset('Display','off',...

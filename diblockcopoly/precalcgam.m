@@ -1,10 +1,10 @@
 % Run and save data
 FAV = linspace(0.1,0.5,41);  % invariant degree of polymerization
 NQ=4;  % number of wavevector sets in calculating GAM4
-NV=logspace(4,6,15);
+NV=logspace(-1,4,15);
 
 % write to file
-filename='data/gamdata';
+filename='data/newgamdata';
 if ~exist(filename,'file')
     outfile = fopen(filename, 'wt');
     for N=NV
