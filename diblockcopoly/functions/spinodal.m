@@ -25,7 +25,7 @@ for ii=1:length(FAV)
     FA=FAV(ii);
     for jj=1:length(NV)
         N=NV(jj);
-        fprintf('Step 1: Calculating spinodal at N=%.2e, FA=%.2f\n',N,FA)
+        fprintf('Step 1: Calculating spinodal at N=%.2e,FA=%.2f\n',N,FA)
 
         % find kstar
         G=@(k) gamma2(N,FA,k,0);

@@ -1,6 +1,6 @@
-function [chit,phase]=spinodalRG(NV,NbarV,FAV)
+function [chit,phase]=spinodalRG(NV,CV,FAV)
 % SPINODALRG  Find the renormalized spinodal by FH theory
-% Usage: [chit,phase]=spinodalRG(N,Nbar,FA)
+% Usage: [chit,phase]=spinodalRG(N,CV,FA)
 % Inputs:
 %   N, number of statistical steps of total chain
 %   Nbar, invariant degree of polymerization
@@ -27,16 +27,14 @@ for ii=1:length(FAV)
     FA=FAV(ii);
     for jj=1:length(NV)
         N=NV(jj);
-        for kk=1:length(NbarV)
-            Nbar=NbarV(kk);
+        for kk=1:length(CV)
+            C=CV(kk);
 
-            % find renormalized spinodal
-            fprintf('Step 3: Calculating renormalized spinodal at N=%.2e,Nbar=%.2e,FA=%.2f\n',N,Nbar,FA)
-
+            fprintf('Step 3: Calculating renormalized spinodal at N=%.2e,C=%.2e,FA=%.2f\n',N,C,FA)
             % find renormalized spinodal of each phase
-            chi1=spinodalfh(N,Nbar,d2gam2(ii),gam3(ii),gam4(ii),ks(ii),chis(ii),1);
-            chi3=spinodalfh(N,Nbar,d2gam2(ii),gam3(ii),gam4(ii),ks(ii),chis(ii),3);
-            chi6=spinodalfh(N,Nbar,d2gam2(ii),gam3(ii),gam4(ii),ks(ii),chis(ii),6);
+            chi1=spinodalfh(N,C,d2gam2(ii),gam3(ii),gam4(ii),ks(ii),chis(ii),1);
+            chi3=spinodalfh(N,C,d2gam2(ii),gam3(ii),gam4(ii),ks(ii),chis(ii),3);
+            chi6=spinodalfh(N,C,d2gam2(ii),gam3(ii),gam4(ii),ks(ii),chis(ii),6);
 
             % find renormalized spinodal
             chiall=[chi1,chi3,chi6];
@@ -49,16 +47,13 @@ for ii=1:length(FAV)
 end
 end
 
-function chit=spinodalfh(N,Nbar,d2gam2,gam3,gam4,ks,chis,n)
+function chit=spinodalfh(N,C,d2gam2,gam3,gam4,ks,chis,n)
 % calculate renormalized spinodal from FH theory    
     % calculate constant (estimate local second-order derivative)
-    xs=ks^2*(1/6)*N;
-    c=power(d2gam2/2,1/2);
-    
-    % parameters
-    miu = N*gam3/power(c,3);
-    lam = N*gam4(1)/power(c,4);
-    d = (3*xs)/(2*pi);
+    alpha=power(d2gam2/2*N/r2(N),1/2);
+    d=r2(N)*ks^2/(4*pi);
+    miu=N*gam3/power(alpha,3);
+    lam=N*gam4(1)/power(alpha,4);
     
     %%%%% LAM/HEX/BCC phase %%%%%
     if n==1
@@ -95,13 +90,13 @@ function chit=spinodalfh(N,Nbar,d2gam2,gam3,gam4,ks,chis,n)
     %               d*power(Nbar,-1/2)*(r^0.5-r0^0.5)...
     %               -2*n/3*theta*a^3+(1/2)*n*eta*a^4 = 0
 
-    F = @(x) [x(2)-x(1)-d*lam*power(x(2)*Nbar,-1/2),...
-              x(3)-x(1)-d*lam*power(x(3)*Nbar,-1/2)-n*lam*x(4)^2,...
+    F = @(x) [x(2)-x(1)-d/C*lam*power(x(2),-1/2),...
+              x(3)-x(1)-d/C*lam*power(x(3),-1/2)-n*lam*x(4)^2,...
               eta*x(4)^2-theta*x(4)+x(3),...
               (1/2/lam)*(x(3)^2-x(2)^2)+...
-              d*power(Nbar,-1/2)*(sqrt(x(3))...
+              d/C*(sqrt(x(3))...
               -sqrt(x(2)))-2*n/3*theta*x(4)^3+(1/2)*n*eta*x(4)^4];
     [x,~] = lsqnonlin(F,x0,lb,ub,options);
     tau=x(1);
-    chit=chis-c^2*tau/(2*N);
+    chit=chis-alpha^2*tau/(2*N);
 end

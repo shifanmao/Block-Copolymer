@@ -1,23 +1,20 @@
-function [chis,chit,phase,chi13,chi36]=plotphaseRG(N,Nbar,FAV)
+function [chis,chit,phase,chi13,chi36]=plotphaseRG(N,C,FAV)
 % PLOTPHASERG:: Calculates diblock copolymer phase diagram
 % with Fredrickson-Helfand density fluctuation correction
-% Usage :: [chis,chit,phase,chi13,chi36]=plotphaseRG(N,Nbar,FAV)
+% Usage :: [chis,chit,phase,chi13,chi36]=plotphaseRG(N,C,FAV)
 % Inputs ::
 %    FAV, fraction of A-type monomers
 
 % results to return
 NFA=length(FAV);
-chit=zeros(NFA,1);      % spinodal (corrected)
-phase=zeros(NFA,1);      % spinodal (corrected)
 chi13=zeros(NFA,1);      % spinodal (corrected)
 chi36=zeros(NFA,1);      % spinodal (corrected)
 
-% parameters
-c=zeros(NFA,1);
-d=zeros(NFA,1);
-
 % calculate mean-field solution
 [chis,ks,d2gam2]=spinodal(N,FAV);
+
+% find renormalized spinodal
+[chit,phase]=spinodalRG(N,C,FAV);
 
 % calculate vertex functions
 NQ=1;  % assume to Q dependence
@@ -26,30 +23,24 @@ gam3=real(gam3);
 gam4=real(gam4(:,1));
 
 for ii=1:NFA
-    FA=FAV(ii);
+    fprintf('Step 4: Calculating renormalized OOT phase diag. at N=%.2e,C=%.2e,FA=%.2f\n',FAV(ii),C,N)
     
     % calculate constant (estimate local second-order derivative)
-    xs=ks(ii)^2*(1/6)*N;
-    c(ii)=power(d2gam2(ii)/2,1/2);
-    
-    % parameters
-    miu = N*gam3(ii)/power(c(ii),3);
-    lam = N*gam4(ii)/power(c(ii),4);
-    d(ii) = (3*xs)/(2*pi);
-    
-    % find renormalized spinodal
-    [chit(ii),phase(ii)]=spinodalRG(N,Nbar,FA);
+    alpha=power(d2gam2(ii)/2*N/r2(N),1/2);
+    d=r2(N)*ks(ii)^2/(4*pi);
+    miu=N*gam3(ii)/power(alpha,3);
+    lam=N*gam4(ii)/power(alpha,4);
 
     %%%%% LAM/HEX phase %%%%%
     if (phase(ii)==6 || phase(ii)==3)
-        chi13(ii)=chioot(chis(ii),c(ii),d(ii),N,Nbar,miu,lam,1,3);
+        chi13(ii)=chioot(chis(ii),alpha,d,N,C,miu,lam,1,3);
     else
         chi13(ii)=0;
     end
     
     %%%%% HEX/BCC phase %%%%%
     if (phase(ii)==6)    
-        chi36(ii)=chioot(chis(ii),c(ii),d(ii),N,Nbar,miu,lam,3,6);
+        chi36(ii)=chioot(chis(ii),alpha,d,N,C,miu,lam,3,6);
     else
         chi36(ii)=0;
     end
@@ -74,7 +65,7 @@ xlabel('f');ylabel('\chi N');box on
 xlim([FAV(1),1-FAV(1)]);ylim([5,20])
 end
 
-function chi13=chioot(chis,c,d,N,Nbar,miu,lam,n1,n2)
+function chi13=chioot(chis,c,d,N,C,miu,lam,n1,n2)
     % solver options
     options = optimset('Display','off',...
         'TolX',1e-12,'TolFun',1e-12,'MaxFunEvals',1e14,'MaxIter',1e14);
@@ -119,15 +110,15 @@ function chi13=chioot(chis,c,d,N,Nbar,miu,lam,n1,n2)
     %               d*power(Nbar,-1/2)*(r_1^0.5-r0_1^0.5)...
     %               -2*1/3*theta_1*a^3+(1/2)*1*eta_1*a^4
 
-    F = @(x) [x(2)-x(1)-d*lam*power(x(2)*Nbar,-1/2),...
-              x(5)-x(1)-d*lam*power(x(5)*Nbar,-1/2),...
-              x(3)-x(1)-d*lam*power(x(3)*Nbar,-1/2)-n1*lam*x(4)^2,...
-              x(6)-x(1)-d*lam*power(x(6)*Nbar,-1/2)-n2*lam*x(7)^2,...
+    F = @(x) [x(2)-x(1)-d/C*lam*power(x(2),-1/2),...
+              x(5)-x(1)-d/C*lam*power(x(5),-1/2),...
+              x(3)-x(1)-d/C*lam*power(x(3),-1/2)-n1*lam*x(4)^2,...
+              x(6)-x(1)-d/C*lam*power(x(6),-1/2)-n2*lam*x(7)^2,...
               eta1*x(4)^2-theta1*x(4)+x(3),...
               eta2*x(7)^2-theta2*x(7)+x(6),...
-              ((1/2/lam)*(x(3)^2-x(2)^2)+d*power(Nbar,-1/2)*(sqrt(x(3))-sqrt(x(2)))-...
+              ((1/2/lam)*(x(3)^2-x(2)^2)+d/C*(sqrt(x(3))-sqrt(x(2)))-...
                 2*n1/3*theta1*x(4)^3+(1/2)*n1*eta1*x(4)^4)-...
-              ((1/2/lam)*(x(6)^2-x(5)^2)+d*power(Nbar,-1/2)*(sqrt(x(6))-sqrt(x(5)))-...
+              ((1/2/lam)*(x(6)^2-x(5)^2)+d/C*(sqrt(x(6))-sqrt(x(5)))-...
                 2*n2/3*theta2*x(7)^3+(1/2)*n2*eta2*x(7)^4)];
     [x,~] = lsqnonlin(F,x02,lb2,ub2,options);
     tau=x(1);
