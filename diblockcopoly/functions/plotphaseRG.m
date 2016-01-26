@@ -23,7 +23,7 @@ gam3=real(gam3);
 gam4=real(gam4(:,1));
 
 for ii=1:NFA
-    fprintf('Step 4: Calculating renormalized OOT phase diag. at N=%.2e,C=%.2e,FA=%.2f\n',FAV(ii),C,N)
+    fprintf('Step 4: Calculating renormalized OOT phase diag. at N=%.2e,C=%.2e,FA=%.2f\n',N,C,FAV(ii))
     
     % calculate constant (estimate local second-order derivative)
     alpha=power(d2gam2(ii)/2*N/r2(N),1/2);

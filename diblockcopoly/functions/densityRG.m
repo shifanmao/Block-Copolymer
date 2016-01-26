@@ -1,4 +1,4 @@
-function [chis,chit]=densityRG(N,Nbar,FA)
+function [chis,chit]=densityRG(N,C,FA)
 % Plot density-density correlations during phase transition
 % according to Mean-field theory and FH theory
 % Usage :: [chis,chit]=densityRG(N,Nbar,FA)
@@ -34,7 +34,7 @@ for ii = 1:length(CHIV)
         plot(k*sqrt(N/6),Smf./N,'color',[col 0 1-col],'linestyle','--','linewidth',2);
 
         % plot RG results
-        Sfh=densityfh(N,Nbar,FA,k,ks,CHI,d2gamma2);
+        Sfh=densityfh(N,C,FA,k,ks,CHI,d2gamma2);
         plot(k*sqrt(N/6),Sfh./N,'color',[col 0 1-col],'linestyle','-','linewidth',2);
     end
 end
@@ -50,7 +50,7 @@ Sfh = zeros(length(CHIV),1);
 for ii = 1:length(CHIV)
     CHI = CHIV(ii)*chis;
     Smf(ii)=densitymf(N,FA,ks,CHI);
-    Sfh(ii)=densityfh(N,Nbar,FA,ks,ks,CHI,d2gamma2);
+    Sfh(ii)=densityfh(N,C,FA,ks,ks,CHI,d2gamma2);
 end
 
 figure;hold;set(gca,'fontsize',20)
@@ -60,8 +60,8 @@ xlim([1,17]);ylim([0,20]);box on
 xlabel('\chi N');ylabel('N/<\psi^2(q^*)>')
 
 % find renormalized spinodal
-chit=spinodalRG(N,Nbar,FA);
-plot(chit*N,N./densityfh(N,Nbar,FA,ks,ks,chit,d2gamma2),'ks',...
+chit=spinodalRG(N,C,FA);
+plot(chit*N,N./densityfh(N,C,FA,ks,ks,chit,d2gamma2),'ks',...
     'MarkerSize',6,'MarkerFaceColor','k');
 end
 
@@ -70,7 +70,8 @@ function Smf=densitymf(N,FA,k,CHI)
 Gmf=gamma2(N,FA,k,CHI);
 Smf=1./Gmf;
 end
-function Sfh=densityfh(N,Nbar,FA,k,ks,CHI,d2gamma2)
+
+function Sfh=densityfh(N,C,FA,k,ks,CHI,d2gamma2)
 % RG with no q dependence (F-H)
 % self-consistent equations:
 %  unknowns x(1)=r, x(2)=alpha
@@ -87,8 +88,9 @@ NQ=1;
 gam4=real(gam4(end,1));
 
 % solve self-consistent equations
-alpha = (1/2)*d2gamma2;
-pref = (N*ks^2)/(4*pi*power(Nbar*alpha,1/2));
+alpha=power(d2gamma2/2*N/r2(N),1/2);
+d=r2(N)*ks^2/(4*pi);
+pref = d/(C*alpha);
 root = roots([1,0,-N*gam2,-pref*N*gam4]);
 r = power(root(root>0),2);
 

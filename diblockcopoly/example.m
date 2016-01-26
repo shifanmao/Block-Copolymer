@@ -32,8 +32,7 @@ set(gca,'xscale','log');xlabel('Nbar');ylabel('\chiN')
 legend('Renormalized ODT','F-H theory')
 
 % Figure 5: density-density correlations
-Nbar=1e4;  % invariant degree of polymerization
-[chis,chit]=densityRG(N,Nbar,0.5);
+[chis,chit]=densityRG(N,C,0.5);
 
 % Figure 6: vertex functions
 NQ=1;  % number of wavevector sets in calculating GAM4
