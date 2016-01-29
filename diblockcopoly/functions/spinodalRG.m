@@ -71,12 +71,12 @@ function chit=spinodalfh(N,C,d2gam2,gam3,gam4,ks,chis,n)
     
     % solver option
     options = optimset('Display','off',...
-        'TolX',1e-12,'TolFun',1e-12,'MaxFunEvals',1e12,'MaxIter',1e12);
+        'TolX',1e-14,'TolFun',1e-14,'MaxFunEvals',1e14,'MaxIter',1e14);
 
     % initial guesses, lower bounds and upper bounds of solutions
-    x0 = [-1e2,1,1,1];
-    lb=[-1e7,0,0,0];
-    ub=[0,1e5,1e5,1e5];
+    x0 = [-1,1,1,1];
+    lb=[-1e3,0,0,0];
+    ub=[0,1e3,1e3,1e3];
     
     % find corrected spinodal
     % use Hartree approximation from Fredrickson-Helfand theory
@@ -94,8 +94,7 @@ function chit=spinodalfh(N,C,d2gam2,gam3,gam4,ks,chis,n)
               x(3)-x(1)-d/C*lam*power(x(3),-1/2)-n*lam*x(4)^2,...
               eta*x(4)^2-theta*x(4)+x(3),...
               (1/2/lam)*(x(3)^2-x(2)^2)+...
-              d/C*(sqrt(x(3))...
-              -sqrt(x(2)))-2*n/3*theta*x(4)^3+(1/2)*n*eta*x(4)^4];
+              d/C*(sqrt(x(3))-sqrt(x(2)))-2*n/3*theta*x(4)^3+n/2*eta*x(4)^4];
     [x,~] = lsqnonlin(F,x0,lb,ub,options);
     tau=x(1);
     chit=chis-alpha^2*tau/(2*N);

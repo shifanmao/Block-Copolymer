@@ -3,8 +3,8 @@ addpath('functions')
 
 N=1e4;  % number of statistical steps of total chain
 FAV=linspace(0.1,0.5,41);  % range of A monomer chemical composition
-Nbar=1e6;  % invariant degree of polymerization
-C=sqrt(Nbar);  % dimensionless excluded volume parameter in the Gaussian limit
+C=1e3;  % dimensionless excluded volume parameter in the Gaussian limit
+        % In the Gaussian chain limit, Nbar = C^2
 
 % Figure 1: make a mean-field phase diagram
 plotphase(N,FAV);
@@ -19,23 +19,33 @@ figure;semilogx(NV,chis.*NV);xlabel('N');ylabel('\chiN')
 figure;loglog(NV,1./ks);xlabel('N');ylabel('1/q^*')
 
 % Figure 4: renormalized spinodal
-CV=logspace(1,4,11);
+CV=logspace(1,4,21);
 [chit,phase]=spinodalRG(N,CV,0.5);
 chit=reshape(chit,length(CV),1);
 
-figure;hold
-NbarV=CV.^2;
-plot(NbarV,chit*N,'kd');
-plot(NbarV,10.495+41*power(NbarV,-1/3),'k-')
-plot(NbarV,ones(length(CV),1)*spinodal(N,0.5)*N,'k--')
-set(gca,'xscale','log');xlabel('Nbar');ylabel('\chiN')
-legend('Renormalized ODT','F-H theory')
+figure;hold;set(gca,'fontsize',20)
+col='b';
+plot(CV.^2,ones(length(CV),1)*spinodal(N,0.5)*N,'--','linewidth',2,'color',col)
+plot(CV.^2,chit*N,'s','MarkerSize',8,'MarkerFaceColor',col,'MarkerEdgeColor',col);
+% plot(CV.^2,6.343+75*power(CV,-2/3),'-','linewidth',2,'color',col)
+% plot(CV.^2,6.138+119*power(CV,-2/3),'-','linewidth',2,'color',col)
+
+% plot(CV.^2,10.495+41*power(CV,-2/3),'-','linewidth',2,'color',col)
+% plot(CV.^2,ones(length(CV),1)*10.495,'--','linewidth',2,'color','k')
+set(gca,'xscale','log');box on
+xlabel('C^2');ylabel('\chiN');title(['N=',num2str(N)])
+legend('MF theory','Renormalized ODT','Fit')
 
 % Figure 5: density-density correlations
-[chis,chit]=densityRG(N,C,0.5);
+densityRG(N,C,0.5);
 
 % Figure 6: vertex functions
 NQ=1;  % number of wavevector sets in calculating GAM4
 [gam3,gam4]=calcgamma(N,FAV,NQ);
-figure;plot(FAV,-gam3*N);xlim([0.2,0.5]);xlabel('f_A');ylabel('-\Gamma_3 N')
-figure;plot(FAV,gam4*N);xlim([0.3,0.5]);xlabel('f_A');ylabel('\Gamma_4 N')
+figure;plot(FAV,-gam3*N,'k-','linewidth',2);xlim([0.2,0.5]);
+xlabel('f_A');ylabel('-N\Gamma_3(q^*)')
+figure;plot(FAV,gam4*N,'k-','linewidth',2);xlim([0.3,0.5]);
+xlabel('f_A');ylabel('N\Gamma_4(q^*)')
+
+% Save to images
+saveas(gca,'../results/diblockcopoly-results/figures/phaseRGC1e2_flexible.eps','epsc')

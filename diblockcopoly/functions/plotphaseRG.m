@@ -51,8 +51,8 @@ ind13=find((phase==3 | phase==6) & chi13>=chit);
 ind36=find((phase==6) & (chi36>=chit) & (chi36<=chi13));
 
 figure;hold;set(gca,'fontsize',18)
-plot(FAV,chit*N,'k','linewidth',2)
-plot(1-FAV,chit*N,'k','linewidth',2)
+plot(FAV,chit*N,'k-','linewidth',2)
+plot(1-FAV,chit*N,'k-','linewidth',2)
 plot(FAV,chis*N,'k--','linewidth',2)
 plot(1-FAV,chis*N,'k--','linewidth',2)
 
@@ -61,14 +61,14 @@ plot(FAV(ind36),chi36(ind36)*N,'b','linewidth',2)
 plot(1-FAV(ind13),chi13(ind13)*N,'r','linewidth',2)
 plot(1-FAV(ind36),chi36(ind36)*N,'b','linewidth',2)
 
-xlabel('f');ylabel('\chi N');box on
+xlabel('f_A');ylabel('\chi N');box on
 xlim([FAV(1),1-FAV(1)]);ylim([5,20])
 end
 
-function chi13=chioot(chis,c,d,N,C,miu,lam,n1,n2)
+function chi13=chioot(chis,alpha,d,N,C,miu,lam,n1,n2)
     % solver options
     options = optimset('Display','off',...
-        'TolX',1e-12,'TolFun',1e-12,'MaxFunEvals',1e14,'MaxIter',1e14);
+        'TolX',1e-14,'TolFun',1e-14,'MaxFunEvals',1e14,'MaxIter',1e14);
 
     % initial guesses, lower bounds and upper bounds of solutions
     x02=[-1e2,1,1,1,1,1,1];
@@ -122,5 +122,5 @@ function chi13=chioot(chis,c,d,N,C,miu,lam,n1,n2)
                 2*n2/3*theta2*x(7)^3+(1/2)*n2*eta2*x(7)^4)];
     [x,~] = lsqnonlin(F,x02,lb2,ub2,options);
     tau=x(1);
-    chi13=chis-c^2*tau/(2*N);
+    chi13=chis-alpha^2*tau/(2*N);
 end

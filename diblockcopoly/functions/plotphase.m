@@ -34,8 +34,8 @@ plot(1-FAV,(chi13+chis)*N,col2,'linewidth',1.5)
 
 plot(FAV,(chi36+chis)*N,col3,'linewidth',1.5)
 plot(1-FAV,(chi36+chis)*N,col3,'linewidth',1.5)
-xlabel('f_A');ylabel('\chi N')
-xlim([0.15,1-0.15]);ylim([5,20]);box on
+xlabel('f_A');ylabel('\chi N');box on
+xlim([FAV(1),1-FAV(1)]);ylim([5,20]);
 end
 
 function [chi13,chi36,chi12,chi23,chi26]=phasediag(N,FAV,gam3,gam4)

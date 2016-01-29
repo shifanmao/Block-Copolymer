@@ -13,8 +13,8 @@ function [chis,chit]=densityRG(N,C,FA)
 
 % PLOT1: DENSITY CORRELATION  %%
 % wavevectors
-kmin=0.5;kmax=3.5;
-k=power(linspace(kmin,kmax,200),1)/sqrt(N/6);
+kmin=0.1;kmax=20;
+k=power(linspace(kmin,kmax,200),1)/sqrt(r2(N));
 
 % Flory-Huggins parameter
 CHIV=linspace(0,1,5);
@@ -31,11 +31,15 @@ for ii = 1:length(CHIV)
     if CHI<=0.9*chis
         % plot mean-field results
         Smf=densitymf(N,FA,k,CHI);
-        plot(k*sqrt(N/6),Smf./N,'color',[col 0 1-col],'linestyle','--','linewidth',2);
+        plot(k*sqrt(r2(N)),Smf./N,'color',[col 0 1-col],'linestyle','--','linewidth',2);
+        plot(ks*sqrt(r2(N)),densitymf(N,FA,ks,CHI)/N,'o',...
+            'MarkerSize',8,'MarkerEdgecolor',[col 0 1-col]);
 
         % plot RG results
         Sfh=densityfh(N,C,FA,k,ks,CHI,d2gamma2);
-        plot(k*sqrt(N/6),Sfh./N,'color',[col 0 1-col],'linestyle','-','linewidth',2);
+        plot(k*sqrt(r2(N)),Sfh./N,'color',[col 0 1-col],'linestyle','-','linewidth',2);
+        plot(ks*sqrt(r2(N)),densityfh(N,C,FA,ks,ks,CHI,d2gamma2)/N,'o',...
+            'MarkerSize',8,'MarkerFacecolor',[col 0 1-col],'MarkerEdgecolor',[col 0 1-col]);
     end
 end
 xlim([kmin,kmax]);box on
@@ -43,7 +47,7 @@ xlabel('qR');ylabel('<\psi^2>/N')
 
 % PLOT2: CRITICAL MODE vs CHI
 % Flory-Huggins parameter
-CHIV=linspace(0,4,50);
+CHIV=linspace(0,4,200);
 
 Smf = zeros(length(CHIV),1);
 Sfh = zeros(length(CHIV),1);
@@ -62,7 +66,7 @@ xlabel('\chi N');ylabel('N/<\psi^2(q^*)>')
 % find renormalized spinodal
 chit=spinodalRG(N,C,FA);
 plot(chit*N,N./densityfh(N,C,FA,ks,ks,chit,d2gamma2),'ks',...
-    'MarkerSize',6,'MarkerFaceColor','k');
+    'MarkerSize',8,'MarkerFaceColor','k');
 end
 
 function Smf=densitymf(N,FA,k,CHI)
