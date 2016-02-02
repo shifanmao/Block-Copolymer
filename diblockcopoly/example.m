@@ -27,9 +27,10 @@ figure;hold;set(gca,'fontsize',20)
 col='b';
 plot(CV.^2,ones(length(CV),1)*spinodal(N,0.5)*N,'--','linewidth',2,'color',col)
 plot(CV.^2,chit*N,'s','MarkerSize',8,'MarkerFaceColor',col,'MarkerEdgeColor',col);
+
+% %Empirical solutions
 % plot(CV.^2,6.343+75*power(CV,-2/3),'-','linewidth',2,'color',col)
 % plot(CV.^2,6.138+119*power(CV,-2/3),'-','linewidth',2,'color',col)
-
 % plot(CV.^2,10.495+41*power(CV,-2/3),'-','linewidth',2,'color',col)
 % plot(CV.^2,ones(length(CV),1)*10.495,'--','linewidth',2,'color','k')
 set(gca,'xscale','log');box on
