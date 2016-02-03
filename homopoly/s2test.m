@@ -1,6 +1,6 @@
 %this code tests the calculation of 2-point correlation
 %functions of rigid-rod, wormlike chain, and Gaussian chains
-clear;
+% clear;
 
 %Calculation parameters
 ORDEig=20;
@@ -8,7 +8,7 @@ ResLayer=500;
 ImagThreshold=1e-8;
 
 %Number of Kuhn steps
-NM_WLC=100;
+NM_WLC=0.1;
 
 %wavevector
 k=logspace(-1,3,100)';
