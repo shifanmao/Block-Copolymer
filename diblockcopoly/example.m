@@ -12,23 +12,23 @@ plotphase(N,FAV);
 % Figure 2: make a phase diagram with density fluctuations
 plotphaseRG(N,C,FAV);
 
-% Figure 3: spinodal and critical wavelength at FA=0.5
+% Figure 3: mean-field spinodal and critical wavelength at FA=0.5
 NV=logspace(-1,3,20);  % number of statistical steps of total chain
 [chis,ks,d2gam2]=spinodal(NV,0.5);
 figure;semilogx(NV,chis.*NV);xlabel('N');ylabel('\chiN')
 figure;loglog(NV,1./ks);xlabel('N');ylabel('1/q^*')
 
-% Figure 4: renormalized spinodal
+% Figure 4: renormalized spinodal at FA=0.5
 CV=logspace(1,4,21);
 [chit,phase]=spinodalRG(N,CV,0.5);
 chit=reshape(chit,length(CV),1);
 
 figure;hold;set(gca,'fontsize',20)
-col='b';
 plot(CV.^2,ones(length(CV),1)*spinodal(N,0.5)*N,'--','linewidth',2,'color',col)
 plot(CV.^2,chit*N,'s','MarkerSize',8,'MarkerFaceColor',col,'MarkerEdgeColor',col);
 
 % %Empirical solutions
+% col='b';
 % plot(CV.^2,6.343+75*power(CV,-2/3),'-','linewidth',2,'color',col)
 % plot(CV.^2,6.138+119*power(CV,-2/3),'-','linewidth',2,'color',col)
 % plot(CV.^2,10.495+41*power(CV,-2/3),'-','linewidth',2,'color',col)
