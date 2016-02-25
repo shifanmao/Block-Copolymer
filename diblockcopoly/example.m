@@ -24,6 +24,7 @@ CV=logspace(1,4,21);
 chit=reshape(chit,length(CV),1);
 
 figure;hold;set(gca,'fontsize',20)
+col='b';
 plot(CV.^2,ones(length(CV),1)*spinodal(N,0.5)*N,'--','linewidth',2,'color',col)
 plot(CV.^2,chit*N,'s','MarkerSize',8,'MarkerFaceColor',col,'MarkerEdgeColor',col);
 

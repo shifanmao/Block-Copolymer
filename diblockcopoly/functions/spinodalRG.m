@@ -31,17 +31,22 @@ for ii=1:length(FAV)
             C=CV(kk);
 
             fprintf('Step 3: Calculating renormalized spinodal at N=%.2e,C=%.2e,FA=%.2f\n',N,C,FA)
-            % find renormalized spinodal of each phase
-            chi1=spinodalfh(N,C,d2gam2(ii),gam3(ii),gam4(ii),ks(ii),chis(ii),1);
-            chi3=spinodalfh(N,C,d2gam2(ii),gam3(ii),gam4(ii),ks(ii),chis(ii),3);
-            chi6=spinodalfh(N,C,d2gam2(ii),gam3(ii),gam4(ii),ks(ii),chis(ii),6);
+            if abs(FA-0.5)<1e-2
+                chit(ii,jj,kk)=spinodalfh(N,C,d2gam2(ii),gam3(ii),gam4(ii),ks(ii),chis(ii),1);
+                phase(ii,jj,kk)=1;
+            else
+                % find renormalized spinodal of each phase
+                chi1=spinodalfh(N,C,d2gam2(ii),gam3(ii),gam4(ii),ks(ii),chis(ii),1);
+                chi3=spinodalfh(N,C,d2gam2(ii),gam3(ii),gam4(ii),ks(ii),chis(ii),3);
+                chi6=spinodalfh(N,C,d2gam2(ii),gam3(ii),gam4(ii),ks(ii),chis(ii),6);
 
-            % find renormalized spinodal
-            chiall=[chi1,chi3,chi6];
-            phases=[1,3,6];
-            [chi,order]=sort(chiall);
-            chit(ii,jj,kk)=chi(1);
-            phase(ii,jj,kk)=phases(order(1));
+                % find renormalized spinodal
+                chiall=[chi1,chi3,chi6];
+                phases=[1,3,6];
+                [chi,order]=sort(chiall);
+                chit(ii,jj,kk)=chi(1);
+                phase(ii,jj,kk)=phases(order(1));
+            end
         end
     end
 end
