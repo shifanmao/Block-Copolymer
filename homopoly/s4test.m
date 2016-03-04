@@ -4,21 +4,21 @@ clear;
 addpath('misc')
 
 %Calculation parameters
-ORDEig=2;
-ORDL=1;
+ORDEig=8;
+ORDL=4;
 ResLayer=500;
 ImagThreshold=1e-8;
 
 %Number of Kuhn steps
-NM=1000;
+NM=100;
 
 %wavevector and structure factor
-QM=logspace(-1,2,20)'/NM;
+QM=logspace(-1,3,20)'/NM;
 Q1=zeros(length(QM),3);
 Q2=zeros(length(QM),3);
 Q3=zeros(length(QM),3);
 Q4=zeros(length(QM),3);
-ang=pi/2;
+ang=0;
 for ii=1:length(QM)
     Q1(ii,1:3)=QM(ii)*[1,0,0];
     Q2(ii,1:3)=transpose(rotz(ang)*Q1(ii,1:3)');
