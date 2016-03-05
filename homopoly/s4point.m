@@ -4,13 +4,14 @@ addpath('misc')
 
 %Number of Kuhn steps
 NMV=logspace(0,3,7);
+NMV=1e2;
 
 %relative angles of wavevectors
 TV=linspace(0,2*pi,1);
 
 %Calculation parameters
-ORDEig=4;
-ORDL=6;
+ORDEig=2;
+ORDL=2;
 ResLayer=500;
 ImagThreshold=1e-8;
 
@@ -18,7 +19,7 @@ for nn=1:length(NMV)
     NM=NMV(nn);
     
     %wavevector and structure factor
-    QM=linspace(1e-5,10,50)/NM;
+    QM=linspace(0,500,20)/NM;
     s4=zeros(length(QM),length(TV));
 
     for tt=1:length(TV)
@@ -49,21 +50,22 @@ for nn=1:length(NMV)
     dlmwrite([foldername,'/k'],QM)
 end
 
-% % %%%%%%%%%%%%%%% make a surface plot %%%%%%%%%%%%%%%
-% %Number of Kuhn steps
-% NM=3.16;
-% 
-% % read in data
-% foldername=sprintf('data/N%.2f',NM);
-% s4=csvread([foldername,'/s']);
-% TV=csvread([foldername,'/t']);
-% QM=csvread([foldername,'/k']);
-% 
+% %%%%%%%%%%%%%%% make a surface plot %%%%%%%%%%%%%%%
+%Number of Kuhn steps
+NM=1e2;
+
+% read in data
+foldername=sprintf('data/N%.2f',NM);
+s4=load([foldername,'/s']);
+TV=load([foldername,'/t']);
+QM=load([foldername,'/k']);
+
 % % optional: normalize s with kL
 % for tt=1:length(TV)
-%     s4(:,tt)=s4(:,tt).*QM';
+%     s4(:,tt)=s4(:,tt).*QM'*NM;
 % end
-% 
+figure;plot(QM*NM,s4,'k--')
+
 % % plot
 % figure;set(gca,'fontsize',15)
 % surf(TV,QM,real(s4),'edgecolor','none','LineStyle','none','FaceLighting','phong');
