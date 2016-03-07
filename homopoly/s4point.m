@@ -7,7 +7,7 @@ NMV=logspace(0,3,7);
 NMV=1e2;
 
 %relative angles of wavevectors
-TV=linspace(0,2*pi,1);
+TV=linspace(0,2*pi,101);
 
 %Calculation parameters
 ORDEig=2;
