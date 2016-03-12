@@ -62,25 +62,25 @@ end
 
 figure;hold;set(gca,'fontsize',20)
 col = 'k';
-plot(CHIV*chis*N,N./Smf,'--','linewidth',2,'color',col);
-plot(CHIV*chis*N,N./Sfh,'-','linewidth',2,'color',col);
+plot(CHIV*chis*N,1./Smf,'--','linewidth',2,'color',col);
+plot(CHIV*chis*N,1./Sfh,'-','linewidth',2,'color',col);
 xlim([1,17]);ylim([0,20]);box on
-xlabel('\chi N');ylabel('N/<\psi^2(q^*)>')
+xlabel('\chi N');ylabel('1/<\psi^2(q^*)>')
 
 % find renormalized spinodal
 chit=spinodalRG(N,C,FA);
 sinvmf=densitymf(N,FA,ks,chis);
 sinvfh=densityfh(N,C,FA,ks,ks,chit,d2gamma2);
-plot(chis*N,N./sinvmf,'o','color',col,...
+plot(chis*N,1./sinvmf,'o','color',col,...
     'MarkerSize',8,'MarkerFaceColor',col);
-plot(chit*N,N./sinvfh,'s','color',col,...
+plot(chit*N,1./sinvfh,'s','color',col,...
     'MarkerSize',8,'MarkerFaceColor',col);
 end
 
 function Smf=densitymf(N,FA,k,CHI)
 % Mean-field theory (Leibler)
 Gmf=gamma2(N,FA,k,CHI);
-Smf=1./Gmf;
+Smf=1./(N*Gmf);  % Density-density correlation
 end
 
 function Sfh=densityfh(N,C,FA,k,ks,CHI,d2gamma2)
@@ -106,8 +106,8 @@ pref = d/(C*alpha);
 root = roots([1,0,-N*gam2,-pref*N*gam4]);
 r = power(root(root>0),2);
 
-Gfh = r/N + alpha*(k-ks).^2;
-Sfh=1./(Gfh);
+Gfh = r + r2(N)*(k-ks).^2;
+Sfh=1./(Gfh);  % Density-density correlation
 end
 
 % Reserved for future work
