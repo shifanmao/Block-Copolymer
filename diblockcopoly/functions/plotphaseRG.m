@@ -53,8 +53,17 @@ ind36=find((phase==6) & (chi36>=chit) & (chi36<=chi13));
 figure;hold;set(gca,'fontsize',18)
 plot(FAV,chit*N,'k-','linewidth',2)
 plot(1-FAV,chit*N,'k-','linewidth',2)
+FA05 = find(abs(FAV-0.5)<1e-2);
 plot(FAV,chis*N,'k--','linewidth',2)
 plot(1-FAV,chis*N,'k--','linewidth',2)
+if ~isempty(FA05)
+    col = 'k';    
+    plot(0.5,chis(FA05)*N,'o','color',col,...
+    'MarkerSize',8,'MarkerFaceColor',col)
+
+    plot(0.5,chit(FA05)*N,'s','color',col,...
+    'MarkerSize',8,'MarkerFaceColor',col)
+end
 
 plot(FAV(ind13),chi13(ind13)*N,'r','linewidth',2)
 plot(FAV(ind36),chi36(ind36)*N,'b','linewidth',2)

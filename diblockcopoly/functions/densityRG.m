@@ -1,4 +1,4 @@
-function [chis,chit]=densityRG(N,C,FA)
+function [chis,chit,CHIV,Smf,Sfh,sinvmf,sinvfh]=densityRG(N,C,FA)
 % Plot density-density correlations during phase transition
 % according to Mean-field theory and FH theory
 % Usage :: [chis,chit]=densityRG(N,Nbar,FA)
@@ -17,9 +17,10 @@ kmin=0.1;kmax=20;
 k=power(linspace(kmin,kmax,200),1)/sqrt(r2(N));
 
 % Flory-Huggins parameter
-CHIV=linspace(0,1,5);
+CHIV=0:0.2:0.8;
 
 figure;hold;set(gca,'fontsize',20)
+p1=[];p2=[];
 for ii = 1:length(CHIV)
     CHI=chis*CHIV(ii);
     if length(CHIV)>1
@@ -31,19 +32,21 @@ for ii = 1:length(CHIV)
     if CHI<=0.9*chis
         % plot mean-field results
         Smf=densitymf(N,FA,k,CHI);
-        plot(k*sqrt(r2(N)),Smf./N,'color',[col 0 1-col],'linestyle','--','linewidth',2);
+        p1(ii)=plot(k*sqrt(r2(N)),Smf./N,'color',[col 0 1-col],'linestyle','--','linewidth',2);
         plot(ks*sqrt(r2(N)),densitymf(N,FA,ks,CHI)/N,'o',...
             'MarkerSize',8,'MarkerEdgecolor',[col 0 1-col]);
-
-        % plot RG results
-        Sfh=densityfh(N,C,FA,k,ks,CHI,d2gamma2);
-        plot(k*sqrt(r2(N)),Sfh./N,'color',[col 0 1-col],'linestyle','-','linewidth',2);
-        plot(ks*sqrt(r2(N)),densityfh(N,C,FA,ks,ks,CHI,d2gamma2)/N,'o',...
-            'MarkerSize',8,'MarkerFacecolor',[col 0 1-col],'MarkerEdgecolor',[col 0 1-col]);
     end
+    
+    % plot RG results
+    Sfh=densityfh(N,C,FA,k,ks,CHI,d2gamma2);
+    p2(ii)=plot(k*sqrt(r2(N)),Sfh./N,'color',[col 0 1-col],'linestyle','-','linewidth',2);
+    plot(ks*sqrt(r2(N)),densityfh(N,C,FA,ks,ks,CHI,d2gamma2)/N,'o',...
+        'MarkerSize',8,'MarkerFacecolor',[col 0 1-col],'MarkerEdgecolor',[col 0 1-col]);
 end
 xlim([kmin,kmax]);box on
 xlabel('qR');ylabel('<\psi^2>/N')
+% legend(p2,{'\chi=0','\chi=0.2\chi_S^{MF}',...
+%     '\chi=0.4\chi_S^{MF}','\chi=0.6\chi_S^{MF}','\chi=0.8\chi_S^{MF}'},'location','northeast')
 
 % PLOT2: CRITICAL MODE vs CHI
 % Flory-Huggins parameter
@@ -58,15 +61,20 @@ for ii = 1:length(CHIV)
 end
 
 figure;hold;set(gca,'fontsize',20)
-plot(CHIV*chis*N,N./Smf,'k--','linewidth',2);
-plot(CHIV*chis*N,N./Sfh,'k-','linewidth',2);
+col = 'k';
+plot(CHIV*chis*N,N./Smf,'--','linewidth',2,'color',col);
+plot(CHIV*chis*N,N./Sfh,'-','linewidth',2,'color',col);
 xlim([1,17]);ylim([0,20]);box on
 xlabel('\chi N');ylabel('N/<\psi^2(q^*)>')
 
 % find renormalized spinodal
 chit=spinodalRG(N,C,FA);
-plot(chit*N,N./densityfh(N,C,FA,ks,ks,chit,d2gamma2),'ks',...
-    'MarkerSize',8,'MarkerFaceColor','k');
+sinvmf=densitymf(N,FA,ks,chis);
+sinvfh=densityfh(N,C,FA,ks,ks,chit,d2gamma2);
+plot(chis*N,N./sinvmf,'o','color',col,...
+    'MarkerSize',8,'MarkerFaceColor',col);
+plot(chit*N,N./sinvfh,'s','color',col,...
+    'MarkerSize',8,'MarkerFaceColor',col);
 end
 
 function Smf=densitymf(N,FA,k,CHI)

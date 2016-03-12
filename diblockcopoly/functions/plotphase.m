@@ -29,6 +29,13 @@ col3='b-';
 
 plot(FAV,chis*N,col1,'linewidth',2);
 plot(1-FAV,chis*N,col1,'linewidth',1.5)
+FA05 = find(abs(FAV-0.5)<1e-2);
+if ~isempty(FA05)
+    col = 'k';
+    plot(0.5,chis(FA05)*N,'o','color',col,...
+    'MarkerSize',8,'MarkerFaceColor',col)
+end
+
 plot(FAV,(chi13+chis)*N,col2,'linewidth',1.5)
 plot(1-FAV,(chi13+chis)*N,col2,'linewidth',1.5)
 
