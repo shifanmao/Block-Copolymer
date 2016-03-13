@@ -102,11 +102,10 @@ gam4=real(gam4(end,1));
 % solve self-consistent equations
 alpha=power(d2gamma2/2*N/r2(N),1/2);
 d=r2(N)*ks^2/(4*pi);
-pref = d/(C*alpha);
-root = roots([1,0,-N*gam2,-pref*N*gam4]);
+root = roots([1,0,-N*gam2/(alpha^2),-(d/C)*N*gam4/(alpha^4)]);
 r = power(root(root>0),2);
 
-Gfh = r + r2(N)*(k-ks).^2;
+Gfh = alpha^2*(r + r2(N)*(k-ks).^2);
 Sfh=1./(Gfh);  % Density-density correlation
 end
 
