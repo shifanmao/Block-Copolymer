@@ -37,7 +37,7 @@ text(150,43,'f(N)=41.01','FontSize',20)
 set(gca,'xscale','log');box on
 xlabel('N');ylabel('f(N)');
 
-savename = sprintf('mkfigures/figure2B.eps');
+savename = sprintf('mkfigures/figure2C.eps');
 saveas(gcf,savename,'epsc')
 
 % Figure 3: mean-field spinodal and critical wavelength at FA=0.5
@@ -54,7 +54,7 @@ plot(NV,ones(length(NV),1)*10.495,'k--','linewidth',2)
 text(40,6.135+0.15,'\chi_S^{MF}N=6.135','FontSize',20,'color','b')
 text(0.15,10.495+0.15,'\chi_S^{MF}N=10.495','FontSize',20,'color','k')
 
-savename = sprintf('mkfigures/figure2C.eps');
+savename = sprintf('mkfigures/figure2B.eps');
 saveas(gcf,savename,'epsc')
 
 cd mkfigures/
