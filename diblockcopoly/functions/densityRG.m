@@ -65,7 +65,8 @@ col = 'k';
 plot(CHIV*chis*N,1./Smf,'--','linewidth',2,'color',col);
 plot(CHIV*chis*N,1./Sfh,'-','linewidth',2,'color',col);
 xlim([1,17]);ylim([0,20]);box on
-xlabel('\chi N');ylabel('1/<\psi^2(q^*)>')
+% xlabel('\chi N');ylabel('1/<\psi^2(q^*)>')
+xlabel('\chi N');ylabel('$N<\tilde{\psi}(q^*)\tilde{\psi}(-q^*)>^{-1}$','Interpreter','latex')
 
 % find renormalized spinodal
 chit=spinodalRG(N,C,FA);

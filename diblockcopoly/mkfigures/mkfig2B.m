@@ -47,12 +47,12 @@ NV=logspace(-1,3,51);  % number of statistical steps of total chain
 figure;set(gca,'fontsize',20);hold
 plot(NV,chis.*NV,'k-','linewidth',2);
 set(gca,'xscale','log');box on;
-xlim([1e-1,1e3])
+xlim([1e-1,1e3]);ylim([6,11.5])
 xlabel('N');ylabel('\chi_S^{MF}N')
 plot(NV,ones(length(NV),1)*6.135,'b--','linewidth',2)
 plot(NV,ones(length(NV),1)*10.495,'k--','linewidth',2)
-text(40,6.3,'\chi_S^{MF}N=6.135','FontSize',20,'color','b')
-text(0.15,10.8,'\chi_S^{MF}N=10.495','FontSize',20,'color','k')
+text(40,6.135+0.15,'\chi_S^{MF}N=6.135','FontSize',20,'color','b')
+text(0.15,10.495+0.15,'\chi_S^{MF}N=10.495','FontSize',20,'color','k')
 
 savename = sprintf('mkfigures/figure2C.eps');
 saveas(gcf,savename,'epsc')

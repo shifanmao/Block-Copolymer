@@ -47,8 +47,8 @@ for ii=1:NFA
 end
 
 % make a phase diagram
-ind13=find((phase==3 | phase==6) & chi13>=chit);
-ind36=find((phase==6) & (chi36>=chit) & (chi36<=chi13));
+ind13=find((phase==3 | phase==6) & chi13*N-chit*N>1e-2);
+ind36=find((phase==6) & (chi36*N-chit*N>1e-2) & (chi36*N-chi13*N>1e-2));
 
 figure;hold;set(gca,'fontsize',18)
 plot(FAV,chit*N,'k-','linewidth',2)

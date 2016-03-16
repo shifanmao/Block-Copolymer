@@ -5,10 +5,12 @@ cd ..
 addpath('functions/')
 fignum1 = 101;
 fignum2 = 102;
+C1 = 1e3;
+C2 = 1e4;
 
 % Figure 1A
 FA = 0.5;
-C = sqrt(1000);
+C = sqrt(C1);
 figure(fignum1);
 hold;set(gca,'fontsize',20)
 
@@ -31,14 +33,14 @@ end
 figure(fignum1);
 legend(p,{'N=10^3 Renormalized','N=10^3 Mean-field','N=1 Renormalized','N=1 Mean-field'})
 xlim([1,17]);ylim([0,25]);box on
-xlabel('\chi N');ylabel('N<\psi(q^*)\psi(-q^*)>^{-1}')
-title(['C^2=',num2str(C^2)])
+xlabel('\chi N');ylabel('$N<\tilde{\psi}(q^*)\tilde{\psi}(-q^*)>^{-1}$','Interpreter','latex')
+title(strcat('C^2=10^',sprintf('%d',log10(C1))))
 savename = sprintf('mkfigures/figure1A.eps');
 saveas(gcf,savename,'epsc')
 
 % Figure 1B
 FA = 0.5;
-C = sqrt(10000);
+C = sqrt(C2);
 figure(fignum2);
 hold;set(gca,'fontsize',20)
 
@@ -61,8 +63,8 @@ end
 figure(fignum2);
 legend(p,{'N=10^3 Renormalized','N=10^3 Mean-field','N=1 Renormalized','N=1 Mean-field'})
 xlim([1,17]);ylim([0,25]);box on
-xlabel('\chi N');ylabel('N<\psi(q^*)\psi(-q^*)>^{-1}')
-title(['C^2=',num2str(C^2)])
+xlabel('\chi N');ylabel('$N<\tilde{\psi}(q^*)\tilde{\psi}(-q^*)>^{-1}$','Interpreter','latex')
+title(strcat('C^2=10^',sprintf('%d',log10(C2))))
 savename = sprintf('mkfigures/figure1B.eps');
 saveas(gcf,savename,'epsc')
 

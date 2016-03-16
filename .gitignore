@@ -6,3 +6,6 @@ backup
 diblockcopoly/data/*
 diblockcopoly/talk/*
 homopoly/data/*
+
+# figures
+diblockcopoly/mkfigures/*.eps

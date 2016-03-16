@@ -27,7 +27,11 @@ for ii = 1:length(NV)
   coef = (chit(1)*N-chis*N).*power(CV(1),2/3);
   
   p(ii)=plot(CV.^2,chit*N,'-','linewidth',2,'color',col);
-  leg{ii}=strcat('\chi_S^{RG}N=',sprintf('%.2f+%.2fC^{-2/3} (N=10^%d)',chis*N,coef,log10(N)));
+  if N>10
+      leg{ii}=strcat('\chi_S^{RG}N=',sprintf('%.2f+%.2fC^{-2/3} (N=10^%d)',chis*N,coef,log10(N)));
+  else
+      leg{ii}=strcat('\chi_S^{RG}N=',sprintf('%.2f+%.2fC^{-2/3} (N=%d)',chis*N,coef,N));
+  end
 end
 
 set(gca,'xscale','log');box on
