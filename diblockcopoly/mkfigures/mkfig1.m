@@ -3,10 +3,14 @@
 
 cd ..
 addpath('functions/')
+fignum1 = 101;
+fignum2 = 102;
 
+% Figure 1A
 FA = 0.5;
-C = 100;
-figure(10);hold;set(gca,'fontsize',20)
+C = sqrt(1000);
+figure(fignum1);
+hold;set(gca,'fontsize',20)
 
 NV = [1e3,1];
 colv = ['k','b'];
@@ -15,7 +19,7 @@ for ii = 1:length(NV)
     N = NV(ii);
     col = colv(ii);
     [chis,chit,CHIV,Smf,Sfh,sinvmf,sinvfh]=densityRG(N,C,FA);
-    figure(10);
+    figure(fignum1);
     p=[p,plot(CHIV*chis*N,1./Sfh,'-','linewidth',2,'color',col)];
     p=[p,plot(CHIV*chis*N,1./Smf,'--','linewidth',2,'color',col)];
     plot(chis*N,1./sinvmf,'o','color',col,...
@@ -24,11 +28,42 @@ for ii = 1:length(NV)
         'MarkerSize',8,'MarkerFaceColor',col);
 end
 
-figure(10);
+figure(fignum1);
 legend(p,{'N=10^3 Renormalized','N=10^3 Mean-field','N=1 Renormalized','N=1 Mean-field'})
-xlim([1,17]);ylim([0,20]);box on
-xlabel('\chi N');ylabel('<\psi(q^*)\psi(-q^*)>^{-1}')
-savename = sprintf('mkfigures/figure1.eps');
+xlim([1,17]);ylim([0,25]);box on
+xlabel('\chi N');ylabel('N<\psi(q^*)\psi(-q^*)>^{-1}')
+title(['C^2=',num2str(C^2)])
+savename = sprintf('mkfigures/figure1A.eps');
+saveas(gcf,savename,'epsc')
+
+% Figure 1B
+FA = 0.5;
+C = sqrt(10000);
+figure(fignum2);
+hold;set(gca,'fontsize',20)
+
+NV = [1e3,1];
+colv = ['k','b'];
+p=[];
+for ii = 1:length(NV)
+    N = NV(ii);
+    col = colv(ii);
+    [chis,chit,CHIV,Smf,Sfh,sinvmf,sinvfh]=densityRG(N,C,FA);
+    figure(fignum2);
+    p=[p,plot(CHIV*chis*N,1./Sfh,'-','linewidth',2,'color',col)];
+    p=[p,plot(CHIV*chis*N,1./Smf,'--','linewidth',2,'color',col)];
+    plot(chis*N,1./sinvmf,'o','color',col,...
+        'MarkerSize',8,'MarkerFaceColor',col);
+    plot(chit*N,1./sinvfh,'s','color',col,...
+        'MarkerSize',8,'MarkerFaceColor',col);
+end
+
+figure(fignum2);
+legend(p,{'N=10^3 Renormalized','N=10^3 Mean-field','N=1 Renormalized','N=1 Mean-field'})
+xlim([1,17]);ylim([0,25]);box on
+xlabel('\chi N');ylabel('N<\psi(q^*)\psi(-q^*)>^{-1}')
+title(['C^2=',num2str(C^2)])
+savename = sprintf('mkfigures/figure1B.eps');
 saveas(gcf,savename,'epsc')
 
 cd mkfigures
