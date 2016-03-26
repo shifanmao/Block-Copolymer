@@ -1,20 +1,21 @@
 % Use K-S test to verify Lorentzian form
 % of structure factor
-clear;close all
+clear;
+% close all
 addpath('../functions/')
 addpath('../chainstats/')
 addpath('../chainstats/')
 addpath('../chainstats/eigcalc/')
 
-N=1e0;
+N=1e4;
 FA=0.5;
 NK=1000;
-NC=100;
+NC=75;
 
 RM=sqrt(r2(N));
 % RM=1;
 % k=logspace(-2,1,NK)/RM;
-k=linspace(0.001,20,NK)/RM;
+k=linspace(0.001,10,NK)/RM;
 CHI=0;
 
 % begin calculation
@@ -34,11 +35,15 @@ sc = s(k0:kf);
 sfit = 1./(1/smax+alpha2.*(kc-ks).^2*RM^2);
 
 % make a plot
-figure;hold
-plot(k*RM,s/N,'-');
-plot(ks*RM,smax/N,'bo');
-plot(kc*RM,sfit/N,'k--','linewidth',2);
-ylim([0,.1])
+figure;hold;
+col='k';
+set(gca,'fontsize',18)
+area([kc(1),kc(end)],[.01,.01])
+plot(k*RM,s/N,'-','linewidth',2,'color',col);
+plot(ks*RM,smax/N,'o','color',col);
+plot(kc*RM,sfit/N,'.-','linewidth',2,'color',col);
+ylim([0,.1]);
+xlabel('qR');ylabel('$\tilde{\psi}(q)\tilde{\psi}(-q)/N$','Interpreter','latex')
 
 % plot cdf
 s1 = sc/sum(sc)/(kc(2)-kc(1))/RM;
