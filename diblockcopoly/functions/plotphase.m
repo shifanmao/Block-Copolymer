@@ -94,7 +94,7 @@ end
 function F2=tetragonal(CHI,gam4)
     %%% TETRA phase %%%
     % coefficients %
-    A=-power(2*pi,-3)*CHI;
+    A=-power(2*pi,-3)*2*CHI;
     B2=0;
     C2=power(2*pi,-9)*(1/8)*(gam4(1)+2*gam4(3));
 
