@@ -22,10 +22,9 @@ if exist(filename,'file')
         FA=FAV(ii);
         ind = find(abs(data(:,2)-FA)<1e-4 & abs(data(:,1)-N)<1e-4);
         if ~isempty(ind)
-%             fprintf('Step 2: Loading vertices at FA=%.2f, N=%.2e\n',FA,N)
-%             gam3(ii)=data(ind,3)/N;
-%             gam4(ii,1:NQ)=data(ind,4:3+NQ)/N;
-            [gam3(ii),gam4(ii,1:NQ)]=gamma(N,FA,NQ);
+            fprintf('Step 2: Loading vertices at FA=%.2f, N=%.2e\n',FA,N)
+            gam3(ii)=data(ind,3)/N;
+            gam4(ii,1:NQ)=data(ind,4:3+NQ)/N;
         else
             [gam3(ii),gam4(ii,1:NQ)]=gamma(N,FA,NQ);
         end
