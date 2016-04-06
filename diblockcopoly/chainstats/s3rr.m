@@ -1,4 +1,4 @@
-function s3=s3rigid(N,FA,Q1,Q2,Q3)
+function s3=s3rr(N,FA,Q1,Q2,Q3)
 
 s3=zeros(2,2,2);
 MIN=1e-5;

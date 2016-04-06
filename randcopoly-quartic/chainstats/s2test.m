@@ -1,14 +1,17 @@
 %this code tests the calculation of 2-point correlation
 clear;
+addpath('../misc')
 
 %Check ABs (if chkab==1, check combinations of SAB, SBA, etc.)
-chkab=10;
+chkab=0;
 
 %Chain structural information
-NM_GS=50;
+NM_GS=100;
+N=100;
 
 %Chain chemical information
 FA=0.8;
+LAM=-.75;
 
 % parameters for WLC calculations
 ORDEig=10;
@@ -25,11 +28,11 @@ figure;hold;set(gca,'fontsize',15);leg=[];
 g2=zeros(length(k),2,2);
 for ii=1:length(k)
     ii
-    g2(ii,:,:) = s2gc(NM_GS,FA,k(ii)/NM_GS);
-%     g2(ii,:,:) = s2wlc(NM_GS,FA,k(ii)/NM_GS,ORDEig,NumLayer);
+    g2(ii,:,:) = s2gc(N,NM_GS,LAM,FA,k(ii)/(NM_GS*N));
+%     g2(ii,:,:) = s2wlc(N,NM_GS,LAM,FA,k(ii)/(NM_GS*N),ORDEig,NumLayer);
 %     g2(ii,:,:) = s2rigid(NM_GS,FA,k(ii)/NM_GS);
 end
-g2 = g2./power(NM_GS,2);
+g2 = g2./power(NM_GS*N,2);
 
 leg=[];
 %make plots

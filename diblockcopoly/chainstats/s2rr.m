@@ -1,4 +1,4 @@
-function s2=s2rigid(N,FA,K)
+function s2=s2rr(N,FA,K)
 
 s2=zeros(2,2);
 

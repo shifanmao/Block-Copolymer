@@ -1,4 +1,4 @@
-function s4=s4rigid(N,FA,Q1,Q2,Q3,Q4)
+function s4=s4rr(N,FA,Q1,Q2,Q3,Q4)
 
 s4=zeros(2,2,2,2);
 MIN=1e-5;
