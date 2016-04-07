@@ -31,7 +31,7 @@ for ii=1:length(FAV)
         G=@(k) gamma2(N,NM,LAM,FA,k,0);
 
         % initial guesses of kstar
-        R2 = r2(N);
+        R2 = r2(NM);
         k0=-1e-2/(sqrt(R2));
         kf=1e1/(sqrt(R2));
         ks(ii,jj) = fminbnd(G,k0,kf);

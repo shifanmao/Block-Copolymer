@@ -6,12 +6,12 @@ addpath('../misc')
 chkab=0;
 
 %Chain structural information
-NM_GS=100;
+NM_GS=1000;
 N=100;
 
 %Chain chemical information
 FA=0.8;
-LAM=-.75;
+LAM=0;
 
 % parameters for WLC calculations
 ORDEig=10;

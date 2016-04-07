@@ -6,8 +6,8 @@ NM_GS=1e4;
 N=100;
 
 %Chain chemical information
-FA=0.5;
-LAM=0.;
+FA=0.9;
+LAM=-0.75;
 
 % parameters for WLC calculations
 ORDEig=4;
@@ -15,7 +15,7 @@ ORDL=5;
 NumLayer=500;
 
 %wavevector and structure factor
-QM=logspace(0,4,20)';
+QM=logspace(2,5,20)';
 Q1=zeros(length(QM),1);
 Q2=zeros(length(QM),1);
 Q3=zeros(length(QM),1);

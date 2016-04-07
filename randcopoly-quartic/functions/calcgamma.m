@@ -1,4 +1,4 @@
-function [gam3,gam4]=calcgamma(N,NM,LAM,FAV,NQ)
+function [gam3,gam4,gam4rep]=calcgamma(N,NM,LAM,FAV,NQ)
 %% calcgamma.m :: This code calculates the coefficients in free energy expansion of block
 % copolymers. Coefficients are evaluated by finding the cubic and quartic
 % order vertex functions at dominant peak given in quadratic order fluctuations
@@ -14,6 +14,7 @@ function [gam3,gam4]=calcgamma(N,NM,LAM,FAV,NQ)
 % results to return
 gam3=zeros(length(FAV),1);
 gam4=zeros(length(FAV),NQ);
+gam4rep=zeros(length(FAV),NQ);
 
 filename='data/gamdata';
 if exist(filename,'file')
@@ -23,21 +24,22 @@ if exist(filename,'file')
         ind = find(abs(data(:,2)-FA)<1e-4 & abs(data(:,1)-N)<1e-4);
         if ~isempty(ind)
             fprintf('Step 2: Loading vertices at FA=%.2f, N=%.2e\n',FA,N)
-            gam3(ii)=data(ind,3)/N;
-            gam4(ii,1:NQ)=data(ind,4:3+NQ)/N;
+            gam3(ii)=data(ind,3)/NM;
+            gam4(ii,1:NQ)=data(ind,4:3+NQ)/NM;
+            gam4rep(ii,1:NQ)=data(ind,4:3+NQ)/NM;
         else
-    	    [gam3(ii),gam4(ii,1:NQ)]=gamma(N,NM,LAM,FA,NQ);
+    	    [gam3(ii),gam4(ii,1:NQ),gam4rep(ii,1:NQ)]=gamma(N,NM,LAM,FA,NQ);
         end
     end
 else
     for ii=1:length(FAV)
         FA=FAV(ii);
-        [gam3(ii),gam4(ii,1:NQ)]=gamma(N,NM,LAM,FA,NQ);
+        [gam3(ii),gam4(ii,1:NQ),gam4rep(ii,1:NQ)]=gamma(N,NM,LAM,FA,NQ);
     end
 end
 end
 
-function [gam3,gam4]=gamma(N,NM,LAM,FA,NQ)
+function [gam3,gam4,gam4rep]=gamma(N,NM,LAM,FA,NQ)
     fprintf('Step 2: Calculating vertices at FA=%.2f, N=%.2e\n',FA,NM)
     
     % wavevectors for Gamma4 calculations
@@ -94,6 +96,7 @@ function [gam3,gam4]=gamma(N,NM,LAM,FA,NQ)
     % calculate free energy coefficients
     gam3=gamma3(N,NM,LAM,FA,ks);
     gam4=zeros(1,NQ);
+    gam4rep=zeros(1,NQ);
 
     for IQ=1:NQ
         K1=Q1(:,IQ);
@@ -101,5 +104,6 @@ function [gam3,gam4]=gamma(N,NM,LAM,FA,NQ)
         K3=Q3(:,IQ);
         K4=Q4(:,IQ);
         gam4(IQ)=gamma4(N,NM,LAM,FA,ks,K1,K2,K3,K4);
+        gam4rep(IQ)=gamma4rep(N,NM,LAM,FA,ks,K1,K2,K3,K4);
     end
 end

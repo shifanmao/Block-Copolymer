@@ -14,7 +14,7 @@ function [chis,chit,CHIV,Smf,Sfh,sinvmf,sinvfh]=densityRG(N,C,NM,LAM,FA)
 % PLOT1: DENSITY CORRELATION  %%
 % wavevectors
 kmin=0.1;kmax=20;
-k=power(linspace(kmin,kmax,200),1)/sqrt(r2(N));
+k=power(linspace(kmin,kmax,200),1)/sqrt(r2(NM));
 
 % Flory-Huggins parameter
 CHIV=0:0.2:0.8;
@@ -32,25 +32,25 @@ for ii = 1:length(CHIV)
     if CHI<=0.9*chis
         % plot mean-field results
         Smf=densitymf(N,NM,LAM,FA,k,CHI);
-        p1(ii)=plot(k*sqrt(r2(N)),Smf./N,'color',[col 0 1-col],'linestyle','--','linewidth',2);
-        plot(ks*sqrt(r2(N)),densitymf(N,NM,LAM,FA,ks,CHI)/N,'o',...
+        p1(ii)=plot(k*sqrt(r2(NM)),Smf./NM,'color',[col 0 1-col],'linestyle','--','linewidth',2);
+        plot(ks*sqrt(r2(NM)),densitymf(N,NM,LAM,FA,ks,CHI)/NM,'o',...
             'MarkerSize',8,'MarkerEdgecolor',[col 0 1-col]);
     end
     
     % plot RG results
     Sfh=densityfh(N,C,NM,LAM,FA,k,ks,CHI,d2gamma2);
-    p2(ii)=plot(k*sqrt(r2(N)),Sfh./N,'color',[col 0 1-col],'linestyle','-','linewidth',2);
-    plot(ks*sqrt(r2(N)),densityfh(N,C,FA,ks,ks,CHI,d2gamma2)/N,'o',...
+    p2(ii)=plot(k*sqrt(r2(NM)),Sfh./NM,'color',[col 0 1-col],'linestyle','-','linewidth',2);
+    plot(ks*sqrt(r2(NM)),densityfh(N,C,NM,LAM,FA,ks,ks,CHI,d2gamma2)/NM,'o',...
         'MarkerSize',8,'MarkerFacecolor',[col 0 1-col],'MarkerEdgecolor',[col 0 1-col]);
 end
 xlim([kmin,kmax]);box on
-xlabel('qR');ylabel('<\psi^2>/N')
+xlabel('qR');ylabel('<\psi^2>/NM')
 % legend(p2,{'\chi=0','\chi=0.2\chi_S^{MF}',...
 %     '\chi=0.4\chi_S^{MF}','\chi=0.6\chi_S^{MF}','\chi=0.8\chi_S^{MF}'},'location','northeast')
 
 % PLOT2: CRITICAL MODE vs CHI
 % Flory-Huggins parameter
-CHIV=linspace(0,4,200);
+CHIV=linspace(0,4,50);
 
 Smf = zeros(length(CHIV),1);
 Sfh = zeros(length(CHIV),1);
@@ -62,26 +62,26 @@ end
 
 figure;hold;set(gca,'fontsize',20)
 col = 'k';
-plot(CHIV*chis*N,1./Smf,'--','linewidth',2,'color',col);
-plot(CHIV*chis*N,1./Sfh,'-','linewidth',2,'color',col);
+plot(CHIV*chis*NM,1./Smf,'--','linewidth',2,'color',col);
+plot(CHIV*chis*NM,1./Sfh,'-','linewidth',2,'color',col);
 xlim([1,17]);ylim([0,20]);box on
 % xlabel('\chi N');ylabel('1/<\psi^2(q^*)>')
 xlabel('\chi N');ylabel('$N<\tilde{\psi}(q^*)\tilde{\psi}(-q^*)>^{-1}$','Interpreter','latex')
 
 % find renormalized spinodal
-chit=spinodalRG(N,C,FA);
-sinvmf=densitymf(N,FA,ks,chis);
-sinvfh=densityfh(N,C,FA,ks,ks,chit,d2gamma2);
-plot(chis*N,1./sinvmf,'o','color',col,...
+chit=spinodalRG(N,C,NM,LAM,FA);
+sinvmf=densitymf(N,NM,LAM,FA,ks,chis);
+sinvfh=densityfh(N,C,NM,LAM,FA,ks,ks,chit,d2gamma2);
+plot(chis*NM,1./sinvmf,'o','color',col,...
     'MarkerSize',8,'MarkerFaceColor',col);
-plot(chit*N,1./sinvfh,'s','color',col,...
+plot(chit*NM,1./sinvfh,'s','color',col,...
     'MarkerSize',8,'MarkerFaceColor',col);
 end
 
 function Smf=densitymf(N,NM,LAM,FA,k,CHI)
 % Mean-field theory (Leibler)
 Gmf=gamma2(N,NM,LAM,FA,k,CHI);
-Smf=1./(N*Gmf);  % Density-density correlation
+Smf=1./(NM*Gmf);  % Density-density correlation
 end
 
 function Sfh=densityfh(N,C,NM,LAM,FA,k,ks,CHI,d2gamma2)
@@ -101,12 +101,12 @@ NQ=1;
 gam4=real(gam4(end,1));
 
 % solve self-consistent equations
-alpha=power(d2gamma2/2*N/r2(N),1/2);
-d=r2(N)*ks^2/(4*pi);
-root = roots([1,0,-N*gam2/(alpha^2),-(d/C)*N*gam4/(alpha^4)]);
+alpha=power(d2gamma2/2*NM/r2(NM),1/2);
+d=r2(NM)*ks^2/(4*pi);
+root = roots([1,0,-NM*gam2/(alpha^2),-(d/C)*NM*gam4/(alpha^4)]);
 r = power(root(root>0),2);
 
-Gfh = alpha^2*(r + r2(N)*(k-ks).^2);
+Gfh = alpha^2*(r + r2(NM)*(k-ks).^2);
 Sfh=1./(Gfh);  % Density-density correlation
 end
 

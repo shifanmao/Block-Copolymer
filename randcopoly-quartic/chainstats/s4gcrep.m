@@ -1,4 +1,4 @@
-function S4=s4gc(N,NM,LAM,FA,Q1,Q2,Q3,Q4)
+function S4=s4gcrep(N,NM,LAM,FA,Q1,Q2,Q3,Q4)
 %S4 is a four point correlation function
 %For example:
 %   S4(1,1,1,1)=SAAAA
@@ -27,7 +27,7 @@ for orderNum=1:24
 
     % Now calculate the eigenvalues 
     R1=-dot(Qnew(:,1),Qnew(:,1))/(2*d);
-    R12=-dot(Qnew(:,1)+Qnew(:,2),Qnew(:,1)+Qnew(:,2))/(2*d);
+	R12=0;
     R4=-dot(Qnew(:,4),Qnew(:,4))/(2*d);
 
     Z1=exp(R1*NM);

@@ -165,16 +165,16 @@ for orderNum=1:24
                                                *GLM12(lam2+1,lam3+1,1,L2+1)...
                                                *GL4(lam3+1,1,1,L3+1);
                                 if isnan(RotTerm)
-                                    Q1_n
-                                    Q2_n
-                                    Q3_n
-                                    alpha1
-                                    cosB1
-                                    cosB2
-                                    firstD
-                                    GL1
-                                    GLM12
-                                    GL4
+%                                     Q1_n
+%                                     Q2_n
+%                                     Q3_n
+%                                     alpha1
+%                                     cosB1
+%                                     cosB2
+%                                     firstD
+%                                     GL1
+%                                     GLM12
+%                                     GL4
                                     error('NaN encountered')
                                 end
                             end
