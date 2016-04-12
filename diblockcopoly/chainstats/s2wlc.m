@@ -18,23 +18,29 @@ NR=ORDmax;
 Residue=Residues(k,R(1:NR),NR,1,ResLayer,1);
 
 s2=zeros(2,2);
-for I=1:NR
-% Case 1 :: A1==A2
-    R(I)=R(I)*NM;
-    
-    % on same monomer (S integrals)
-    valeqA = R(I).^(-2).*(-1+exp(FA.*R(I))-FA.*R(I));
-    valeqB = R(I).^(-2).*(-1+exp(FB.*R(I))-FB.*R(I));
+if abs(R(1))<1e-10
+    s2(1,1)=FA*FA;
+    s2(2,2)=FB*FB;
+    s2(1,2)=FA*FB;
+else
+    for I=1:NR
+    % Case 1 :: A1==A2
+        R(I)=R(I)*NM;
 
-    s2(1,1)=s2(1,1)+2*Residue(I)*valeqA*(NM^2);
-    s2(2,2)=s2(2,2)+2*Residue(I)*valeqB*(NM^2);
+        % on same monomer (S integrals)
+        valeqA = R(I).^(-2).*(-1+exp(FA.*R(I))-FA.*R(I));
+        valeqB = R(I).^(-2).*(-1+exp(FB.*R(I))-FB.*R(I));
 
-% Case 2 :: A1~=A2
-    % on same monomer (S integrals)
-    valeqAB = (1+exp(R(I))-exp(FA.*R(I))-exp(R(I)-FA.*R(I))).*R(I).^(-2);
-    % J1<J2
-    s2(1,2)=s2(1,2)+Residue(I)*valeqAB*(NM^2);
-    
+        s2(1,1)=s2(1,1)+2*Residue(I)*valeqA*(NM^2);
+        s2(2,2)=s2(2,2)+2*Residue(I)*valeqB*(NM^2);
+
+    % Case 2 :: A1~=A2
+        % on same monomer (S integrals)
+        valeqAB = (1+exp(R(I))-exp(FA.*R(I))-exp(R(I)-FA.*R(I))).*R(I).^(-2);
+        % J1<J2
+        s2(1,2)=s2(1,2)+Residue(I)*valeqAB*(NM^2);
+
+    end
 end
 s2(2,1)=s2(1,2);
 
