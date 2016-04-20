@@ -41,20 +41,42 @@ else
         Q4=Q4./norm(Q4)*k(j);
 
         % calculate single chain correlation functions
-        if NM>=1e4  % Gaussian chain limit
+        if NM>=1e2  % Gaussian chain limit
             % Gaussian chain correlations
             s4 = s4gcrep(N,NM,LAM,FA,Q1,Q2,Q3,Q4);
-        elseif NM<=1e-4  % Rigid rod limit
+            s2 = s2gc(N,NM,LAM,FA,k(j));
+        elseif NM<=1e-2  % Rigid rod limit
             % Rigid rod correlations
-%             s4 = s4rrrep(N,NM,LAM,FA,Q1,Q2,Q3,Q4);
+            error('not written')
+            %s4 = s4rr(N,NM,LAM,FA,Q1,Q2,Q3,Q4);
         else
             % Worm-like chain correlations
-%             s4 = s4wlcrep(N,NM,LAM,FA,Q1,Q2,Q3,Q4);
+            error('not written')
+            %s4 = s4wlc(N,NM,LAM,FA,Q1,Q2,Q3,Q4);
         end
         s2inv=s2inverse(N,NM,LAM,FA,k(j));
         
-        % use replica coupling term
-        g4 = s4;
+        % Use Leibler's formula (III-22 to III-25 in his 1980 paper)
+%         g4=zeros(2,2,2,2);
+        s2rep=zeros(2,2,2,2);
+        s4rep=zeros(2,2,2,2);
+        for A1=1:2
+            for A2=1:2
+                for A3=1:2
+                    for A4=1:2
+                        s2rep(A1,A2,A3,A4)=s2rep(A1,A2,A3,A4)...
+                            -s2(A1,A2)*s2(A3,A4)-s2(A1,A3)*s2(A2,A4)-s2(A1,A4)*s2(A2,A3);
+                        s4rep(A1,A2,A3,A4)=s4rep(A1,A2,A3,A4)...
+                            +s4(A1,A2,    A3,A4)+s4(A1,A3,    A2,A4)+s4(A1,A4,    A2,A3);
+                    end
+                end
+            end
+        end
+%         F=[FA,1-FA];
+%         A1=2;A2=1;A3=2;A4=1;
+%         s2rep/power(N*NM,4)
+%         s4rep/power(N*NM,4)
+        g4 = s2rep+s4rep;
 
         M=combinator(2,4,'p','r');
         for I = 1:length(M)

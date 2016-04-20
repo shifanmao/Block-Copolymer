@@ -44,13 +44,13 @@ else
         Q14=norm(Q1+Q4);
 
         % calculate single chain correlation functions
-        if NM>=1e4  % Gaussian chain limit
+        if NM>=1e2  % Gaussian chain limit
             % Gaussian chain correlations
             s4 = s4gc(N,NM,LAM,FA,Q1,Q2,Q3,Q4);
             s31 = s3gc(N,NM,LAM,FA,Q1,Q2,-Q1-Q2);
             s32 = s3gc(N,NM,LAM,FA,Q1,Q3,-Q1-Q3);
             s33 = s3gc(N,NM,LAM,FA,Q1,Q4,-Q1-Q4);
-        elseif NM<=1e-4  % Rigid rod limit
+        elseif NM<=1e-2  % Rigid rod limit
             % Rigid rod correlations
             s4 = s4rr(N,NM,LAM,FA,Q1,Q2,Q3,Q4);
             s31 = s3rr(N,NM,LAM,FA,Q1,Q2,-Q1-Q2);

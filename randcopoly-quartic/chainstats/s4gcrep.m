@@ -25,10 +25,22 @@ for orderNum=1:24
     Qnew=[Q(:,order(1)),Q(:,order(2)),Q(:,order(3)),Q(:,order(4))];
     % Qnew is the reordered Q
 
-    % Now calculate the eigenvalues 
-    R1=-dot(Qnew(:,1),Qnew(:,1))/(2*d);
-	R12=0;
-    R4=-dot(Qnew(:,4),Qnew(:,4))/(2*d);
+    % Now calculate the eigenvalues
+    if (ifcorr(order,1,2) && ~ifcorr(order,2,3) && ifcorr(order,3,4))
+        R1=-dot(Qnew(:,1),Qnew(:,1))/(2*d);
+        R4=-dot(Qnew(:,4),Qnew(:,4))/(2*d);
+        R12=0;
+    elseif (~ifcorr(order,1,2) && ~ifcorr(order,2,3) && ~ifcorr(order,3,4))
+        R1=-dot(Qnew(:,1),Qnew(:,1))/(2*d);
+        R4=-dot(Qnew(:,4),Qnew(:,4))/(2*d);
+        R12=R1+R4;
+    elseif (~ifcorr(order,1,2) && ifcorr(order,2,3) && ~ifcorr(order,3,4))
+        R1=-dot(Qnew(:,1),Qnew(:,1))/(2*d);
+        R4=R1;
+        R12=R1-2*dot(Qnew(:,1)+Qnew(:,2),Qnew(:,1)+Qnew(:,2))/(2*d);
+    else
+	error('case not considered')
+    end
 
     Z1=exp(R1*NM);
     Z12=exp(R12*NM);
@@ -47,4 +59,13 @@ for orderNum=1:24
     S4=S4+case8(N,NM,R1,R12,R4,Z1,Z1L,Z12,Z12L,Z4,Z4L,F,order);
 end
     
+end
+
+function val=ifcorr(order,I1,I2)
+    if ((order(I1)==1 && order(I2)==2) || (order(I1)==2 && order(I2)==1) ||...
+            (order(I1)==3 && order(I2)==4) || (order(I1)==4 && order(I2)==3))
+        val=true;
+    else
+        val=false;
+    end
 end

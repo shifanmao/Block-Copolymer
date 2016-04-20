@@ -25,7 +25,7 @@ for orderNum=1:24
     Qnew=[Q(:,order(1)),Q(:,order(2)),Q(:,order(3)),Q(:,order(4))];
     % Qnew is the reordered Q
 
-    % Now calculate the eigenvalues 
+    % Now calculate the eigenvalues
     R1=-dot(Qnew(:,1),Qnew(:,1))/(2*d);
     R12=-dot(Qnew(:,1)+Qnew(:,2),Qnew(:,1)+Qnew(:,2))/(2*d);
     R4=-dot(Qnew(:,4),Qnew(:,4))/(2*d);

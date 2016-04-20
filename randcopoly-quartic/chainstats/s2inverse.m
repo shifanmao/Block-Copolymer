@@ -13,9 +13,9 @@ s2inv=zeros(2,2);
 MIN=1e-10;
 
 % Calculate the s matrix
-if NM>=1e4  % Gaussian chain limit
+if NM>=1e2  % Gaussian chain limit
     s2=s2gc(N,NM,LAM,FA,k);
-elseif NM<=1e-3  % Rigid rod limit
+elseif NM<=1e-2  % Rigid rod limit
     s2=s2rr(N,NM,LAM,FA,k);
 else
     s2=s2wlc(N,NM,LAM,FA,k);

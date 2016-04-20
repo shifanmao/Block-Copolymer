@@ -32,9 +32,9 @@ for j=1:length(k)
     Q2=transpose(rotz(pi*2/3)*Q1(1:3)');
     Q3=-Q1-Q2;    
 
-    if NM>=1e4  % Gaussian chain limit
+    if NM>=1e2  % Gaussian chain limit
         s3 = s3gc(N,NM,LAM,FA,Q1,Q2,Q3);
-    elseif NM<=1e-4  % Rigid rod limit
+    elseif NM<=1e-2  % Rigid rod limit
         s3 = s3rr(N,NM,LAM,FA,Q1,Q2,Q3);
     else
         s3 = s3wlc(N,NM,LAM,FA,Q1,Q2,Q3);

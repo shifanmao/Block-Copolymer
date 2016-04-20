@@ -21,11 +21,12 @@ Q2=zeros(length(QM),1);
 Q3=zeros(length(QM),1);
 Q4=zeros(length(QM),1);
 ang=pi/3;
+ang=pi;
 for ii=1:length(QM)
     Q1(ii,1:3)=QM(ii)*[1,0,0];
     Q2(ii,1:3)=transpose(rotz(ang)*Q1(ii,1:3)');
-    Q3(ii,1:3)=-Q2(ii,1:3);
-    Q4(ii,1:3)=-Q1(ii,1:3);
+    Q3(ii,1:3)=-Q1(ii,1:3);
+    Q4(ii,1:3)=-Q2(ii,1:3);
 end
 
 %begin making plots
@@ -50,6 +51,7 @@ for ii=1:length(QM)
 %                                       Q3(ii,1:3)/NM_GS,...
 %                                       Q4(ii,1:3)/NM_GS);
 end
+s4gc(N,NM_GS,LAM,FA,Q1(ii,1:3)/(N*NM_GS),Q2(ii,1:3)/(N*NM_GS),Q3(ii,1:3)/(N*NM_GS),Q4(ii,1:3)/(N*NM_GS));
 g4=g4./power(N*NM_GS,4);
 
 %make plots
