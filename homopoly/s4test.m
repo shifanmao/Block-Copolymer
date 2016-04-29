@@ -13,7 +13,7 @@ ImagThreshold=1e-8;
 NM=100;
 
 %wavevector and structure factor
-QM=logspace(-1,3,20)'/NM;
+QM=logspace(-1,4,20)'/NM;
 Q1=zeros(length(QM),3);
 Q2=zeros(length(QM),3);
 Q3=zeros(length(QM),3);

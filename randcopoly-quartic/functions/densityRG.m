@@ -37,11 +37,11 @@ for ii = 1:length(CHIV)
             'MarkerSize',8,'MarkerEdgecolor',[col 0 1-col]);
     end
     
-    % plot RG results
-    Sfh=densityfh(N,C,NM,LAM,FA,k,ks,CHI,d2gamma2);
-    p2(ii)=plot(k*sqrt(r2(NM)),Sfh./NM,'color',[col 0 1-col],'linestyle','-','linewidth',2);
-    plot(ks*sqrt(r2(NM)),densityfh(N,C,NM,LAM,FA,ks,ks,CHI,d2gamma2)/NM,'o',...
-        'MarkerSize',8,'MarkerFacecolor',[col 0 1-col],'MarkerEdgecolor',[col 0 1-col]);
+%     % plot RG results
+%     Sfh=densityfh(N,C,NM,LAM,FA,k,ks,CHI,d2gamma2);
+%     p2(ii)=plot(k*sqrt(r2(NM)),Sfh./NM,'color',[col 0 1-col],'linestyle','-','linewidth',2);
+%     plot(ks*sqrt(r2(NM)),densityfh(N,C,NM,LAM,FA,ks,ks,CHI,d2gamma2)/NM,'o',...
+%         'MarkerSize',8,'MarkerFacecolor',[col 0 1-col],'MarkerEdgecolor',[col 0 1-col]);
 end
 xlim([kmin,kmax]);box on
 xlabel('qR');ylabel('<\psi^2>/NM')
@@ -97,13 +97,15 @@ gam2 = gamma2(N,NM,LAM,FA,ks,CHI);
 
 % gamma4 at angle phi=pi (assume no q dependence)
 NQ=1;
-[~,gam4]=calcgamma(N,NM,LAM,FA,NQ);
+[~,gam4,gam4rep]=calcgamma(N,NM,LAM,FA,NQ);
+
 gam4=real(gam4(end,1));
+gam4rep=real(gam4rep(end,1));
 
 % solve self-consistent equations
 alpha=power(d2gamma2/2*NM/r2(NM),1/2);
 d=r2(NM)*ks^2/(4*pi);
-root = roots([1,0,-NM*gam2/(alpha^2),-(d/C)*NM*gam4/(alpha^4)]);
+root = roots([1,0,-NM*gam2/(alpha^2),-(d/C)*NM*(gam4-gam4rep)/(alpha^4)]);
 r = power(root(root>0),2);
 
 Gfh = alpha^2*(r + r2(NM)*(k-ks).^2);

@@ -13,6 +13,13 @@ if sum(power(Q1+Q2+Q3+Q4,2)) > MIN
     error('Wavevectors must add up to zero from translational invariance')
 end
 
+if isrow(Q1)==1
+    Q1=transpose(Q1);
+    Q2=transpose(Q2);
+    Q3=transpose(Q3);
+    Q4=transpose(Q4);
+end
+
 % Evaluate the quantities for s4 calculation
 FB=1-FA;
 F=[FA,FB];

@@ -1,4 +1,4 @@
-function val=gamma4rep(N,NM,LAM,FA,k,Q1,Q2,Q3,Q4)
+function val=gamma4rep(N,NM,LAM,FA,k)
 %% This function calculates the quartic order coefficient
 % in free energy expansion of copolymer melts
 % Usage: val=gamma4(N,FA,k,Q1,Q2,Q3,Q4)
@@ -25,67 +25,50 @@ function val=gamma4rep(N,NM,LAM,FA,k,Q1,Q2,Q3,Q4)
 %    xlabel('(kR)^2');ylabel('\Gamma_4')
 % Shifan Mao 06/10/15
 
-MIN=1e-10;
-if norm(Q1+Q2+Q3+Q4)>=MIN
-    disp('ERROR :: Qs must add up to zero')
-    return
-else
-    %result to return
-    val=zeros(length(k),1);
+%result to return
+val=zeros(length(k),1);
 
-    for j=1:length(k)
-        %wave vectors
-        Q1=Q1./norm(Q1)*k(j);
-        Q2=Q2./norm(Q2)*k(j);
-        Q3=Q3./norm(Q3)*k(j);
-        Q4=Q4./norm(Q4)*k(j);
+for j=1:length(k)
+    % calculate single chain correlation functions
+    if NM>=1e2  % Gaussian chain limit
+        % Gaussian chain correlations
+        s4 = s4gcrep(N,NM,LAM,FA,k(j),k(j));
+        s2 = s2gc(N,NM,LAM,FA,k(j));
+    elseif NM<=1e-2  % Rigid rod limit
+        % Rigid rod correlations
+        error('not written')
+        %s4 = s4rr(N,NM,LAM,FA,Q1,Q2,Q3,Q4);
+    else
+        % Worm-like chain correlations
+        error('not written')
+        %s4 = s4wlc(N,NM,LAM,FA,Q1,Q2,Q3,Q4);
+    end
+    s2inv=s2inverse(N,NM,LAM,FA,k(j));
 
-        % calculate single chain correlation functions
-        if NM>=1e2  % Gaussian chain limit
-            % Gaussian chain correlations
-            s4 = s4gcrep(N,NM,LAM,FA,Q1,Q2,Q3,Q4);
-            s2 = s2gc(N,NM,LAM,FA,k(j));
-        elseif NM<=1e-2  % Rigid rod limit
-            % Rigid rod correlations
-            error('not written')
-            %s4 = s4rr(N,NM,LAM,FA,Q1,Q2,Q3,Q4);
-        else
-            % Worm-like chain correlations
-            error('not written')
-            %s4 = s4wlc(N,NM,LAM,FA,Q1,Q2,Q3,Q4);
-        end
-        s2inv=s2inverse(N,NM,LAM,FA,k(j));
-        
-        % Use Leibler's formula (III-22 to III-25 in his 1980 paper)
-%         g4=zeros(2,2,2,2);
-        s2rep=zeros(2,2,2,2);
-        s4rep=zeros(2,2,2,2);
-        for A1=1:2
-            for A2=1:2
-                for A3=1:2
-                    for A4=1:2
-                        s2rep(A1,A2,A3,A4)=s2rep(A1,A2,A3,A4)...
-                            -s2(A1,A2)*s2(A3,A4)-s2(A1,A3)*s2(A2,A4)-s2(A1,A4)*s2(A2,A3);
-                        s4rep(A1,A2,A3,A4)=s4rep(A1,A2,A3,A4)...
-                            +s4(A1,A2,    A3,A4)+s4(A1,A3,    A2,A4)+s4(A1,A4,    A2,A3);
-                    end
+    % Use Leibler's formula (III-22 to III-25 in his 1980 paper)
+    s2rep=zeros(2,2,2,2);
+    s4rep=zeros(2,2,2,2);
+    for A1=1:2
+        for A2=1:2
+            for A3=1:2
+                for A4=1:2
+                    s2rep(A1,A2,A3,A4)=s2rep(A1,A2,A3,A4)...
+                        +s2(A1,A2)*s2(A3,A4)+s2(A1,A3)*s2(A2,A4)+s2(A1,A4)*s2(A2,A3);
+                    s4rep(A1,A2,A3,A4)=s4rep(A1,A2,A3,A4)...
+                        +s4(A1,A2,    A3,A4)+s4(A1,A3,    A2,A4)+s4(A1,A4,    A2,A3);
                 end
             end
         end
-%         F=[FA,1-FA];
-%         A1=2;A2=1;A3=2;A4=1;
-%         s2rep/power(N*NM,4)
-%         s4rep/power(N*NM,4)
-        g4 = s2rep+s4rep;
-
-        M=combinator(2,4,'p','r');
-        for I = 1:length(M)
-            val(j) = val(j) + g4(M(I,1),M(I,2),M(I,3),M(I,4))*...
-                    (s2inv(M(I,1),1)-s2inv(M(I,1),2))*...
-                    (s2inv(M(I,2),1)-s2inv(M(I,2),2))*...
-                    (s2inv(M(I,3),1)-s2inv(M(I,3),2))*...
-                    (s2inv(M(I,4),1)-s2inv(M(I,4),2));
-        end
+    end
+    g4 = s2rep-s4rep;
+    
+    M=combinator(2,4,'p','r');
+    for I = 1:length(M)
+        val(j) = val(j) + g4(M(I,1),M(I,2),M(I,3),M(I,4))*...
+                (s2inv(M(I,1),1)-s2inv(M(I,1),2))*...
+                (s2inv(M(I,2),1)-s2inv(M(I,2),2))*...
+                (s2inv(M(I,3),1)-s2inv(M(I,3),2))*...
+                (s2inv(M(I,4),1)-s2inv(M(I,4),2));
     end
 end
 

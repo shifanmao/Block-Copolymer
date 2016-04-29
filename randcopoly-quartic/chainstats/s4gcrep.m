@@ -1,4 +1,4 @@
-function S4=s4gcrep(N,NM,LAM,FA,Q1,Q2,Q3,Q4)
+function S4=s4gcrep(N,NM,LAM,FA,k1,k2)
 %S4 is a four point correlation function
 %For example:
 %   S4(1,1,1,1)=SAAAA
@@ -7,10 +7,13 @@ function S4=s4gcrep(N,NM,LAM,FA,Q1,Q2,Q3,Q4)
 d=3;    % three dimensional
 
 % Begin calculation of s4
-MIN=1e-6;
-if sum(power(Q1+Q2+Q3+Q4,2)) > MIN
-    disp(['sum(Q)=',num2str(sum(power(Q1+Q2+Q3+Q4,2)))])
-    error('Wavevectors must add up to zero from translational invariance')
+MIN=1e-4;
+if k1 < MIN
+    k1=0;
+end
+
+if k2 < MIN
+    k2=0;
 end
 
 % Evaluate the quantities for s4 calculation
@@ -21,25 +24,22 @@ S4=zeros(2,2,2,2);
 orders = perms(1:4);
 for orderNum=1:24
     order=orders(orderNum,:);
-    Q = [Q1,Q2,Q3,Q4];
-    Qnew=[Q(:,order(1)),Q(:,order(2)),Q(:,order(3)),Q(:,order(4))];
-    % Qnew is the reordered Q
 
     % Now calculate the eigenvalues
-    if (ifcorr(order,1,2) && ~ifcorr(order,2,3) && ifcorr(order,3,4))
-        R1=-dot(Qnew(:,1),Qnew(:,1))/(2*d);
-        R4=-dot(Qnew(:,4),Qnew(:,4))/(2*d);
+    if (ifcorr(order,1,2) && ifcorr(order,3,4))
+        R1 =-k1*k1/(2*d);
+        R4 =-k2*k2/(2*d);
         R12=0;
-    elseif (~ifcorr(order,1,2) && ~ifcorr(order,2,3) && ~ifcorr(order,3,4))
-        R1=-dot(Qnew(:,1),Qnew(:,1))/(2*d);
-        R4=-dot(Qnew(:,4),Qnew(:,4))/(2*d);
+    elseif (ifcorr(order,1,3) && ifcorr(order,2,4))
+        R1 =-k1*k1/(2*d);
+        R4 =-k2*k2/(2*d);
         R12=R1+R4;
-    elseif (~ifcorr(order,1,2) && ifcorr(order,2,3) && ~ifcorr(order,3,4))
-        R1=-dot(Qnew(:,1),Qnew(:,1))/(2*d);
-        R4=R1;
-        R12=R1-2*dot(Qnew(:,1)+Qnew(:,2),Qnew(:,1)+Qnew(:,2))/(2*d);
+    elseif (ifcorr(order,1,4) && ifcorr(order,2,3))
+        R1 =-k1*k1/(2*d);
+        R4 =-k1*k1/(2*d);
+        R12 = -k1*k1/(2*d)-k2*k2/(2*d);
     else
-	error('case not considered')
+        error('case not considered')
     end
 
     Z1=exp(R1*NM);

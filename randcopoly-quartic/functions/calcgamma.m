@@ -104,6 +104,6 @@ function [gam3,gam4,gam4rep]=gamma(N,NM,LAM,FA,NQ)
         K3=Q3(:,IQ);
         K4=Q4(:,IQ);
         gam4(IQ)=gamma4(N,NM,LAM,FA,ks,K1,K2,K3,K4);
-        gam4rep(IQ)=gamma4rep(N,NM,LAM,FA,ks,K1,K2,K3,K4);
+        gam4rep(IQ)=gamma4rep(N,NM,LAM,FA,ks);
     end
 end

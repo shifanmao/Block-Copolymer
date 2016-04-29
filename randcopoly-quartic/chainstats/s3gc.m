@@ -9,6 +9,12 @@ d=3;    % three dimensional
 MIN=5e-6;
 FB=1-FA;
 
+if isrow(Q1)==1
+    Q1=transpose(Q1);
+    Q2=transpose(Q2);
+    Q3=transpose(Q3);
+end
+
 % Begin calculation of s3
 if sum(power(Q1+Q2+Q3,2)) > 1e-8
     

@@ -87,26 +87,6 @@ else
         end
         g4 = g4-s4;
 
-%         s21=s2gc(N,FA,Q12);
-%         s22=s2gc(N,FA,Q13);
-%         s23=s2gc(N,FA,Q14);
-%         g4=zeros(2,2,2,2);
-%         M=combinator(2,2,'p','r');
-%         for A1=1:2
-%             for A2=1:2
-%                 for A3=1:2
-%                     for A4=1:2
-%                         for I=1:length(M)
-%                             g4(A1,A2,A3,A4) = g4(A1,A2,A3,A4)+...
-%                                 3*s31(M(I,1),A1,A2)*s33(M(I,2),A3,A4)*s2inv(M(I,1),M(I,2));
-%                         end
-%                         g4(A1,A2,A3,A4) = g4(A1,A2,A3,A4)+s21(A1,A2)*s22(A3,A4)+s21(A1,A2)*s23(A3,A4)+s22(A1,A2)*s23(A3,A4);
-%                     end
-%                 end
-%             end
-%         end
-%         g4 = g4-s4;
-
         M=combinator(2,4,'p','r');
         for I = 1:length(M)
             val(j) = val(j) + g4(M(I,1),M(I,2),M(I,3),M(I,4))*...

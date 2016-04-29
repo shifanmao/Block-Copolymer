@@ -16,9 +16,9 @@ phase=zeros(length(FAV),length(NMV));     % renormalized spinodal
 
 % calculate vertex functions
 NQ=1;  % assume to Q dependence
-[gam3,gam4]=calcgamma(N,NMV,LAM,FAV,NQ);
+[gam3,gam4,gam4rep]=calcgamma(N,NMV,LAM,FAV,NQ);
 gam3=real(gam3);
-gam4=real(gam4(:,1));
+gam4=real(gam4(:,1)-gam4rep(:,1));
 
 % find spinodal
 [chis,ks,d2gam2]=spinodal(N,NMV,LAM,FAV);

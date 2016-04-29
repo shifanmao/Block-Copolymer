@@ -82,7 +82,6 @@ Smin = power(-2*CHI0+1/(FA*(1-FA)),-1);  % zero q analytical structure factor
 
 rm = 32.05; % end-to-end distance of a monomer in unit Angstrom
 snorm = Smin/smin(I)*0.8;
-rm = 50;
 
 % evaluate s2inv
 [SINV]=s2invwlc(N,NM,FA,LAM,K);
@@ -90,16 +89,14 @@ rm = 50;
 CHIS=0.5*SS;
 
 figure;hold
-plot(q*rm,s(:,I)*snorm);
-plot([qmin0,qmin0]*rm,[7,1e2]*snorm,'k-','linewidth',3)
-plot([qminf,qminf]*rm,[7,1e2]*snorm,'k-','linewidth',3)
+plot(q*rm,s(:,I));
+plot([qmin0,qmin0]*rm,[7,1e2],'k-','linewidth',3)
+plot([qminf,qminf]*rm,[7,1e2],'k-','linewidth',3)
 loglog(RM*K,1./(-2*CHI0+SINV*NM),'-','LineWidth',2)
 
 xlabel('R_Mq');ylabel('S(q)')
 set(gca,'xscale','log');set(gca,'yscale','log');
-xlim([0.02,0.6]*rm);
-ylim([7,1e2]*snorm)
-
+xlim([0.02,0.6]*rm);ylim([7,1e2])
 
 %% find a region to fit
 indmin = find(q*rm >= 2.5);indmin = indmin(1);
