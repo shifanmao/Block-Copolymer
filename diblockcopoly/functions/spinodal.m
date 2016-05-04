@@ -10,12 +10,6 @@ function [chis,ks,d2gam2]=spinodal(NV,FAV)
 %   ks, critical wavelength of quadratic density fluctuation
 %   d2gam2, second derivative of structure factor around peak
 
-% add paths
-addpath('misc')
-addpath('chainstats')
-addpath('chainstats/eigcalc')
-addpath('chainstats/integrals')
-
 % results to return
 chis=zeros(length(FAV),length(NV));     % spinodal
 ks=zeros(length(FAV),length(NV));        % critical wavelength of density fluctuations
