@@ -1,4 +1,4 @@
-function [chis,chiv,KS_MF,KS_SIM,SINV_MF,SINV_SIM,D2S_MF,D2S_SIM,ERR]=plotsim(EPS,LAM,PLOTON,SIMNUM,CHEMNUM)
+function [KS_SIM,SINV_SIM,D2S_SIM,S,CHI]=plotsim5(EPS,LAM,vfac,PLOTON,SIMNUM,CHEMNUM)
 % Plots density-density correlation of sim. and theory
 % INPUTS::
 %   EPS, number of Kuhn steps per monomer
@@ -13,7 +13,7 @@ addpath('../misc/')
 % load simulation parameters
 simparam=load([folder,'/chivals']);
 
-if nargin == 3
+if nargin == 4
     % find corresponding simulation at EPS and LAM
     ind = find(simparam(:,1)==EPS & simparam(:,2)==LAM);
     % finding simulation index(indices)
@@ -25,15 +25,12 @@ end
 % simulation constants
 FA=0.5;  % fraction of A blocks
 M=8;        % number of blocks
-if CHEMNUM==111
-    G=10;  % number of discrete monomers
-else
-    G=5;  % number of discrete monomers
-end
+EPS=EPS*vfac;
+G=5*vfac;  % number of discrete monomers
 NM=G*EPS;  % number of Kuhn steps per monomer
 
 % range of chi params.
-chiind=fliplr([1:2:11,21,31,41]);
+chiind=11;
 plotind=chiind(1:end);
 
 % Flory-Huggins parameter
@@ -45,12 +42,12 @@ chiv = chiv/G;
 chis=0.5*sval;
 
 R2=-0.5+0.5*exp(-2*NM)+NM;
-k=logspace(-1,2,100)./sqrt(R2); % wavevectors
+k=logspace(log10(0.01),log10(100),100)./sqrt(R2); % wavevectors
 
 % Plot: density-density correlation
 if PLOTON==1
-%     f1=figure;hold;set(gca,'fontsize',30)
-%     set(gca,'position',[0,0,800,600])
+    f1=figure;hold;set(gca,'fontsize',30)
+    set(f1,'position',[0,0,800,600])
     cnt=find(chiind==plotind(1));
     for ii = plotind
         CHI = chiv(ii);
@@ -79,8 +76,8 @@ if PLOTON==1
     box on
 end
 
+chiv=chiv(chiind);
 % Find peak of structure factors
-chiv = chiv([1:2:11,21,31,41]);
 KS_SIM = zeros(length(chiv),1);
 SINV_MF = zeros(length(chiv),1);
 SINV_SIM = zeros(length(chiv),1);

@@ -1,0 +1,14 @@
+Universe = vanilla
+Getenv = True
+
+Executable = /usr/local/bin/matlab
+Initialdir = /tower12/home/shifan/wlc-phase-03-11-15/
+
+input = randphase.m
+output = stdout.ex1
+error = stderr.ex1
+Log = ex1.log
+
+Arguments =  -nodisplay
++TimeBeforePreempt = 12
+Queue 

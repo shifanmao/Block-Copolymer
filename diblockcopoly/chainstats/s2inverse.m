@@ -10,7 +10,7 @@ function s2inv=s2inverse(N,FA,k)
 %       k input can be a vector
 
 s2inv=zeros(2,2);
-MIN=1e-10;
+MIN=1e-4;
 
 % Calculate the s matrix
 if N>=1e4  % Gaussian chain limit

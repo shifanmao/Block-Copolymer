@@ -56,7 +56,8 @@ if nargin>=3 && ischar(varargin{1})
    % Calling sequence with named arguments
    okargs =   {'jacobian' 'covariance' 'alpha'};
    defaults = {[]         []           0.05};
-   [eid emsg J Sigma alpha] = internal.stats.getargs(okargs,defaults,varargin{:});
+%    [eid emsg J Sigma alpha] = internal.stats.getargs(okargs,defaults,varargin{:});
+   [eid emsg J Sigma alpha] = getargs(okargs,defaults,varargin{:});
    if ~isempty(eid)
       error(sprintf('stats:nlparci:%s',eid),emsg);
    end
