@@ -15,7 +15,7 @@ function [gam3,gam4]=calcgamma(N,FAV,NQ)
 gam3=zeros(length(FAV),1);
 gam4=zeros(length(FAV),NQ);
 
-filename='data/gamdata';
+filename='../data/gamdata';
 if exist(filename,'file')
     data=dlmread(filename);
     for ii=1:length(FAV)

@@ -2,3 +2,4 @@
 mkfigures/*.eps
 mkfigures/data
 README_files/
+mkfigures/data/*

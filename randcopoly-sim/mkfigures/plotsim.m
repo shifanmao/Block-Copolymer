@@ -5,8 +5,8 @@ function [chis,chiv,KS_MF,KS_SIM,SINV_MF,SINV_SIM,D2S_MF,D2S_SIM,ERR]=plotsim(EP
 %   LAM, degree of chemical correlation
 
 % simulation folder
-% folder = '../../results/randcopoly-results/scalcbatch-12-15-15';
-folder = '../../results/randcopoly-results/scalcbatch-05-19-16';
+folder = '../../results/randcopoly-results/scalcbatch-12-15-15';
+% folder = '../../results/randcopoly-results/scalcbatch-05-19-16';
 addpath('../functions/')
 addpath('../misc/')
 
@@ -25,11 +25,7 @@ end
 % simulation constants
 FA=0.5;  % fraction of A blocks
 M=8;        % number of blocks
-if CHEMNUM==111
-    G=10;  % number of discrete monomers
-else
-    G=5;  % number of discrete monomers
-end
+G=5;
 NM=G*EPS;  % number of Kuhn steps per monomer
 
 % range of chi params.
@@ -49,8 +45,10 @@ k=logspace(-1,2,100)./sqrt(R2); % wavevectors
 
 % Plot: density-density correlation
 if PLOTON==1
-%     f1=figure;hold;set(gca,'fontsize',30)
+%     figure;hold;set(gca,'fontsize',30)
 %     set(gca,'position',[0,0,800,600])
+    figure;hold
+
     cnt=find(chiind==plotind(1));
     for ii = plotind
         CHI = chiv(ii);
@@ -78,72 +76,72 @@ if PLOTON==1
     set(gca,'xscale','log');set(gca,'yscale','log')
     box on
 end
-
-% Find peak of structure factors
-chiv = chiv([1:2:11,21,31,41]);
-KS_SIM = zeros(length(chiv),1);
-SINV_MF = zeros(length(chiv),1);
-SINV_SIM = zeros(length(chiv),1);
-D2S_SIM = zeros(length(chiv),1);
-D2S_MF = zeros(length(chiv),1);
-ERR = zeros(length(chiv),3);
-
-for ii = 1:length(chiv)
-% for ii = plotind
-    CHI = chiv(ii);
-    
-    % Find peak position
-    SINV_MF(ii)=-2*CHI+EPS*sval;
-    D2S_MF(ii) = -1/(sval^2*R2*EPS)*d2gam2;
-
-    % Plot simulation results
-    filename = sprintf([folder,'/sdata-%d-%d/Sdata/SMC_SIM%dCHEM%dCHI%.8f'],...
-        SIMNUM,CHEMNUM,SIMNUM,CHEMNUM,CHI*G);
-    S = load(filename);
-    
-    IND = find(S(:,2)==max(S(:,2)));IND = IND(1);
-    KS_SIM(ii) = S(IND,1);
-    SINV_SIM(ii) = 1./S(IND,2);
-    
-    NUMFIT = 4;
-    if IND>NUMFIT  % central differences
-        Kfit = S(IND-NUMFIT:IND+NUMFIT,1);
-        Sfit = S(IND-NUMFIT:IND+NUMFIT,2);
-    
-        % local fit to Lorentzian (three parameter fit)
-        options = optimset('Display','off',...
-            'TolX',1e-8,'TolFun',1e-8,'MaxFunEvals',1e10,'MaxIter',1e10);
-        x0 = [KS_SIM(ii),SINV_SIM(ii),1];   % x = [ks_sim,sinv_sim,d2s]
-        lb = [0.1,0.01,0.1]; ub = [5,10,10];
-        fun = @(x,Kfit) x(2) + (1/2)*(1/G)*x(3)*(Kfit-x(1)).^2;
-        [xhat,~,resid,~,~,~,J] = lsqcurvefit(fun,x0,Kfit,1./Sfit,lb,ub,options);
-        [~,sehat] = nlparcinew(xhat,resid,'jacobian',J);      % %estimate error from the fit
-        x=xhat;se=sehat;
-
-        %[x,r,J,cov,mse] = nlinfit(Kfit,1./Sfit,fun,x0,options);
-        %[ci,se] = nlparcinew(x,r,'covar',cov);
-    elseif IND<=NUMFIT  % forward differences
-        Kfit = S(IND:IND+NUMFIT,1);
-        Sfit = S(IND:IND+NUMFIT,2);
-        
-        % local fit to Lorentzian (two parameter fit)
-        options = optimset('Display','off',...
-            'TolX',1e-8,'TolFun',1e-8,'MaxFunEvals',1e10,'MaxIter',1e10);
-        x0 = [SINV_SIM(ii),1];   % x = [sinv_sim,d2s]
-        lb = [0.01,0.1]; ub = [10,10];
-        fun = @(x,Kfit) x(1) + (1/2)*(1/G)*x(2)*(Kfit).^2;
-        [xhat,~,resid,~,~,~,J] = lsqcurvefit(fun,x0,Kfit,1./Sfit,lb,ub,options);
-        [~,sehat] = nlparcinew(xhat,resid,'jacobian',J);      % %estimate error from the fit
-        x=[0,xhat];se=[0,sehat'];
-    else
-        error('peak location has large variability')
-    end
-    
-    KS_SIM(ii) = x(1);
-    SINV_SIM(ii) = x(2);
-    D2S_SIM(ii) = x(3);
-    ERR(ii,1:3) = se(1:3);
-
+% 
+% % Find peak of structure factors
+% chiv = chiv([1:2:11,21,31,41]);
+% KS_SIM = zeros(length(chiv),1);
+% SINV_MF = zeros(length(chiv),1);
+% SINV_SIM = zeros(length(chiv),1);
+% D2S_SIM = zeros(length(chiv),1);
+% D2S_MF = zeros(length(chiv),1);
+% ERR = zeros(length(chiv),3);
+% 
+% for ii = 1:length(chiv)
+% % for ii = plotind
+%     CHI = chiv(ii);
+%     
+%     % Find peak position
+%     SINV_MF(ii)=-2*CHI+EPS*sval;
+%     D2S_MF(ii) = -1/(sval^2*R2*EPS)*d2gam2;
+% 
+%     % Plot simulation results
+%     filename = sprintf([folder,'/sdata-%d-%d/Sdata/SMC_SIM%dCHEM%dCHI%.8f'],...
+%         SIMNUM,CHEMNUM,SIMNUM,CHEMNUM,CHI*G);
+%     S = load(filename);
+%     
+%     IND = find(S(:,2)==max(S(:,2)));IND = IND(1);
+%     KS_SIM(ii) = S(IND,1);
+%     SINV_SIM(ii) = 1./S(IND,2);
+%     
+%     NUMFIT = 4;
+%     if IND>NUMFIT  % central differences
+%         Kfit = S(IND-NUMFIT:IND+NUMFIT,1);
+%         Sfit = S(IND-NUMFIT:IND+NUMFIT,2);
+%     
+%         % local fit to Lorentzian (three parameter fit)
+%         options = optimset('Display','off',...
+%             'TolX',1e-8,'TolFun',1e-8,'MaxFunEvals',1e10,'MaxIter',1e10);
+%         x0 = [KS_SIM(ii),SINV_SIM(ii),1];   % x = [ks_sim,sinv_sim,d2s]
+%         lb = [0.1,0.01,0.1]; ub = [5,10,10];
+%         fun = @(x,Kfit) x(2) + (1/2)*(1/G)*x(3)*(Kfit-x(1)).^2;
+%         [xhat,~,resid,~,~,~,J] = lsqcurvefit(fun,x0,Kfit,1./Sfit,lb,ub,options);
+%         [~,sehat] = nlparcinew(xhat,resid,'jacobian',J);      % %estimate error from the fit
+%         x=xhat;se=sehat;
+% 
+%         %[x,r,J,cov,mse] = nlinfit(Kfit,1./Sfit,fun,x0,options);
+%         %[ci,se] = nlparcinew(x,r,'covar',cov);
+%     elseif IND<=NUMFIT  % forward differences
+%         Kfit = S(IND:IND+NUMFIT,1);
+%         Sfit = S(IND:IND+NUMFIT,2);
+%         
+%         % local fit to Lorentzian (two parameter fit)
+%         options = optimset('Display','off',...
+%             'TolX',1e-8,'TolFun',1e-8,'MaxFunEvals',1e10,'MaxIter',1e10);
+%         x0 = [SINV_SIM(ii),1];   % x = [sinv_sim,d2s]
+%         lb = [0.01,0.1]; ub = [10,10];
+%         fun = @(x,Kfit) x(1) + (1/2)*(1/G)*x(2)*(Kfit).^2;
+%         [xhat,~,resid,~,~,~,J] = lsqcurvefit(fun,x0,Kfit,1./Sfit,lb,ub,options);
+%         [~,sehat] = nlparcinew(xhat,resid,'jacobian',J);      % %estimate error from the fit
+%         x=[0,xhat];se=[0,sehat'];
+%     else
+%         error('peak location has large variability')
+%     end
+%     
+%     KS_SIM(ii) = x(1);
+%     SINV_SIM(ii) = x(2);
+%     D2S_SIM(ii) = x(3);
+%     ERR(ii,1:3) = se(1:3);
+% 
 %     savename = sprintf('../../results/randcopoly-results/structure-figures/sfig-eps%.2f-lam%.2f.eps',EPS,LAM);
 %     saveas(gcf,savename,'epsc')
-end
+% end

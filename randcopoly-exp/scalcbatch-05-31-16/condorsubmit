@@ -1,0 +1,4 @@
+cp /tower12/home/shifan/polymem-exp-05-31-16/rand-pt-exp-05-31-16-6-1/chilist sdata-6-1/Sdata/. 
+cp *.m sdata-6-1/mfiles/. 
+condor_submit sdata-6-1/condor* 
+

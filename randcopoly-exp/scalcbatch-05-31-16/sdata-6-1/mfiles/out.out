@@ -1,0 +1,13386 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015b (8.6.0.267246) 64-bit (glnxa64)
+                              August 20, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+>> >> 
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+
+calcdir =
+
+polymem-exp-05-31-16/scalcbatch-05-31-16
+
+
+CHIV =
+
+    0.0010
+    0.1111
+    0.2212
+    0.3312
+    0.4413
+    0.5514
+    0.6615
+    0.7716
+    0.8817
+    0.9917
+    1.1018
+    1.2119
+    1.3220
+    1.4321
+    1.5422
+    1.6522
+    1.7623
+    1.8724
+    1.9825
+    2.0926
+    2.2026
+    2.3127
+
+  Name      Size            Bytes  Class     Attributes
+
+  ind       1x42              336  double              
+
+chi=0.001 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.001 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.11108 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.22116 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.33125 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.44133 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.55141 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.66149 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.77158 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.88166 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=0.99174 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.1018 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.2119 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.322 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.4321 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.5422 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.6522 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.7623 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.8724 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=1.9825 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.0926 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.2026 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#1
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#2
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#3
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#4
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#5
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#6
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#7
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#8
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#9
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#10
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#11
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#12
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#13
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#14
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#15
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#16
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#17
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#18
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#19
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#20
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#21
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#22
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#23
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#24
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#25
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#26
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#27
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#28
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#29
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#30
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#31
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#32
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#33
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#34
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#35
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#36
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#37
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#38
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#39
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#40
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#41
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#42
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#43
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#44
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#45
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#46
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#47
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#48
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#49
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#50
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#51
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#52
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#53
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#54
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#55
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#56
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#57
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#58
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#59
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#60
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#61
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#62
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#63
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#64
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#65
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#66
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#67
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#68
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#69
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#70
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#71
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#72
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#73
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#74
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#75
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#76
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#77
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#78
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#79
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#80
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#81
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#82
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#83
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#84
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#85
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#86
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#87
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#88
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#89
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#90
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#91
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#92
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#93
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#94
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#95
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#96
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#97
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#98
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#99
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#100
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+chi=2.3127 // snap#101
+
+simdir =
+
+polymem-exp-05-31-16/rand-pt-exp-05-31-16
+
+>> 
