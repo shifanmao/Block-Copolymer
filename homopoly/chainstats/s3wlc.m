@@ -1,7 +1,6 @@
 function S3=s3wlc(NM,Q1,Q2,Q3,ORDEig,ORDL,ResLayer)
 % Calculate the Fourier transform of the three-point Green function
 % for the wormlike chain in d-dimension
-addpath('eigcalc')
 
 S3=0;
 NR=ORDEig;

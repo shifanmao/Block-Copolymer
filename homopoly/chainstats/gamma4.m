@@ -1,9 +1,6 @@
 %this code tests the calculation of 4-point correlation
 %functions of rigid-rod, wormlike chain, and Gaussian chains
 function gam4 = gamma4(QM,ang,NM_WLC)
-addpath('../chainstats')
-addpath('../misc')
-addpath('../eigcalc')
 
 %Calculation parameters
 ORDEig=8;

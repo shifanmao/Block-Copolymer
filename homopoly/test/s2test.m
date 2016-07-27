@@ -1,4 +1,4 @@
-%this code tests the calculation of 2-point correlation
+e%this code tests the calculation of 2-point correlation
 %functions of rigid-rod, wormlike chain, and Gaussian chains
 clear;
 addpath('../chainstats/')
