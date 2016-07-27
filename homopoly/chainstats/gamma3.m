@@ -12,7 +12,7 @@ ImagThreshold=1e-8;
 gam3 = zeros(length(QM),length(ang));
 for ii = 1:length(QM)
     for jj = 1:length(ang)
-    fprintf('Calculating Vd at QM = %.2f, ang = %.2f\n',QM(ii),ang)
+    fprintf('Calculating gam3 at QM = %.2f, ang = %.2f\n',QM(ii),ang(jj))
 
         Q1=QM(ii)*[1,0,0];
         Q2=transpose(rotz(ang(jj))*Q1');

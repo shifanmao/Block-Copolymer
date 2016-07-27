@@ -3,9 +3,9 @@ clear;
 addpath(genpath('../chainstats'))
 
 % Plot options:
-NMPLOT=1e4;     % Number of Kuhn steps
 PLOT1 = 1;      % S vs q
 PLOT2 = 1;      % Surface plot of S vs (q and angle)
+NMPLOT=1e4;     % Number of Kuhn steps
 readfolder = '../data';    % save to folder destination
 
 % Calculation options:
