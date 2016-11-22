@@ -2,8 +2,10 @@
 This folder contains functions that calculate structure factors of random copolymers (2,3,and 4-point correlations).
 
 Example 1: Two-point correlations of Gaussian random copolymer
-`
+
+```matlab
 clear;
+import('integrals')
 
 N = 100;  % Number of Monomers
 NM = 100; % Number of Kuhn steps per monomer
@@ -41,4 +43,4 @@ figure;semilogx(kv,1./Gamma2)
 
 % calculate solvent structure factor
 ...
-`
+```
