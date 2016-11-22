@@ -1,0 +1,28 @@
+# Chainstats
+This folder contains functions that calculate structure factors of random copolymers (2,3,and 4-point correlations).
+
+Example 1: Two-point correlations of Gaussian random copolymer
+`
+clear;
+
+N = 100;  % Number of Monomers
+NM = 100; % Number of Kuhn steps per monomer
+LAM = 0;  % Degree of chemical correlation
+FA = 0.5; % Fraction of A-type monomers
+
+kv = logspace(-4,2,50);
+s2 = zeros(length(kv),2,2);
+ssum = zeros(length(kv),1);  % SAA+SAB+SBA+SBB
+for ii = 1:length(kv)
+  k = kv(ii);  % wavevector
+  s2(ii,:,:)=s2gc(N,NM,LAM,FA,k);
+  ssum(ii) = sum(sum(s2(ii,:,:)))/power(N*NM,4);
+end
+
+figure;hold;
+plot(kv,s2(:,1,1));  % Plots SAA for different k
+
+% check normaliztion
+figure;hold;
+plot(kv,ssum);  % Plots SAA for different k
+`
