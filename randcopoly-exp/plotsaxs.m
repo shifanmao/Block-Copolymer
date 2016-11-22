@@ -3,13 +3,13 @@
 % random copolymers.
 
 clear;
-MW = 1500;
-WT = 30;
+MW = 900;
+WT = 40;
 FILENAME = sprintf('PEG%dMW%d',WT,MW);
 
 % Load experiment data.
 addpath('functions/')
-load(strcat('savedata/',FILENAME,'.mat'));
+%load(strcat('savedata/',FILENAME,'.mat'));
 data = load(strcat('exp-data/',FILENAME,'.csv'));
 
 % preset parameters in theory
@@ -20,9 +20,9 @@ q = data(:,1);
 s = data(:,2:end);
 
 % extract domain with low background noise
-iq0 = find(q==qf(1));iqf = find(q==qf(end));
-qf = q(iq0:iqf);
-sf = s(iq0:iqf,:);
+% iq0 = find(q==qf(1));iqf = find(q==qf(end));
+% qf = q(iq0:iqf);
+% sf = s(iq0:iqf,:);
 
 if (MW==1500)
     TV = [22,40:20:180];  % temperature in degree C
@@ -44,10 +44,10 @@ for IT = 1:NFIT
    plot(q*rm,s(:,IT),'-','LineWidth',1,'color',[col 0 1-col]) % experiment data
 end
 
-for IT = 1:NFIT
-   col = (IT-1)/(NFIT-1);
-   plot(qf*rm,sf(:,IT),'+-','LineWidth',1,'color',[col 0 1-col]) % experiment data
-end
+% for IT = 1:NFIT
+%    col = (IT-1)/(NFIT-1);
+%    plot(qf*rm,sf(:,IT),'+-','LineWidth',1,'color',[col 0 1-col]) % experiment data
+% end
 
 % plot process
 xlabel('R_Mq');ylabel('S(q)');
@@ -57,5 +57,5 @@ plot([1.35,1.35],[10,1e3],'k--')
 box on
 
 % save to data
-SAVEFILENAME = strcat('exp-data/','SEXP_',FILENAME);
-dlmwrite(SAVEFILENAME,[qf*rm,sf]);
+% SAVEFILENAME = strcat('exp-data/','SEXP_',FILENAME);
+% dlmwrite(SAVEFILENAME,[qf*rm,sf]);

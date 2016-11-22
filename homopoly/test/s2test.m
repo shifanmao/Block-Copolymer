@@ -1,8 +1,7 @@
-e%this code tests the calculation of 2-point correlation
+%this code tests the calculation of 2-point correlation
 %functions of rigid-rod, wormlike chain, and Gaussian chains
 clear;
-addpath('../chainstats/')
-addpath('../eigcalc/')
+addpath(genpath('../chainstats/'))
 
 %Calculation parameters
 ORDEig=20;
@@ -10,22 +9,28 @@ ResLayer=500;
 ImagThreshold=1e-8;
 
 %Number of Kuhn steps
-NM_WLC=1e4;
+NM=1e2;
 
 %wavevector
-k=logspace(-1,3,100)';
+k=logspace(-2,2,100)';
 
 %calculate s2
 s2=zeros(length(k),1);
 for ii=1:length(k)
-    s2(ii) = s2wlc(NM_WLC,k(ii)/NM_WLC,ORDEig,ResLayer);            
-    s2(ii) = s2(ii)/power(NM_WLC,2);
+    s2(ii) = s2wlc(NM,k(ii),ORDEig,ResLayer);            
+    s2(ii) = s2(ii)/power(NM,2);
     
     if imag(s2(ii))<ImagThreshold
         s2(ii)=real(s2(ii));
     end
 end
 
-figure;plot(k,s2,'linewidth',2);
-set(gca,'xscale','log');set(gca,'yscale','linear');ylim([0,1.2]);
-xlabel('Normalized Wavevector kL');ylabel('Normalized Structure Factor S/L^2')
+figure;hold;
+plot(k,s2,'k-','linewidth',2);
+xlim([1e0,1e3]);ylim([0,1]);box on
+
+set(gca,'xscale','log');set(gca,'yscale','linear');
+xlabel('Wavevector 2l_Pq');
+ylabel('Pair Correlation $\left< \rho(\vec{q})\rho(-\vec{q}) \right>$','interpreter','latex')
+xlim([1e-2,1e2])
+set(gca,'fontsize',20)

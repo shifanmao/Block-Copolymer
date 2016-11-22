@@ -130,6 +130,7 @@ if M==0
             S4=S4+2*S4_case1_int(1,R1(N1+1,1),R12(N2+1,M+1),R3(N3+1,1))*NM^4*...
                         YLM112(lam2+1,M+1)*conj(YLM443(lam3+1,M+1))...
                         *GL1(1,lam2+1,1,N1+1)*GLM12(lam2+1,lam3+1,M+1,N2+1)*GL3(lam3+1,1,1,N3+1);
+            % the prefactor 2 needs to be 1 for high q?
         end
     end
 else

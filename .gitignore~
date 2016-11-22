@@ -1,0 +1,16 @@
+# folders
+results
+backup
+
+# data files
+diblockcopoly/data/*
+diblockcopoly/talk/*
+homopoly/data/*
+randcopoly-quartic/data/old/*
+randcopoly-quartic/mkfigures/old/*
+
+# figures
+diblockcopoly/mkfigures/*.eps
+randcopoly-sim/mkfigures/*.png
+randcopoly-sim/mkfigures/*.eps
+homopoly/test/*.eps

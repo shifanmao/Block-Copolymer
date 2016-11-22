@@ -11,3 +11,7 @@ randcopoly-quartic/mkfigures/old/*
 
 # figures
 diblockcopoly/mkfigures/*.eps
+randcopoly-sim/mkfigures/*.png
+randcopoly-sim/mkfigures/*.eps
+homopoly/test/*.eps
+randcopoly-exp/Presentations/*

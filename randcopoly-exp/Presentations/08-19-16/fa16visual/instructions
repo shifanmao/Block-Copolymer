@@ -1,0 +1,9 @@
+# first make pdb files by running
+./random
+
+# next generate images by running
+(in Mac) open -a MacPyMol mksnap.pml
+(in Linux) pymol mksnap.pml
+
+# example of making a movie using pngs (ffmpeg needs to be installed first)
+ffmpeg -framerate 6 -i snap%04d.png -c:v libx264 -r 30 -pix_fmt yuv420p -vf scale=1024:-1  out.mp4

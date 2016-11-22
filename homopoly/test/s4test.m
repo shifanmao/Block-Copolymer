@@ -1,7 +1,7 @@
 %this code tests the calculation of 4-point correlation
 %functions of rigid-rod, wormlike chain, and Gaussian chains
 clear;
-addpath('misc')
+addpath(genpath('../chainstats'))
 
 %Calculation parameters
 ORDEig=8;

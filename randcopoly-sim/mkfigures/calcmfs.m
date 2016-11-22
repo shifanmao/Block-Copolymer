@@ -1,5 +1,9 @@
 clear;
 %close all
+
+PLOTON = 1;
+SAVEON = 0;
+
 addpath('../functions/')
 addpath('../misc/')
 
@@ -8,17 +12,20 @@ CHI=0;
 M=100;     % number of blocks
 G=5;  % number of discrete monomers
 
-% FA=0.5;  % fraction of A blocks
-% EPSV = [0.01,0.10,1.00];
-% LAMV = [-0.75:0.25:0.75];
+FAV=0.5;  % fraction of A blocks
+EPSV = [0.01,0.10,1.00];
+LAMV = [-1.00:0.25:0.75];
 
-EPSV = [0.01,0.10,1.00,0.04];
-LAMV = 0;
-FAV = [0.16,0.23,0.50];
+EPSV = 0.01;LAMV = -1;
+
+% EPSV = [0.01,0.10,1.00,0.04];
+% LAMV = 0;
+% FAV = [0.16,0.23,0.50];
 
 for EPS = EPSV
     for LAM = LAMV;
         for FA = FAV
+            fprintf('Calculating at EPS = %.2f, LAM = %.2f, FA = %.2f\n', EPS, LAM, FA)
             NM=G*EPS;  % number of Kuhn steps per monomer
 
             % save destination
@@ -39,11 +46,15 @@ for EPS = EPSV
             spinodal = [CHIS*NM,kval*sqrt(R2)];
             result = [k'.*sqrt(R2),val];
 
-%             figure;
-%             plot(result(:,1),1/EPS./result(:,2),'--','linewidth',3)
-%             set(gca,'xscale','log');set(gca,'yscale','log');
+            if (PLOTON)
+                figure;
+                plot(result(:,1),1/EPS./result(:,2),'--','linewidth',3)
+                set(gca,'xscale','log');set(gca,'yscale','log');
+            end
 
-            dlmwrite(filename,[spinodal;result],'precision','%.6f');
+            if (SAVEON)
+                dlmwrite(filename,[spinodal;result],'precision','%.6f');
+            end
         end
     end
 end

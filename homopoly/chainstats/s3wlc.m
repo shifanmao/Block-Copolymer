@@ -79,7 +79,7 @@ function S3=S3_case1(S3,NM,N1,N2,R1,R2,GL1,GL2,PL12)
 end
 
 function valeq=case1_int(FA,R1,R2)
-    MIN=(10^-2)/FA;
+    MIN=(10^-4)/FA;
     if abs(R1-R2)<MIN
         if abs(R1)<MIN
             valeq=(1/6).*FA.^3;

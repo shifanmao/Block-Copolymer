@@ -3,7 +3,6 @@ function S4=s4gc(N,NM,LAM,FA,Q1,Q2,Q3,Q4)
 %For example:
 %   S4(1,1,1,1)=SAAAA
 %   S4(1,1,2,1)=SAABA
-
 d=3;    % three dimensional
 
 % Begin calculation of s4
