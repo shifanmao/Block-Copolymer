@@ -1,0 +1,39 @@
+function CHIABS = solvnt_spin(N,NM,LAM,FA,KV,FP)
+
+CHI0 = [0, 0; 0, 0];
+[~,~,~,~,~,~,KS1,~] = gamma2_solvent(N,NM,LAM,FA,KV,CHI0,FP);
+
+CHIABS = 0;
+KSIND = find(KV >= KS1, 1);
+for CHIAB = linspace(0, 10, 100)/NM
+    CHIBA = CHIAB;
+    CHI = [0, CHIAB; CHIBA, 0];
+    
+    [EIG1] = gamma2_solvent(N,NM,LAM,FA,KV,CHI,FP);
+    if EIG1(KSIND)*NM < 1e-2
+        CHIABS = CHIAB;
+        break;
+    end
+end 
+
+
+chis = 0/NM;
+chie = 10/NM;
+while (chie - chis) < 1e-1/NM
+    mid = (chie + chis) / 2;
+    CHIAB = mid;
+    CHIBA = CHIAB;
+    CHI = [0, CHIAB; CHIBA, 0];
+
+    [EIG1] = gamma2_solvent(N,NM,LAM,FA,KV,CHI,FP);
+    if EIG1(KSIND)*NM < 1e-2
+        CHIABS = CHIAB;
+        break;
+    end
+        
+for CHIAB = linspace(0, 10, 100)/NM
+    
+
+end 
+
+end

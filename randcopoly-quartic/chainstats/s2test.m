@@ -6,7 +6,7 @@ addpath('../misc')
 chkab=0;
 
 %Chain structural information
-NM_GS=1000;
+NM_GS=100;
 N=100;
 
 %Chain chemical information
@@ -18,7 +18,7 @@ ORDEig=10;
 NumLayer=500;
 
 %wavevector
-k=logspace(-1,3,50)';
+k=logspace(2,10,50)';
 
 %begin making plots
 figure;hold;set(gca,'fontsize',15);leg=[];
@@ -26,17 +26,21 @@ figure;hold;set(gca,'fontsize',15);leg=[];
 %%%% Gaussian Chain %%%%
 %calculate s2
 g2=zeros(length(k),2,2);
+g2old=zeros(length(k),2,2);
 for ii=1:length(k)
     ii
-    g2(ii,:,:) = s2gc(N,NM_GS,LAM,FA,k(ii)/(NM_GS*N));
-%     g2(ii,:,:) = s2wlc(N,NM_GS,LAM,FA,k(ii)/(NM_GS*N),ORDEig,NumLayer);
+%     g2(ii,:,:) = s2gc(N,NM_GS,LAM,FA,k(ii)/(NM_GS*N));
+    g2(ii,:,:) = s2wlc(N,NM_GS,LAM,FA,k(ii)/(NM_GS*N));
+    g2old(ii,:,:) = s2wlc_old(N,NM_GS,LAM,FA,k(ii)/(NM_GS*N));
 %     g2(ii,:,:) = s2rigid(NM_GS,FA,k(ii)/NM_GS);
 end
 g2 = g2./power(NM_GS*N,2);
+g2old = g2old./power(NM_GS*N,2);
 
 leg=[];
 %make plots
-plot(k,g2(:,1,1),'k-',k,g2(:,1,2),'k--','linewidth',2);
+plot(k,g2(:,1,1),'b-',k,g2(:,1,2),'b--','linewidth',2);
+plot(k,g2old(:,1,1),'k-',k,g2old(:,1,2),'k--','linewidth',2);
 leg=[leg {'Gaussian S_{AA}'}];
 leg=[leg {'Gaussian S_{AB}'}];
 
