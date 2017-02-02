@@ -1,7 +1,7 @@
-function [EIG1,EIG2,EIGV1,EIGV2,THETA1,THETA2,KS1,KS2]=gamma2_solvent(N,NM,LAM,FA,kv,CHI,FP)
+function [EIG1,EIG2,EIGV1,EIGV2,KS1,KS2]=gamma2_solvent(N,NM,LAM,FA,kv,CHI,PHIP)
 
 %% Inputs
-FS = 1-FP;   % Fraction of solvent
+PHIS = 1-PHIP;   % Fraction of solvent
 
 %% Start Calculation
 %%% CALCULATE S FUNCTIONS %%%
@@ -18,9 +18,9 @@ for ii = 1:length(kv)
   SBBINV = s2inv(2,2);
   
   %%% CALCULATE GAM FUNCTIONS %%%
-  GAMAA = -2*CHI(1,1)+N*NM*SAAINV./FP+1/FS;
-  GAMBB = -2*CHI(2,2)+N*NM*SBBINV./FP+1/FS;
-  GAMAB = (CHI(1,2)-CHI(1,1)-CHI(2,2))+N*NM*SABINV/FP+1/FS;
+  GAMAA = -2*CHI(1,1)+N*NM*SAAINV./PHIP+1/PHIS;
+  GAMBB = -2*CHI(2,2)+N*NM*SBBINV./PHIP+1/PHIS;
+  GAMAB = (CHI(1,2)-CHI(1,1)-CHI(2,2))+N*NM*SABINV/PHIP+1/PHIS;
   GAMBA = GAMAB;
   GAM = [GAMAA, GAMAB; GAMBA, GAMBB];
 
@@ -34,8 +34,8 @@ for ii = 1:length(kv)
   EIGV2(ii,:) = EIV(:, ind2);
 end
 
-THETA1 = atan(EIGV1(1,1)/EIGV1(1,2));
-THETA2 = atan(EIGV2(1,1)/EIGV2(1,2));
+% THETA1 = atan(EIGV1(1,1)/EIGV1(1,2));
+% THETA2 = atan(EIGV2(1,1)/EIGV2(1,2));
 
 %%% FIND CRITICAL WAVEMODE %%%
 KS1 = kv(EIG1==min(EIG1));
