@@ -15,3 +15,4 @@ randcopoly-sim/mkfigures/*.png
 randcopoly-sim/mkfigures/*.eps
 homopoly/test/*.eps
 randcopoly-exp/Presentations/*
+randcopoly-quartic/figures/*
