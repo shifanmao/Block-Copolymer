@@ -1,43 +1,94 @@
-function [EIG1,EIG2,EIGV1,EIGV2,KS1,KS2]=gamma2_solvent(N,NM,LAM,FA,kv,CHI,PHIP)
+function [EIG,EIGV]=gamma2_solvent(N,NM,LAM,FA,KV,CHI,PHIP)
 
 %% Inputs
 PHIS = 1-PHIP;   % Fraction of solvent
 
 %% Start Calculation
-%%% CALCULATE S FUNCTIONS %%%
-EIG1 = zeros(length(kv),1);
-EIG2 = zeros(length(kv),1);
-EIGV1 = zeros(length(kv),2);
-EIGV2 = zeros(length(kv),2);
+EIG = zeros(length(KV),2);
+EIGV = zeros(length(KV),4);
 
-for ii = 1:length(kv)
-  k = kv(ii);  % wavevector
-  s2inv = s2inverse(N,NM,LAM,FA,k);
-  SAAINV = s2inv(1,1);
-  SABINV = s2inv(1,2);
-  SBBINV = s2inv(2,2);
+for ii = 1:length(KV)
+  k = KV(ii);  % wavevector
   
-  %%% CALCULATE GAM FUNCTIONS %%%
-  GAMAA = -2*CHI(1,1)+N*NM*SAAINV./PHIP+1/PHIS;
-  GAMBB = -2*CHI(2,2)+N*NM*SBBINV./PHIP+1/PHIS;
-  GAMAB = (CHI(1,2)-CHI(1,1)-CHI(2,2))+N*NM*SABINV/PHIP+1/PHIS;
-  GAMBA = GAMAB;
-  GAM = [GAMAA, GAMAB; GAMBA, GAMBB];
+  if PHIP == 1
+      if FA > 0 && FA < 1
+          %%% CALCULATE S FUNCTIONS %%%
+          s2inv = s2inverse(N,NM,LAM,FA,k);
+          SAAINV = s2inv(1,1);
+          SABINV = s2inv(1,2);
+          SBBINV = s2inv(2,2);
 
-  %%% CALCULATE EIGENMODES %%%
-  [EIV,EI] = eig(GAM);
-  EI = [EI(1,1),EI(2,2)];
-  [~,ind] = sort(EI,'ascend');ind1 = ind(1);ind2 = ind(2);
-  EIG1(ii) = EI(ind1);
-  EIG2(ii) = EI(ind2);
-  EIGV1(ii,:) = EIV(:, ind1);
-  EIGV2(ii,:) = EIV(:, ind2);
+          %%% CALCULATE GAM FUNCTIONS %%%
+          GAMAA = -2*CHI(1,1)+N*NM*SAAINV./PHIP;
+          GAMBB = -2*CHI(2,2)+N*NM*SBBINV./PHIP;
+          GAMAB = (CHI(1,2)-CHI(1,1)-CHI(2,2))+N*NM*SABINV/PHIP;
+          GAMBA = GAMAB;
+          GAM = [GAMAA, GAMAB; GAMBA, GAMBB];
+
+          EIG1 = GAM(1,1) + GAM(2,2) - GAM(1,2) - GAM(2,1);
+
+          EIGV(ii, 1:4) = [1; -1; 1; 1]/sqrt(2);
+          EIG(ii, 1:2) = [EIG1, 1e10];
+      else
+          EIGV(ii, 1:4) = [NaN; NaN; NaN; NaN];
+          EIG(ii, 1:2) = [NaN, NaN];
+      end
+      
+  elseif PHIP == 0
+      EIGV(ii, 1:4) = [NaN; NaN; NaN; NaN];
+      EIG(ii, 1:2) = [NaN, NaN];
+
+  else
+      if FA > 0 && FA < 1
+          %%% CALCULATE S FUNCTIONS %%%
+          s2inv = s2inverse(N,NM,LAM,FA,k);
+          SAAINV = s2inv(1,1);
+          SABINV = s2inv(1,2);
+          SBBINV = s2inv(2,2);
+
+          %%% CALCULATE GAM FUNCTIONS %%%
+          GAMAA = -2*CHI(1,1)+N*NM*SAAINV./PHIP+1/PHIS;
+          GAMBB = -2*CHI(2,2)+N*NM*SBBINV./PHIP+1/PHIS;
+          GAMAB = (CHI(1,2)-CHI(1,1)-CHI(2,2))+N*NM*SABINV/PHIP+1/PHIS;
+          GAMBA = GAMAB;
+          GAM = [GAMAA, GAMAB; GAMBA, GAMBB];
+          
+          %%% CALCULATE EIGENMODES %%%
+          [EIV,EI] = eig(GAM);
+          EI = [EI(1,1),EI(2,2)];
+
+          sign = 1;
+          [~,ind] = sort(EI,'ascend');ind1 = ind(1);ind2 = ind(2);
+          EIG(ii, 1:2) = [EI(ind1); EI(ind2)];
+          EIGV(ii, 1:4) = [EIV(:, ind1)*sign; EIV(:, ind2)*sign];
+
+      elseif FA == 1
+          %%% CALCULATE S FUNCTIONS %%%
+          s2 = s2wlc(N,NM,LAM,FA,k);
+          SAAINV = 1/s2(1,1);
+
+          %%% CALCULATE GAM FUNCTIONS %%%
+          GAMAA = -2*CHI(1,1)+N*NM*SAAINV./PHIP+1/PHIS;
+
+          %%% CALCULATE EIGENMODES %%%
+          EIGV(ii, 1:4) = [-1; 0; 0; -1];
+          EIG(ii, 1:2) = [GAMAA, 1e10];
+
+      elseif FA == 0
+
+          %%% CALCULATE S FUNCTIONS %%%
+          s2 = s2wlc(N,NM,LAM,FA,k);
+          SBBINV = 1/s2(2,2);
+
+          %%% CALCULATE GAM FUNCTIONS %%%
+          GAMBB = -2*CHI(2,2)+N*NM*SBBINV./PHIP+1/PHIS;
+
+          %%% CALCULATE EIGENMODES %%%
+          EIGV(ii, 1:4) = [0; -1; -1; 0];
+          EIG(ii, 1:2) = [GAMBB, 1e10];
+      end
+  end
+
 end
 
-% THETA1 = atan(EIGV1(1,1)/EIGV1(1,2));
-% THETA2 = atan(EIGV2(1,1)/EIGV2(1,2));
-
-%%% FIND CRITICAL WAVEMODE %%%
-KS1 = kv(EIG1==min(EIG1));
-KS2 = kv(EIG2==min(EIG2));
 end

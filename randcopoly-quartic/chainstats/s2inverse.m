@@ -8,23 +8,22 @@ function s2inv=s2inverse(N,NM,LAM,FA,k)
 %    FA, fraction of A type monomers
 %    k, magnitude of wavevector in unit of 1/contour length
 %       k input can be a vector
-
 s2inv=zeros(2,2);
 MIN=1e-10;
 
 % Calculate the s matrix
-if NM>=1e2  % Gaussian chain limit
+if NM>=1e4  % Gaussian chain limit
     s2=s2gc(N,NM,LAM,FA,k);
-elseif NM<=1e-2  % Rigid rod limit
+elseif NM<=1e-4  % Rigid rod limit
     s2=s2rr(N,NM,LAM,FA,k);
 else
     s2=s2wlc(N,NM,LAM,FA,k);
 end
 DET=s2(1,1,:)*s2(2,2,:)-s2(1,2,:)*s2(2,1,:);
 
-if abs(k)<MIN
-    s2inv=ones(2,2)./power(N*NM,2);
-else
+% if abs(k)<=MIN
+%     s2inv=ones(2,2)./power(N*NM,2);
+% else
     s2inv(1,1) = s2(2,2)./DET;
     s2inv(1,2) = -s2(1,2)./DET;
     s2inv(2,1) = -s2(2,1)./DET;
