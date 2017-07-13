@@ -1,5 +1,7 @@
 clear;
-close all
+% close all
+
+CALCON = 0;
 
 % universal parameters
 N = 100;
@@ -12,105 +14,91 @@ filename5 = '../data/figureS5E';
 filename6 = '../data/figureS5F';
 filenames = {filename1, filename2, filename3, filename4, filename5, filename6};
 
-FAV = linspace(.1, .9, 11);
-LAMV = linspace(-1, 1, 11);
-CHIABSV = zeros(length(FAV), length(LAMV));
-KSV = zeros(length(FAV), length(LAMV));
+if CALCON
+    FAV = linspace(.1, .9, 11);
+    LAMV = linspace(-1, 1, 11);
+    CHIABSV = zeros(length(FAV), length(LAMV));
+    KSV = zeros(length(FAV), length(LAMV));
 
-cnt = 1;
-for PHIP = [.2, .5, .8]
-    for NM = [1e-2, 1e2]
+    cnt = 1;
+    for PHIP = [.2, .5, .8]
+        for NM = [1e-2, 1e2]
+            for ii = 1:length(FAV)
+                FA = FAV(ii)
+                for jj = 1:length(LAMV)
+                    LAM = LAMV(jj);
+
+                    [CHIABS, KS, EIGS, EIGVS] = spinodal_wsolvent(N,NM,LAM,FA,PHIP);
+                    CHIABSV(ii, jj) = CHIABS*NM*PHIP;
+                    KSV(ii, jj) = KS*sqrt(r2(NM));
+                end
+            end
+
+            filename = filenames{cnt};
+            save(filename, 'CHIABSV', 'KSV', 'LAMV', 'FAV', 'PHIP', 'NM');
+            cnt = cnt+1;
+        end
+    end
+    
+else
+    for ff = 1:2
+        load(filenames{ff})
+
         for ii = 1:length(FAV)
-            FA = FAV(ii)
-            for jj = 1:length(LAMV)
-                LAM = LAMV(jj);
-
-                [CHIABS, KS, EIGS, EIGVS] = spinodal_wsolvent(N,NM,LAM,FA,PHIP);
-                CHIABSV(ii, jj) = CHIABS*NM*PHIP;
-                KSV(ii, jj) = KS*sqrt(r2(NM));
+            FA = FAV(ii);
+            LAMMIN = max([-(1-FA)/FA, -FA/(1-FA)]);
+            IND = find(LAMV<LAMMIN);
+            if (IND)
+                IND = IND(end);
+                KSV(ii, 1:IND) = NaN;
+                CHIABSV(ii, 1:IND) = NaN;
             end
         end
+        FAMIN = -LAMV./(1-LAMV);
 
-        filename = filenames{cnt};
-        save(filename, 'CHIABSV', 'KSV', 'LAMV', 'FAV', 'PHIP', 'NM');
-        cnt = cnt+1;
+        figure('position', [0, 0, 600, 800]);
+        subplot(2, 1, 1);hold
+        surf(LAMV, FAV, CHIABSV, 'edgecolor', 'none', 'facecolor', 'interp')
+        colormap copper
+        view([0, 90]);grid off
+        set(gca,'fontsize',18)
+
+        xlabel('\lambda');ylabel('f_A')
+        plot3(LAMV, 1-FAMIN, 1e5*ones(1, length(FAMIN)), 'k-', 'linewidth', 3)
+        plot3(LAMV, FAMIN, 1e5*ones(1, length(FAMIN)), 'k-', 'linewidth', 3)
+        ylim([0.1, 0.9]);box on
+        colorbar
+        caxis([0, 8])
+        set(gca,'fontsize',18)
+
+        subplot(2, 1, 2);hold
+        surf(LAMV, FAV, KSV, 'edgecolor', 'none', 'facecolor', 'interp')
+        colormap copper
+        view([0, 90]);grid off
+        set(gca,'fontsize',18)
+
+        xlabel('\lambda');ylabel('f_A')
+        plot3(LAMV, 1-FAMIN, 1e5*ones(1, length(FAMIN)), 'k-', 'linewidth', 3)
+        plot3(LAMV, FAMIN, 1e5*ones(1, length(FAMIN)), 'k-', 'linewidth', 3)
+        ylim([0.1, 0.9]);box on
+        colorbar
+        caxis([0, 4.5])
+        set(gca,'fontsize',18)
     end
+
+%     figure;
+%     figure;hold
+%     for ii = 1:51
+%         COL = (ii-1)/(length(FAV)-1);
+%         
+%         FA = FAV(ii)
+%         plot(LAMV, KSV(ii, :), ...
+%             'o-', 'linewidth', 1.5, 'color', [COL 0 1-COL])
+%     end
+%     
+%     figure;hold
+%     for ii = 1:length(FAV)
+%         COL = (ii-1)/(length(FAV)-1);
+%         plot(LAMV, CHIABSV(ii,:)*FAV(ii)*(1-FAV(ii)), 'color', [COL 0 1-COL])
+%     end
 end
-
-% figure;surf(LAMV, FAV, KSV)
-
-
-% 
-% %%%% cuts %%%%
-% clear;
-% filename3 = '../data/figureS5C';
-% load(filename3)
-% 
-% figure;hold
-% for ii = 1:length(FAV)
-%     plot(LAMV, KSV(ii,:))
-% end
-% 
-% figure;hold
-% for ii = 1:length(FAV)
-%     plot(LAMV, CHIABSV(ii,:)*FAV(ii)*(1-FAV(ii))*4)
-% end
-
-
-
-
-
-% 
-% 
-% %%%% some conditions %%%%
-% clear;
-% N = 100;
-% PHIP = .5;
-% 
-% FA = .2;
-% NM = .01;
-% % LAMV = linspace(-1, 0, 21);
-% LAMV = linspace(-1, 1, 21);
-% KSV = zeros(1, length(LAMV));
-% CHIABSV = zeros(1, length(LAMV));
-% 
-% for ii = 1:length(LAMV)
-%     LAM = LAMV(ii)
-%     [CHIABS, KS, EIGS, EIGVS] = spinodal_wsolvent(N,NM,LAM,FA,PHIP);
-%     KSV(ii) = KS*sqrt(r2(NM));
-%     CHIABSV(ii) = CHIABS*PHIP*NM;
-% end
-% 
-% figure;plot(LAMV, CHIABSV)
-% figure;plot(LAMV, KSV)
-% 
-
-%%%% structure factors %%%%
-clear;
-N = 100;
-PHIP = .5;
-
-FA = .2;
-NM = .01;
-LAM = -0.20;
-KV = logspace(-3, 2, 100)/sqrt(r2(NM));
-
-[CHIABS, KS, EIGS, EIGVS] = spinodal_wsolvent(N,NM,LAM,FA,PHIP);
-CHIV = linspace(.2, .9, 5);
-KSV = zeros(length(CHIV), 1);
-
-figure;hold
-for ii = 1:length(CHIV)
-    COL = (ii-1)/(length(CHIV)-1);
-    
-    CHI = CHIV(ii);
-    CHIMAT = [0,CHIABS;CHIABS,0]*CHI
-    
-    [KS, EIGS, EIGVS] = eigs_wsolvent(N, NM, LAM, FA, PHIP, CHIMAT, 1);
-    KSV(ii) = KS*sqrt(r2(NM));
-    
-    [EIG,EIGV]=gamma2_solvent(N,NM,LAM,FA,KV,CHIMAT,PHIP);
-    plot(KV*sqrt(r2(NM)), 1/NM./EIG(:,1), '-', 'color', [COL 0 1-COL]);
-%     plot(KV*sqrt(r2(NM)), 1/NM./EIG(:,2), '--', 'color', [COL 0 1-COL]);
-end
-set(gca,'xscale','log');set(gca,'yscale','log')

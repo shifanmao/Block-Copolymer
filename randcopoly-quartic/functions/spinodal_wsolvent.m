@@ -20,8 +20,25 @@ CHI = setCHIAB(CHIABS);
 [KS, EIGS, EIGVS] = eigs_wsolvent(N, NM, LAM, FA, PHIP, CHI, 1);
 
 % reset KS
-if KS*sqrt(r2(NM)) <= 1e-2
+if KS*sqrt(r2(NM)) <= 1.1e-2
     KS = 0;
+
+    chis = 0/NM/PHIP;
+    chie = 3e1/NM/PHIP;
+
+    while (chie - chis) > 1e-2/NM/PHIP
+        mid = (chie + chis) / 2;
+        CHI = setCHIAB(mid);
+
+        [EIG,~]=gamma2_solvent(N,NM,LAM,FA,KS,CHI,PHIP);
+        MINEIG = EIG(1);
+        if MINEIG*N < 0
+            chie = mid;
+        else
+            chis = mid;
+        end
+    end
+    CHIABS = chis;
 end
 
 end

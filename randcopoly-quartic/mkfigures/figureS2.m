@@ -1,7 +1,7 @@
 % Figure 2: Triangular phases at 8different 
 clear;
 
-CALCON = 0;
+CALCON = 1;
 filename1 = '../data/figureS4ATriMesh';
 filename2 = '../data/figureS4BTriMesh';
 filename3 = '../data/figureS4CTriMesh';
@@ -18,7 +18,8 @@ filenames = {filename1, filename2, filename3, filename4,...
 if CALCON
     N = 100;
     cnt = 1;
-    for LAM = [-0.75, 0]
+%     for LAM = [-0.75, 0]
+    for LAM = -0.75
         for NM = [1e-2, 1e2]
             for CHI = [0, 0.8]
                 filename = filenames{cnt};
@@ -33,7 +34,7 @@ else
     names = {};
     cnt = 1;
     for LAM = [-0.75, 0]
-        for NM = [1e-1, 1e1]
+        for NM = [1e-2, 1e2]
             for CHI = [0, 0.8]
                 name = sprintf('NM=%d, CHI=%.2f, LAM=%.2f', NM, CHI, LAM);
                 names{cnt} = name;
@@ -45,14 +46,31 @@ else
     for ii = 1:8
         filename = filenames{ii};
         load(filename);
-        
+
+        if ii <=4
+            LAM = -0.75;
+        else
+            LAM = 0;
+        end
+        % put limits to FA
+        FAMIN = -LAM/(1-LAM);
+        FAMAX = 1/(1-LAM);
+        for jj = 1:length(PHIPV)
+            INDMIN = find(FAVV(:, jj) < FAMIN);
+            INDMAX = find(FAVV(:, jj) > FAMAX);
+
+            if INDMIN
+                INDMIN = INDMIN(end);
+                EIG(1:INDMIN, jj) = NaN;
+            end
+            if INDMAX
+                INDMAX = INDMAX(1);
+                EIG(INDMAX:end, jj) = NaN;
+            end
+        end
+
         figure;plotphase_wsolvent(FAVV, PHIPV, EIGV, EIG, KSV, NM)
         title(names{ii})
-%         if ii == 1 || ii == 3
-%             title('\chi_{AB}=0');set(get(gca,'title'), 'position', [0.2,1])
-%         else
-%             title('\chi_{AB}=0.8\chi_{AB}^*');set(get(gca,'title'), 'position', [0.2,1])
-%         end
     end
 end
 

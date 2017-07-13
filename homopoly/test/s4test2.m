@@ -4,13 +4,13 @@ clear;
 addpath(genpath('../chainstats'))
 
 %Calculation parameters
-ORDEig=2;
-ORDL=2;
+ORDEig=10;
+ORDL=10;
 ResLayer=500;
 ImagThreshold=1e-8;
 
 %Number of Kuhn steps
-NM=1000;
+NM=1;
 
 %wavevector and structure factor
 k=logspace(-2,3,21)';

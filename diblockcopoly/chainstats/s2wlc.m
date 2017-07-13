@@ -39,7 +39,6 @@ else
         valeqAB = (1+exp(R(I))-exp(FA.*R(I))-exp(R(I)-FA.*R(I))).*R(I).^(-2);
         % J1<J2
         s2(1,2)=s2(1,2)+Residue(I)*valeqAB*(NM^2);
-
     end
 end
 s2(2,1)=s2(1,2);

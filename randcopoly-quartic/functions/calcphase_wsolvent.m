@@ -7,8 +7,10 @@ if LOAD
     load(filename);
 else
     PHIPV = [0, linspace(.001, .999, 49), 1];
-    FAV0 = .0;
-    FAVf = 1;
+    FAV0 = -LAM/(1-LAM);
+    FAVf = 1/(1-LAM);
+%     FAV0 = 0;
+%     FAVf = 1;
     lenFAVV = zeros(length(PHIPV), 1);
     
     % triangular mesh
